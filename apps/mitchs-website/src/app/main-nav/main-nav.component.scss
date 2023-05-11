@@ -1,0 +1,23 @@
+#main-nav {
+  background-color: rgb(232, 241, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  div {
+    margin: 0px 20px;
+  }
+}
+
+.nav-bar-items {
+  a {
+    margin: 0px 12px;
+  }
+}
+
+.nav-logo {
+  padding: 0px 3px;
+  border: 2px solid red;
+  border-radius: 12px;
+  background-color: greenyellow;
+}
