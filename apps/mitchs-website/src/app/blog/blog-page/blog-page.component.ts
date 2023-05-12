@@ -6,6 +6,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './blog-page.component.html',
-  styleUrls: ['./blog-page.component.scss'],
-})
-export class BlogPageComponent {}
+  styleUrls: ['../blog-styles.scss']})
+export class BlogPageComponent {
+
+  newBlogButtonClicked() {
+    console.log("new Blog")
+  }
+}
