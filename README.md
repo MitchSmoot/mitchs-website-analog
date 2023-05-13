@@ -4,7 +4,7 @@ Welcome to the repository for my personal website! It is being build on the SPAR
 
 ## About the SPARTAN Stack
 
-<img alt="The tip of a spear with the Angular A inside" width="350px" src="./assets/spartan.svg" title="Spartan logo"/>
+<img alt="The tip of a spear with the Angular A inside" width="350px" src="./libs/assets/spartan.svg" title="Spartan logo"/>
 
 SPARTAN is an experimental tech stack for AnalogJS, with potential to become massively popular in the future!
 The featured libraries are [Supabase](https://supabase.com/), [Prisma](https://www.prisma.io/), [Analog](https://analogjs.org/),
