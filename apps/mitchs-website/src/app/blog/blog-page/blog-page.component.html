@@ -2,5 +2,12 @@
   <h1>Mitch's Blog!</h1>
   <button (click)="newBlogButtonClicked()">New</button>
 
+  <post-form />
+
+  <li *ngFor="let post of posts">
+    <h1>{{post.title}}</h1>
+    <p>{{post.content}}</p>
+  </li>
+
 </div>
 

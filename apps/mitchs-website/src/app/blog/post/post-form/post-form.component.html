@@ -1,1 +1,15 @@
-<p>post-form works!</p>
+<div id="post-form-container">
+
+  <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+
+    <label for="title">Title: </label>
+    <input id="title" type="text" formControlName="title">
+  
+    <label for="content">Content: </label>
+    <input id="content" type="text" formControlName="content">
+
+    <button type="submit">Submit</button>
+  </form>
+
+
+</div>
