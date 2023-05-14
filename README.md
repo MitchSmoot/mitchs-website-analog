@@ -1,6 +1,6 @@
 # MitchsWebsiteAnalog
 
-Welcome to the repository for my personal website! It is being build on the SPARTAN stack, featuring Analog to create a full-stack, end to end type safe application. Initially, this will be a personal blog and portfolio website, and I will continue to add features related to my hobbies and favorite things.
+Welcome to the repository for my personal website! It is being built on the SPARTAN stack, featuring Analog to create a full-stack, end to end type safe application. Initially, this will be a personal blog and portfolio website, and I will continue to add features related to my hobbies and favorite things.
 
 ## About the SPARTAN Stack
 
