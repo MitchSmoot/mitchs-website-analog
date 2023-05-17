@@ -11,12 +11,19 @@ export class AuthService {
 
   constructor() {}
   #currentUser = signal<User| undefined>(undefined);
-  currenUser = computed(this.#currentUser);
+  currentUser = computed(this.#currentUser);
 
-  async userSignup() {
+  async userSignUp() {
     const { data, error } = await supabase.auth.signUp({
       email: 'example@email.com',
       password: 'example-password',
+    })
+  }
+
+  async userSignIn(email: string, password: string) {
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: email,
+      password: password,
     })
   }
 }

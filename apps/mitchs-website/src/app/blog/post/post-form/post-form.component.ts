@@ -11,7 +11,7 @@ import { PostService } from '../../../services/blog/post.service';
   styleUrls: ['../../blog-styles.scss'],
 })
 export class PostFormComponent {
-  constructor(private _postService: PostService) {}
+  constructor(private postService: PostService) {}
 
   postForm = new FormGroup({
     title: new FormControl<string>(''),
@@ -19,7 +19,7 @@ export class PostFormComponent {
   });
 
   onSubmit() {
-    this._postService.create({
+    this.postService.create({
       title: this.postForm.value.title ? this.postForm.value.title : '',
       content: this.postForm.value.content ? this.postForm.value.content : ''
     })
