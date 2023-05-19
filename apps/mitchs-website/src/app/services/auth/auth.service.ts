@@ -14,10 +14,11 @@ export class AuthService {
   currentUser = computed(this.#currentUser);
 
   async userSignUp() {
-    const { data, error } = await supabase.auth.signUp({
+    const user: { data: any, error: any } = await supabase.auth.signUp({
       email: 'example@email.com',
       password: 'example-password',
     })
+    console.log(user)
   }
 
   async userSignIn(email: string, password: string) {

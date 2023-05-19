@@ -13,7 +13,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class UserFormComponent implements OnInit {
   constructor(private authService: AuthService) {}
 
-  userSignedin = false
+  userSignedIn = false
   userForm = new FormGroup({
     email: new FormControl<string>(''),
     name: new FormControl<string>(''),
@@ -23,7 +23,7 @@ export class UserFormComponent implements OnInit {
 
   ngOnInit() {
     if (this.authService.currentUser !== undefined) {
-      this.userSignedin = true
+      this.userSignedIn = true
     }
   }
 

@@ -1,8 +1,10 @@
 import { Route } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { UserFormComponent } from './auth/user-form/user-form.component';
 
 export const appRoutes: Route[] = [
   {path: 'blog', loadChildren: () => import('./blog/blog-routes').then(mod => mod.BLOG_ROUTES)},
   {path: 'portfolio', loadChildren: () => import('./portfolio/portfolio-routes').then(mod => mod.PORTFOLIO_ROUTES)},
-  {path: 'nx', component: NxWelcomeComponent}
+  {path: 'nx', component: NxWelcomeComponent},
+  {path: 'auth', component: UserFormComponent}
 ];
