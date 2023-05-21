@@ -2,7 +2,7 @@ import { Injectable, computed, signal } from '@angular/core';
 import { createClient } from '@supabase/supabase-js';
 import { User } from '@prisma/client';
 
-const supabase = createClient(import.meta.env.SUPABASE_URL, import.meta.env.SUPABASE_KEY)
+const supabase = createClient(import.meta.env['VITE_SUPABASE_URL'], import.meta.env['VITE_SUPABASE_KEY'])
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +10,8 @@ const supabase = createClient(import.meta.env.SUPABASE_URL, import.meta.env.SUPA
 export class AuthService {
 
   constructor() {}
-  #currentUser = signal<User| undefined>(undefined);
-  currentUser = computed(this.#currentUser);
+    #currentUser = signal<User| undefined>(undefined);
+    currentUser = computed(this.#currentUser);
 
   async userSignUp() {
     const user: { data: any, error: any } = await supabase.auth.signUp({
