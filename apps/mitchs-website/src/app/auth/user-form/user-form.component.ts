@@ -27,4 +27,9 @@ export class UserFormComponent implements OnInit {
     }
   }
 
+  onSubmit() {
+    console.log(this.userForm.value.email, this.userForm.value.password)
+    this.authService.userSignIn(this.userForm.value.email, this.userForm.value.password)
+  }
+
 }

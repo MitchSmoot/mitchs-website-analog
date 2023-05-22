@@ -7,6 +7,7 @@ async function main() {
     create: {
       email: 'testAdmin@test.com',
       name: 'AdminDude',
+      password: 'asdf',
       createdAt: new Date(),
       role: Role.ADMIN
     }
@@ -17,6 +18,7 @@ async function main() {
     create: {
       email: 'testUser@test.com',
       name: 'OrdinaryPerson',
+      password: 'asdf',
       createdAt: new Date(),
       role: Role.USER
     }
