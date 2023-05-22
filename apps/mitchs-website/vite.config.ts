@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       analog({
+        ssr: false,
         ssrBuildDir: '../../dist/apps/mitchs-website/ssr',
         entryServer: 'apps/mitchs-website/src/main.server.ts',
         vite: {
