@@ -2,19 +2,21 @@
   "name": "mitchs-website",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "mitchs-website-analog",
+  "prefix": "mitchs",
   "sourceRoot": "apps/mitchs-website/src",
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}",
+        "dist/apps/mitchs-website/.nitro",
+        "dist/apps/mitchs-website/ssr",
+        "dist/apps/mitchs-website/analog"
+      ],
       "options": {
+        "configFile": "apps/mitchs-website/vite.config.ts",
         "outputPath": "dist/apps/mitchs-website",
-        "index": "apps/mitchs-website/src/index.html",
-        "main": "apps/mitchs-website/src/main.ts",
-        "polyfills": ["zone.js"],
-        "tsConfig": "apps/mitchs-website/tsconfig.app.json",
         "assets": [
           "apps/mitchs-website/src/favicon.ico",
           "apps/mitchs-website/src/assets"
@@ -50,7 +52,12 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mitchs-website:build",
+        "port": 4200
+      },
       "configurations": {
         "production": {
           "browserTarget": "mitchs-website:build:production"
@@ -58,8 +65,7 @@
         "development": {
           "browserTarget": "mitchs-website:build:development"
         }
-      },
-      "defaultConfiguration": "development"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
