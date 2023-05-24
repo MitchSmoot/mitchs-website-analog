@@ -14,17 +14,20 @@ export class AuthService {
     currentUser = computed(this.#currentUser);
 
   async userSignUp() {
-    const user: { data: any, error: any } = await supabase.auth.signUp({
+    const userSignUpPromise: { data: any, error: any } = await supabase.auth.signUp({
       email: 'example@email.com',
       password: 'example-password',
     })
-    console.log(user)
+    console.log(userSignUpPromise)
   }
 
   async userSignIn(email: string, password: string) {
-    const { data, error } = await supabase.auth.signInWithPassword({
+    const userSignInPromise: { data: any, error: any } = await supabase.auth.signInWithPassword({
       email: email,
       password: password,
     })
+    const userSignInResponse = await userSignInPromise
+    console.log(userSignInResponse)
   }
 }
+// // 
