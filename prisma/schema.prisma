@@ -2,15 +2,12 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["multiSchema"]
+  provider = "prisma-client-js"
 }
 
 datasource db {
-  provider  = "postgresql"
-  url       = env("VITE_DATABASE_URL")
-  directUrl = env("VITE_DIRECT_URL")
-  schemas   = ["public", "auth"]
+  provider = "postgresql"
+  url      = env("VITE_DATABASE_URL")
 }
 
 model User {
@@ -21,8 +18,6 @@ model User {
   password String?
   role  Role         @default(USER)
   posts Post[]
-
-  @@schema("auth")
 }
 
 model Post {
@@ -32,28 +27,22 @@ model Post {
   title     String
   content   String?
   published Boolean  @default(false)
-  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  author    User     @relation(fields: [authorId], references: [id])
   authorId  Int
   comments  Comment[]
-
-  @@schema("public")
 }
 
 model Comment {
   id        Int      @id @default(autoincrement())
   name      String
   body      String?
-  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  post      Post     @relation(fields: [postId], references: [id])
   postId    Int
   createdAt DateTime @default(now())
-
-  @@schema("public")
 }
 
 enum Role {
   ADMIN
   MEMBER
   USER
-
-  @@schema("auth")
 }
