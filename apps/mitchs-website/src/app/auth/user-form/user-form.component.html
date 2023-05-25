@@ -1,5 +1,5 @@
 <div id="user-form-container">
-  <form>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <label for="email">Email:</label>
     <input id="email" type="text" formControlName="email">
 

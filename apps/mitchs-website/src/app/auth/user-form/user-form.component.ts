@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../services/auth/auth.service';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'user-form',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './user-form.component.html',
   styleUrls: ['./user-form.component.scss'],
 })
@@ -29,7 +29,10 @@ export class UserFormComponent implements OnInit {
 
   onSubmit() {
     console.log(this.userForm.value.email, this.userForm.value.password)
-    this.authService.userSignIn(this.userForm.value.email, this.userForm.value.password)
+    if (this.userForm.value.email && this.userForm.value.password) {
+
+      this.authService.userSignIn(this.userForm.value.email, this.userForm.value.password)
+    }
   }
 
 }
