@@ -1,31 +1,55 @@
 import { Injectable, computed, signal } from '@angular/core';
-import { createClient } from '@supabase/supabase-js';
 import { User } from '@prisma/client';
 import { SupabaseService } from '../supabase/supabase.service';
-
-const supabase = createClient(import.meta.env['VITE_SUPABASE_URL'], import.meta.env['VITE_SUPABASE_KEY'])
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  currentUser: any
 
   constructor(private supabaseService: SupabaseService) {}
+
     #currentUser = signal<User | undefined>(undefined);
-    currentUserComputed = computed(this.#currentUser);
+    currentUser = computed(this.#currentUser);
+
+    #isLoading = signal<boolean>(false)
+    isLoading = computed(this.#isLoading);
 
   async userSignUp(email: string, password: string, name: string) {
-    this.currentUser = await this.supabaseService.signUp(email, password, name);
+    this.#isLoading.set(true)
+    await this.supabaseService.signUp(email, password, name)
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+    .finally(() => {
+      this.#isLoading.set(false)
+    })
   }
 
   async userSignIn(email: string, password: string) {
-    this.currentUser = await
-      this.supabaseService.signIn(email, password)
+    console.log("loading")
+    this.#isLoading.set(true)
+    await this.supabaseService.signIn(email, password)
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+    .finally(() => {
+      console.log("done loading")
+      this.#isLoading.set(false)
+    })
   }
 
   async signOut() {
-    this.supabaseService.signOut()
+    await this.supabaseService.signOut()
+    .catch((error) => {
+      console.error(error)
+    })
     this.#currentUser.set(undefined)
   }
 }

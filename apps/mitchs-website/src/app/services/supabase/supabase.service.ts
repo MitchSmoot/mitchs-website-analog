@@ -21,7 +21,8 @@ export class SupabaseService {
   }
 
   public signIn(email: string, password: string) {
-    return this.supabase.auth.signInWithPassword({email, password})
+    console.log(email, password)
+    return this.supabase.auth.signInWithPassword({email: email, password: password})
   }
 
   public signUp(email: string, password: string, name: string) {
@@ -30,5 +31,9 @@ export class SupabaseService {
 
   public signOut() {
     return this.supabase.auth.signOut()
+  }
+
+  public create(model: string, row: object[]) {
+    return this.supabase.from(model).insert(row)
   }
 }

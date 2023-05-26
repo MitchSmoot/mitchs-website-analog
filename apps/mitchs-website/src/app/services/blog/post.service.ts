@@ -1,7 +1,7 @@
 
-import { Injectable } from '@angular/core';
-
+import { Injectable, computed, signal } from '@angular/core';
 import { Post } from '@prisma/client'
+import { SupabaseService } from '../supabase/supabase.service';
 
 
 export interface Filter {
@@ -13,6 +13,10 @@ export interface Filter {
   providedIn: 'root'
 })
 export class PostService {
+  constructor(private supabaseService: SupabaseService) {}
+
+  #isLoading = signal<boolean>(false)
+  isLoading = computed(this.#isLoading);
 
 
   get(filter?: Filter) {
@@ -29,8 +33,17 @@ export class PostService {
     console.log("GET post" + id.toString())
   }
 
-  create(post: {title: string, content: string}) {
+  async create(post: {title: string, content: string}) {
+    this.#isLoading.set(true)
     console.log(`Creating Post. Title:${post.title}, content: ${post.content}`)
+    this.supabaseService.create('Post', [{
+      title: post.title,
+      content: post.content
+    }])
+    .then((data) => {
+      console.log(data)
+      this.#isLoading.set(false)
+    })
   }
 
   update(id: number, post: Post) {

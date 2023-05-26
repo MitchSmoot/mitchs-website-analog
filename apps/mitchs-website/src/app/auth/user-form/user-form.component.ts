@@ -13,6 +13,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 export class UserFormComponent implements OnInit {
   constructor(private authService: AuthService) {}
 
+  authLoading = this.authService.isLoading
   userSignedIn = false
   userForm = new FormGroup({
     email: new FormControl<string>(''),
