@@ -9,21 +9,23 @@ const supabase = createClient(import.meta.env['VITE_SUPABASE_URL'], import.meta.
   providedIn: 'root'
 })
 export class AuthService {
+  currentUser: any
 
   constructor(private supabaseService: SupabaseService) {}
-    #currentUser = signal<User| undefined>(undefined);
-    currentUser = computed(this.#currentUser);
+    #currentUser = signal<User | undefined>(undefined);
+    currentUserComputed = computed(this.#currentUser);
 
-  async userSignUp() {
-    // const userSignUpPromise: { data: any, error: any } = await supabase.auth.signUp({
-    //   email: 'example@email.com',
-    //   password: 'example-password',
-    // })
-    // console.log(userSignUpPromise)
+  async userSignUp(email: string, password: string, name: string) {
+    this.currentUser = await this.supabaseService.signUp(email, password, name);
   }
 
   async userSignIn(email: string, password: string) {
-    const userSignInPromise: { data: any, error: any } = await this.supabaseService.signIn(email, password)
-    console.log(await userSignInPromise)
+    this.currentUser = await
+      this.supabaseService.signIn(email, password)
+  }
+
+  async signOut() {
+    this.supabaseService.signOut()
+    this.#currentUser.set(undefined)
   }
 }

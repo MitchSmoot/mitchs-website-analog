@@ -24,7 +24,11 @@ export class SupabaseService {
     return this.supabase.auth.signInWithPassword({email, password})
   }
 
-  signOut() {
+  public signUp(email: string, password: string, name: string) {
+    return this.supabase.auth.signUp({email: email, password: password, options: { data: {name: name}}})
+  }
+
+  public signOut() {
     return this.supabase.auth.signOut()
   }
 }
