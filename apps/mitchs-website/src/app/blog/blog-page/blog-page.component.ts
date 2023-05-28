@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { PostFormComponent } from '../post/post-form/post-form.component';
 import { PostService } from '../../services/blog/post.service';
 import { Post } from '@prisma/client';
+import { PostComponent } from '../post/post.component';
 
 @Component({
   selector: 'mitchs-website-analog-blog-page',
   standalone: true,
-  imports: [CommonModule, PostFormComponent],
+  imports: [CommonModule, PostFormComponent, PostComponent],
   templateUrl: './blog-page.component.html',
   styleUrls: ['../blog-styles.scss']})
 export class BlogPageComponent implements OnInit {

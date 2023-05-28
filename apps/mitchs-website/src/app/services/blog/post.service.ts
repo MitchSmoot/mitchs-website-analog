@@ -12,7 +12,7 @@ export class PostService {
   #isLoading = signal<boolean>(false)
   isLoading = computed(this.#isLoading);
 
-  #posts = signal([])
+  #posts = signal<Post[]>([])
   posts = computed(this.#posts)
 
   async get(filter: string) {
@@ -26,11 +26,7 @@ export class PostService {
       this.#posts.set(response.data)
       this.#isLoading.set(false)
       }
-    })
-  }
-
-  getbyId(id: number) {
-    console.log("GET post" + id.toString())
+    });
   }
 
   async create(post: {title: string, content: string}) {
@@ -39,37 +35,30 @@ export class PostService {
       title: post.title,
       content: post.content
     }])
-    .then((data) => {
-      console.log(data)
+    .then((response) => {
+      console.log(response)
       this.#isLoading.set(false)
-    })
+      this.#posts.mutate((posts) => posts.push(post))
+    });
+    //TODO: Populate newly pushed post with ID from database
   }
 
-  async update(id: number, post: Post) {
-    console.log(`Updating Post ${id}, content: ` + post.toString())
+  async update(id: number, updatedPost: Post) {
+    console.log(`Updating Post ${id}, content: ` + updatedPost.toString())
     this.#isLoading.set(true)
-    await this.supabaseService.updateById('Post', id, post)
+    await this.supabaseService.updateById('Post', id, updatedPost)
     .then((data) => {
       console.log(data)
+      this.#posts.update(posts =>
+        posts.map(post => post.id === id ? updatedPost : post ))
       this.#isLoading.set(false)
-      // TODO: update post in state
-    })
+      // TODO: make sure this updates in state
+    });
   }
 
-  delete(id: number) {
-    this.supabaseService.deleteById('Post', id);
-    // TODO: filter deleted post from state
+  async delete(id: number) {
+    this.#posts.update((posts) => posts.filter(post => post.id !== id))
+    await this.supabaseService.deleteById('Post', id).throwOnError()
   }
-
-}
-
-const placeholderPost: Post = {
-  id: 0,
-  createdAt: new Date(),
-  updatedAt: new Date(),
-  title: "Lorem Ipsum",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  published: true,
-  authorId: 0
 
 }
