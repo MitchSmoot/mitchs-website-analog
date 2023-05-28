@@ -12,14 +12,13 @@ import { Post } from '@prisma/client';
   styleUrls: ['../blog-styles.scss']})
 export class BlogPageComponent implements OnInit {
 
-  posts: Post[] | undefined
-
-  constructor(private _postService: PostService) {}
+  constructor(private postService: PostService) {}
+  postsLoading = this.postService.isLoading
+  posts = this.postService.posts
 
   ngOnInit() {
 
-    this.posts = this._postService.get()
-    console.log(this.posts)
+    this.postService.get('*')
   }
 
   newBlogButtonClicked() {

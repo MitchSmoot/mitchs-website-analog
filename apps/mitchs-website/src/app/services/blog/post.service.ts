@@ -1,13 +1,7 @@
 
-import { Injectable, computed, signal } from '@angular/core';
+import { Injectable, computed, signal} from '@angular/core';
 import { Post } from '@prisma/client'
 import { SupabaseService } from '../supabase/supabase.service';
-
-
-export interface Filter {
-  filter: string
-}
-
 
 @Injectable({
   providedIn: 'root'
@@ -18,15 +12,21 @@ export class PostService {
   #isLoading = signal<boolean>(false)
   isLoading = computed(this.#isLoading);
 
+  #posts = signal([])
+  posts = computed(this.#posts)
 
-  get(filter?: Filter) {
-    if (filter) {
-      console.log("Getting posts, filtered by " + filter)
-      return [placeholderPost]
-    } else {
-      console.log("Getting all posts")
-      return [placeholderPost]
-    }
+  async get(filter: string) {
+    this.#isLoading.set(true)
+    await this.supabaseService.select('Post', filter)
+    .then((response) => {
+      if (response.error) {
+        throw response.error
+      } else {
+      console.log(response)
+      this.#posts.set(response.data)
+      this.#isLoading.set(false)
+      }
+    })
   }
 
   getbyId(id: number) {
@@ -35,8 +35,7 @@ export class PostService {
 
   async create(post: {title: string, content: string}) {
     this.#isLoading.set(true)
-    console.log(`Creating Post. Title:${post.title}, content: ${post.content}`)
-    this.supabaseService.create('Post', [{
+    await this.supabaseService.insert('Post', [{
       title: post.title,
       content: post.content
     }])
@@ -46,12 +45,20 @@ export class PostService {
     })
   }
 
-  update(id: number, post: Post) {
+  async update(id: number, post: Post) {
     console.log(`Updating Post ${id}, content: ` + post.toString())
+    this.#isLoading.set(true)
+    await this.supabaseService.updateById('Post', id, post)
+    .then((data) => {
+      console.log(data)
+      this.#isLoading.set(false)
+      // TODO: update post in state
+    })
   }
 
   delete(id: number) {
-    console.log("Deleting Post " + id.toString())
+    this.supabaseService.deleteById('Post', id);
+    // TODO: filter deleted post from state
   }
 
 }
