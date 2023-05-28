@@ -6,19 +6,13 @@ import { AuthSession, SupabaseClient, createClient } from '@supabase/supabase-js
 })
 export class SupabaseService {
   private supabase: SupabaseClient
-  _session: AuthSession | null = null
 
+  //Initialize Supabase Client
   constructor() {
     this.supabase = createClient(import.meta.env['VITE_SUPABASE_URL'], import.meta.env['VITE_SUPABASE_KEY'])
   }
 
-  get session() {
-    this.supabase.auth.getSession().then(({ data }) => {
-      this._session = data.session
-    })
-    console.log(this.session)
-    return this._session
-  }
+  //SUPABASE API CALLS
 
   public signIn(email: string, password: string) {
     console.log(email, password)
@@ -33,7 +27,23 @@ export class SupabaseService {
     return this.supabase.auth.signOut()
   }
 
-  public create(model: string, row: object[]) {
+  public select(model: string, filter: string) {
+    return this.supabase.from(model).select(filter)
+  }
+
+  public selectPaginated(model:string, filter:string, min: number, max: number) {
+    return this.supabase.from(model).select(filter).range(min, max)
+  }
+
+  public insert(model: string, row: object[]) {
     return this.supabase.from(model).insert(row)
+  }
+
+  public updateById(model:string, id: number, updatedItem: object) {
+    return this.supabase.from(model).update(updatedItem).eq("id", id)
+  }
+
+  public deleteById(model: string, id: number) {
+    return this.supabase.from(model).delete().eq("id", id)
   }
 }
