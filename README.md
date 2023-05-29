@@ -10,5 +10,3 @@ SPARTAN is an experimental tech stack for AnalogJS, with potential to become mas
 The featured libraries are [Supabase](https://supabase.com/), [Prisma](https://www.prisma.io/), [Analog](https://analogjs.org/),
 [tRPC](https://trpc.io/), [Tailwind](https://tailwindcss.com/), [Angular](https://angular.io/),
 and [Nx](https://nx.dev/).
-
-My app does not currently use Tailwind, but I will probably add it soon.
