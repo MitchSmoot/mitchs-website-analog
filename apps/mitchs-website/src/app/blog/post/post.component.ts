@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PostService } from '../../services/blog/post.service';
-import { Post } from '@prisma/client';
 
 @Component({
   selector: 'post',
@@ -12,7 +11,8 @@ import { Post } from '@prisma/client';
 })
 export class PostComponent {
   constructor(private postService: PostService) {}
-  @Input() post: Post = {}
+  //TODO: fix Post typing
+  @Input() post = {id: 0, title: "", content: ""}
 
   onDelete() {
     console.log("Delete Clicked")

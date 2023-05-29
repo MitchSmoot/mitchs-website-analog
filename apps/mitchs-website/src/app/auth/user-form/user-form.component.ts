@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../services/auth/auth.service';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
@@ -14,7 +14,7 @@ export class UserFormComponent implements OnInit {
   constructor(private authService: AuthService) {}
 
   authLoading = this.authService.isLoading
-  currentUser = {}
+  currentUser: any
   signUp = false
   userForm = new FormGroup({
     email: new FormControl<string>(''),
@@ -29,11 +29,13 @@ export class UserFormComponent implements OnInit {
 
   onSubmit() {
     console.log(this.userForm.value)
+    if(this.userForm.value.email && this.userForm.value.password)
     if (!this.signUp) {
-
       this.authService.userSignIn(this.userForm.value.email, this.userForm.value.password)
     } else {
-      this.authService.userSignUp(this.userForm.value.email, this.userForm.value.password, this.userForm.value.name)
+      if (this.userForm.value.name) {
+        this.authService.userSignUp(this.userForm.value.email, this.userForm.value.password, this.userForm.value.name)
+      }
     }
   }
 

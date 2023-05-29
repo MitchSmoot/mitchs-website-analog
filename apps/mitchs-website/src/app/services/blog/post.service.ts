@@ -15,7 +15,8 @@ export class PostService {
   #isLoading = signal<boolean>(false)
   isLoading = computed(this.#isLoading);
 
-  #posts = signal<Post[]>([])
+  //TODO: fix Post typing
+  #posts = signal<any[]>([])
   posts = computed(this.#posts)
 
   async get(filter: string) {
