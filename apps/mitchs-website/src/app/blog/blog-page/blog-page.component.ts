@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PostFormComponent } from '../post/post-form/post-form.component';
 import { PostService } from '../../services/blog/post.service';
-import { Post } from '@prisma/client';
 import { PostComponent } from '../post/post.component';
 
 @Component({
