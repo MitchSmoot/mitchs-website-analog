@@ -1,6 +1,6 @@
 import { Injectable, computed, signal } from '@angular/core';
-import { User } from '@prisma/client';
 import { SupabaseService } from '../supabase/supabase.service';
+import { User } from '@supabase/supabase-js';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ export class AuthService {
 
   constructor(private supabaseService: SupabaseService) {}
 
-    #currentUser = signal<User | undefined>(undefined);
+    #currentUser = signal<User | null>(null);
     currentUser = computed(this.#currentUser);
 
     #isLoading = signal<boolean>(false)
@@ -32,15 +32,15 @@ export class AuthService {
   async userSignIn(email: string, password: string) {
     console.log("loading")
     this.#isLoading.set(true)
-    await this.supabaseService.signIn(email, password)
-    .then((data) => {
-      console.log(data);
+    await this.supabaseService.signIn({email, password})
+    .then((response) => {
+      console.log(response);
+      this.#currentUser.set(response.data.user)
     })
     .catch((error) => {
       console.error(error)
     })
     .finally(() => {
-      console.log("done loading")
       this.#isLoading.set(false)
     })
   }
@@ -50,6 +50,6 @@ export class AuthService {
     .catch((error) => {
       console.error(error)
     })
-    this.#currentUser.set(undefined)
+    this.#currentUser.set(null)
   }
 }

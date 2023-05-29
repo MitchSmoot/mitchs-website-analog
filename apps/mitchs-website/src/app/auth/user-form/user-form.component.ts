@@ -14,26 +14,36 @@ export class UserFormComponent implements OnInit {
   constructor(private authService: AuthService) {}
 
   authLoading = this.authService.isLoading
-  userSignedIn = false
+  currentUser = {}
+  signUp = false
   userForm = new FormGroup({
     email: new FormControl<string>(''),
     name: new FormControl<string>(''),
     password: new FormControl<string>(''),
-    passworConfirmation: new FormControl<string>('')
+    passwordConfirmation: new FormControl<string>('')
     })
 
   ngOnInit() {
-    if (this.authService.currentUser !== undefined) {
-      this.userSignedIn = true
-    }
+     this.currentUser = this.authService.currentUser;
   }
 
   onSubmit() {
-    console.log(this.userForm.value.email, this.userForm.value.password)
-    if (this.userForm.value.email && this.userForm.value.password) {
+    console.log(this.userForm.value)
+    if (!this.signUp) {
 
       this.authService.userSignIn(this.userForm.value.email, this.userForm.value.password)
+    } else {
+      this.authService.userSignUp(this.userForm.value.email, this.userForm.value.password, this.userForm.value.name)
     }
+  }
+
+  toggleButtonClicked() {
+    this.signUp = !this.signUp
+    this.userForm.reset()
+  }
+
+  signOutButtonClicked() {
+    this.authService.signOut()
   }
 
 }

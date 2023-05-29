@@ -9,6 +9,9 @@ import { SupabaseService } from '../supabase/supabase.service';
 export class PostService {
   constructor(private supabaseService: SupabaseService) {}
 
+  // #private signal for state changes within service
+  // readOnly computed signal for sharing data with outside components
+
   #isLoading = signal<boolean>(false)
   isLoading = computed(this.#isLoading);
 

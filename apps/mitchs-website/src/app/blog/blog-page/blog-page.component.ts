@@ -19,7 +19,9 @@ export class BlogPageComponent implements OnInit {
 
   ngOnInit() {
 
-    this.postService.get('*')
+    if (!this.postService.posts.length) {
+      this.postService.get('*')
+    }
   }
 
   newBlogButtonClicked() {

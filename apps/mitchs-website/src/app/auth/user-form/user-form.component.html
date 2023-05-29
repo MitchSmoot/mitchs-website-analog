@@ -1,17 +1,25 @@
 <div id="user-form-container">
-  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
-    <label for="email">Email:</label>
-    <input id="email" type="text" formControlName="email">
+  <!-- <button (click)="toggleButtonClicked()">
+    <p *ngIf="signUp">Sign In</p>
+    <p *ngIf="!signUp">Sign Up</p>
+  </button> -->
+  <form *ngIf="!this.currentUser()"[formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="text" formControlName="email">
+    </div>
 
-    <div *ngIf="!this.userSignedIn">
+    <div *ngIf="this.signUp">
       <label for="name">Name:</label>
       <input id="name" type="text" formControlName="name">
     </div>
 
-    <label for="password">Password:</label>
-    <input id="password" type="text" formControlName="password">
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" type="text" formControlName="password">
+    </div>
 
-    <div *ngIf="!this.userSignedIn">
+    <div *ngIf="this.signUp">
       <label for="password">Confirm Password:</label>
       <input id="password-confirmation" type="text" formControlName="passwordConfirmation">
     </div>
@@ -19,5 +27,10 @@
     <button type="submit">Submit</button>
 
   </form>
+
+  <div *ngIf="this.currentUser()">
+    <button click="signOutButtonClicked">Sign Out</button>
+  </div>
+  
   <div *ngIf="authLoading()"><h1>Loading!</h1></div>
 </div>

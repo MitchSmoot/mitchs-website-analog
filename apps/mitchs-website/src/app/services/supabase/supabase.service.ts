@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AuthSession, SupabaseClient, createClient } from '@supabase/supabase-js';
+import { SupabaseClient, createClient, SignInWithPasswordCredentials } from '@supabase/supabase-js';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +14,8 @@ export class SupabaseService {
 
   //SUPABASE API CALLS
 
-  public signIn(email: string, password: string) {
-    console.log(email, password)
-    return this.supabase.auth.signInWithPassword({email: email, password: password})
+  public signIn(credentials: SignInWithPasswordCredentials) {
+    return this.supabase.auth.signInWithPassword(credentials)
   }
 
   public signUp(email: string, password: string, name: string) {
