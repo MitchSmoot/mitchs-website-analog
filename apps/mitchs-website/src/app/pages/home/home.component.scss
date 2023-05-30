@@ -1,0 +1,12 @@
+#home-container {
+
+}
+
+section {
+  background-color: rgb(240, 240, 240);
+  @apply border rounded-xl py-5 m-2;
+}
+
+h1 {
+  @apply flex justify-center text-2xl font-bold;
+}

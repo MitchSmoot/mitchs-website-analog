@@ -10,8 +10,9 @@
 }
 
 .nav-bar-items {
+  @apply flex;
   a {
-    margin: 0px 12px;
+    @apply mx-4;
   }
 }
 
