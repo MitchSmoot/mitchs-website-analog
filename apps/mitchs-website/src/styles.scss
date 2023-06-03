@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,8 +10,4 @@
 img, svg, video {
   max-width: 100%;
   display: block;
-}
-
-* {
-  margin: 0
 }
