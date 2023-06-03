@@ -18,4 +18,8 @@ export class PostComponent {
     console.log("Delete Clicked")
     this.postService.delete(this.post.id)
   }
+
+  commentButtonClicked() {
+    console.log(`commenting on post ${this.post.id}`)
+  }
 }
