@@ -9,11 +9,11 @@ export class AuthService {
 
   constructor(private supabaseService: SupabaseService) {}
 
-    #currentUser = signal<User | null>(null);
-    currentUser = computed(this.#currentUser);
-
     #isLoading = signal<boolean>(false)
-    isLoading = computed(this.#isLoading);
+    #currentUser = signal<User | null>(null);
+
+    isLoading = this.#isLoading.asReadonly()
+    currentUser = this.#currentUser.asReadonly()
 
   async userSignUp(email: string, password: string, name: string) {
     this.#isLoading.set(true)
