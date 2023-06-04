@@ -17,7 +17,6 @@ export class BlogPageComponent implements OnInit {
   posts = this.postService.posts
 
   ngOnInit() {
-
     if (!this.postService.posts.length) {
       this.postService.get('*')
     }
