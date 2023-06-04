@@ -1,4 +1,4 @@
-import { Injectable, computed, signal } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { SupabaseService } from '../supabase/supabase.service';
 import { User } from '@supabase/supabase-js';
 
@@ -9,9 +9,11 @@ export class AuthService {
 
   constructor(private supabaseService: SupabaseService) {}
 
+    //Internal Variables
     #isLoading = signal<boolean>(false)
     #currentUser = signal<User | null>(null);
 
+    //External Variables
     isLoading = this.#isLoading.asReadonly()
     currentUser = this.#currentUser.asReadonly()
 

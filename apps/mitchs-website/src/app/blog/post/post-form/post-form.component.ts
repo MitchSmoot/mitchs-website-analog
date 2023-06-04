@@ -13,6 +13,7 @@ import { PostService } from '../../../services/blog/post.service';
 export class PostFormComponent {
   constructor(private postService: PostService) {}
 
+  topics = this.postService.topics
   postForm = new FormGroup({
     title: new FormControl<string>(''),
     content: new FormControl<string>('')

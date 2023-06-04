@@ -1,5 +1,5 @@
 
-import { Injectable, computed, signal} from '@angular/core';
+import { Injectable, signal} from '@angular/core';
 import { Post } from '@prisma/client'
 import { SupabaseService } from '../supabase/supabase.service';
 
@@ -15,6 +15,13 @@ export class PostService {
   
   posts = this.#posts.asReadonly()
   isLoading = this.#isLoading.asReadonly();
+  topics = [
+    "Programming",
+    "Travel",
+    "Caving",
+    "Radio",
+    "General"
+  ]
 
   async get(filter: string) {
     this.#isLoading.set(true)

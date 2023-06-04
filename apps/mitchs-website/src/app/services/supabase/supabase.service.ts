@@ -26,6 +26,7 @@ export class SupabaseService {
     return this.supabase.auth.signOut()
   }
 
+  // to select everything, use '*' as the filter
   public select(model: string, filter: string) {
     return this.supabase.from(model).select(filter)
   }
