@@ -11,7 +11,7 @@
     <div class="flex justify-center">
       <label for="topics">Select Topics: </label>
       <div *ngFor="let topic of this.topics" class="flex items-center">
-        <input id="${topic.id}" type="" value="${topic.name}" name="${topic.name}" class="">
+        <input id="${topic.id}" type="button" name="${topic.name}" class="">
         <label for="${topic.id}" class="">{{topic.name}}</label>
       </div>
     </div>
