@@ -9,9 +9,10 @@
     <input id="content" type="text" formControlName="content">
 
     <div class="flex justify-center">
+      <label for="topics">Select Topics: </label>
       <div *ngFor="let topic of this.topics" class="flex items-center">
-        <input id="default-radio-1" type="radio" value="${topic}" name="${topic}" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-        <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">{{topic}}</label>
+        <input id="${topic.id}" type="" value="${topic.name}" name="${topic.name}" class="">
+        <label for="${topic.id}" class="">{{topic.name}}</label>
       </div>
     </div>
 

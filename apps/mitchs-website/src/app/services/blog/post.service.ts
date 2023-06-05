@@ -16,11 +16,11 @@ export class PostService {
   posts = this.#posts.asReadonly()
   isLoading = this.#isLoading.asReadonly();
   topics = [
-    "Programming",
-    "Travel",
-    "Caving",
-    "Radio",
-    "General"
+    {id: 0, name: "General"},
+    {id: 1, name: "Programming"},
+    {id: 2, name: "Travel"},
+    {id: 3, name: "Caving"},
+    {id: 4, name: "Radio"}
   ]
 
   async get(filter: string) {

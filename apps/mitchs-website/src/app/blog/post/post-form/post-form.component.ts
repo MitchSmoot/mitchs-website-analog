@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup, FormArray, Validators } from '@angular/forms';
 import { PostService } from '../../../services/blog/post.service';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'post-form',
@@ -11,13 +12,26 @@ import { PostService } from '../../../services/blog/post.service';
   styleUrls: ['../../blog-styles.scss'],
 })
 export class PostFormComponent {
-  constructor(private postService: PostService) {}
+  constructor(
+    private postService: PostService,
+    private fb: FormBuilder) {}
 
   topics = this.postService.topics
   postForm = new FormGroup({
-    title: new FormControl<string>(''),
-    content: new FormControl<string>('')
+    title: new FormControl<string>('', [Validators.required]),
+    content: new FormControl<string>('', [Validators.required]),
+    topics: this.fb.array([
+      this.fb.control('')
+    ])
   });
+
+  get topicControls() {
+    return this.postForm.get('topics') as FormArray;
+  }
+
+  addTopics() {
+    this.topicControls.push(this.fb.control(''))
+  }
 
   onSubmit() {
     this.postService.create({
