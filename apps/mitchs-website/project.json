@@ -21,7 +21,10 @@
           "apps/mitchs-website/src/favicon.ico",
           "apps/mitchs-website/src/assets"
         ],
-        "styles": ["apps/mitchs-website/src/styles.scss"],
+        "styles": [
+          "apps/mitchs-website/src/styles.scss",
+        "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
+        ],
         "scripts": []
       },
       "configurations": {
