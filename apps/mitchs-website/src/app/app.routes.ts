@@ -8,6 +8,6 @@ export const appRoutes: Route[] = [
   {path: 'portfolio', loadChildren: () => import('./portfolio/portfolio-routes').then(mod => mod.PORTFOLIO_ROUTES)},
   {path: 'nx', component: NxWelcomeComponent},
   {path: 'auth', component: UserFormComponent},
-  {path: 'radio', loadComponent: () => import('./pages/(radio)/index.page').then(mod => mod.RadioPageComponent)},
+  {path: 'radio', loadComponent: () => import('./pages/(radio)/radio.page').then(mod => mod.RadioPageComponent)},
   {path: 'caving', loadComponent: () => import('./pages/(caving)/index.page').then(mod => mod.CavingPageComponent)}
 ];
