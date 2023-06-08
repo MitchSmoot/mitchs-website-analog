@@ -3,7 +3,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { UserFormComponent } from './auth/user-form/user-form.component';
 
 export const appRoutes: Route[] = [
-  {path: '', loadComponent: () => import('./pages/home/home.component').then(mod => mod.HomeComponent)},
+  {path: '', loadComponent: () => import('./pages/(home)/index.page').then(mod => mod.HomeComponent)},
   {path: 'blog', loadChildren: () => import('./blog/blog-routes').then(mod => mod.BLOG_ROUTES)},
   {path: 'portfolio', loadChildren: () => import('./portfolio/portfolio-routes').then(mod => mod.PORTFOLIO_ROUTES)},
   {path: 'nx', component: NxWelcomeComponent},
