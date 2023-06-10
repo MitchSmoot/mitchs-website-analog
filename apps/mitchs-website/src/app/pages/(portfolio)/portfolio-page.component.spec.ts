@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PortfolioPageComponent } from './portfolio-page.component';
+import PortfolioPageComponent from './portfolio.page';
 
 describe('PortfolioPageComponent', () => {
   let component: PortfolioPageComponent;

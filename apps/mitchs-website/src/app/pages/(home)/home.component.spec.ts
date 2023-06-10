@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RadioPageComponent } from './radio-page.component';
+import HomePageComponent from './index.page';
 
-describe('RadioPageComponent', () => {
-  let component: RadioPageComponent;
-  let fixture: ComponentFixture<RadioPageComponent>;
+describe('HomeComponent', () => {
+  let component: HomePageComponent;
+  let fixture: ComponentFixture<HomePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RadioPageComponent],
+      imports: [HomePageComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RadioPageComponent);
+    fixture = TestBed.createComponent(HomePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
