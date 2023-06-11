@@ -8,7 +8,7 @@ import tsConfigPaths from 'vite-tsconfig-paths';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    publicDir: 'src/public',
+    publicDir: 'src/assets',
     optimizeDeps: {
       include: ['@angular/common', '@angular/forms']
     },
