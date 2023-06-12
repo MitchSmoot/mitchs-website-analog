@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
   selector: 'mitchs-home',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  templateUrl: './(home)/home.component.html',
+  styleUrls: ['./(home)/home.component.scss'],
 })
 export default class HomePageComponent {}

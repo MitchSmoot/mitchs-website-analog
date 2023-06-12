@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RadioPageComponent } from './radio.page';
+import RadioPageComponent from './radio.page';
 
 describe('RadioPageComponent', () => {
   let component: RadioPageComponent;
