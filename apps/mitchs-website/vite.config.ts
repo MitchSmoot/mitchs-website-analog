@@ -29,6 +29,9 @@ export default defineConfig(({ mode }) => {
         },
         nitro: {
           rootDir: 'apps/mitchs-website',
+          routeRules: {
+            '/': { prerender: true },
+          },
           output: {
             dir: '../../../dist/apps/mitchs-website/analog',
             publicDir: '../../../dist/apps/mitchs-website/analog/public'
