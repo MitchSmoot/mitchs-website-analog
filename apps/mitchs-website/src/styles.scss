@@ -1,13 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
-* {
-  margin: 0
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0
+}
+
 img, svg, video {
   max-width: 100%;
   display: block;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* remove animations for those who have turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
