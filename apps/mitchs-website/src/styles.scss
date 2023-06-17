@@ -3,6 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Variables */
+:root {
+  --clr-bg-primary: #333;
+  --clr-bg-secondary: #555;
+  --clr-bg-accent: rgb(85, 90, 75);
+  --clr-bg-white: #fff;
+  --clr-text-primary: #ddd;
+  --clr-text-accent: #e9cf59;
+  --clr-text-black: #000;
+
+  --fs-text: 1.25rem;
+  --fs-heading: 2.5rem;
+
+  --ff-serif: 'Roboto Slab', serif;
+  --ff-sans: 'Roboto', sans-serif;
+}
+
 /* Global Resets */
 
 *,
@@ -12,6 +29,8 @@
   margin: 0
 }
 
+/* Global Styles */
+
 img, svg, video {
   max-width: 100%;
   display: block;
@@ -20,10 +39,12 @@ img, svg, video {
 body {
   line-height: 1.5;
   min-height: 100vh;
-  background-color: #333;
+  background-color: var(--clr-bg-primary);
+  color: var(--clr-text-primary);
+  font-family: var(--ff-sans);
 }
 
-/* remove animations for those who have turned them off */
+/* remove animations for those who have them disabled in browser */
 @media (prefers-reduced-motion: reduce) {  
   *,
   *::before,
@@ -35,5 +56,64 @@ body {
   }
 }
 
+/* --------------- */
 /* Utility Classes */
+/* --------------- */
 
+/* Layouts */
+
+.container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 2em;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap, 1rem);
+  * {
+    flex: 1 1 auto;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap, 1rem);
+}
+
+.space-vertically > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.circle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding: 0 1em;
+}
+
+/* Component Classes */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: var(--fs-heading);
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--clr-text-accent);
+}

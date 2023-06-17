@@ -1,5 +1,5 @@
 #main-nav {
-  background-color: rgb(85, 90, 75);
+  background-color: var(--clr-bg-accent);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,16 +9,13 @@
   }
 }
 
-.nav-bar-items {
-  @apply flex;
-  a {
-    @apply mx-4;
-  }
+.nav-links a {
+  --gap: 2rem;
 }
 
 .nav-logo {
-  padding: 0px 3px;
+  padding: 0px 5px;
   border: 2px solid red;
-  border-radius: 12px;
   background-color: greenyellow;
+  color: black;
 }
