@@ -14,7 +14,7 @@ export default class RadioPageComponent implements OnInit {
   constructor(private noaaService: NoaaService) {}
 
   ngOnInit() {
-    console.log(this.noaaService.getSolarData());
+    console.log("init");
   }
 
 }

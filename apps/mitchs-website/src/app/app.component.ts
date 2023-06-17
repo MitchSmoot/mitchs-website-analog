@@ -6,8 +6,10 @@ import { MainNavComponent } from './main-nav/main-nav.component';
   standalone: true,
   imports: [RouterOutlet, MainNavComponent],
   selector: 'mitchs-website-analog-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `
+  <main-nav />
+  <router-outlet />
+  `
 })
 export class AppComponent {
   title = 'mitchs-website';
