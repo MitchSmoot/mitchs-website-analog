@@ -11,6 +11,12 @@
 
 .nav-links a {
   --gap: 2rem;
+  border-bottom: .2rem solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  border-bottom: .2rem solid var(--clr-text-accent);
 }
 
 .nav-logo {
