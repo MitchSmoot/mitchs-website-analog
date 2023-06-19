@@ -16,6 +16,7 @@
 
 .nav-links a:hover,
 .nav-links a:focus {
+  color: var(--clr-text-accent);
   border-bottom: .2rem solid var(--clr-text-accent);
 }
 
