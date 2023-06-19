@@ -14,7 +14,9 @@
   --clr-text-black: #000;
 
   --fs-text: 1.25rem;
-  --fs-heading: 2.5rem;
+  --fs-heading-l: 2.5rem;
+  --fs-heading-m: 2rem;
+  --fs-heading-s: 1.65rem;
 
   --ff-serif: 'Roboto Slab', serif;
   --ff-sans: 'Roboto', sans-serif;
@@ -106,7 +108,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--fs-heading);
+  font-size: var(--fs-heading-l);
+  padding: 2rem 1rem
+}
+
+h2 {
+  font-size: var(--fs-heading-m);
+  padding: 1rem 0.5rem
+}
+
+h3 {
+  font-size: var(--fs-heading-s);
+  padding: .5rem 0.2rem;
 }
 
 a {
