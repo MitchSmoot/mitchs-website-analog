@@ -20,6 +20,16 @@
 
   --ff-serif: 'Roboto Slab', serif;
   --ff-sans: 'Roboto', sans-serif;
+
+  .light {
+    --clr-bg-primary: #fff;
+    --clr-bg-secondary: #eee;
+    --clr-bg-accent: rgb(140, 148, 124);
+    --clr-bg-white: #fff;
+    --clr-text-primary: #333;
+    --clr-text-accent: #e9cf59;
+    --clr-text-black: #000;
+  }
 }
 
 /* Global Resets */
