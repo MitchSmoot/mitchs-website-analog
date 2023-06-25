@@ -1,7 +1,7 @@
 #main-nav {
   background-color: var(--clr-bg-accent);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 32px;
   div {
@@ -21,6 +21,17 @@
 }
 
 .nav-logo {
+  padding: 0px 5px;
+  border: 2px solid red;
+  background-color: greenyellow;
+  color: black;
+}
+
+.links-center {
+  align-items: center;
+}
+
+.dark-toggle {
   padding: 0px 5px;
   border: 2px solid red;
   background-color: greenyellow;

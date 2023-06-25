@@ -1,15 +1,19 @@
 <header id="main-nav">
-  <div class="logo-container" routerLink="" routerLinkActive="active">
-    <a class="nav-logo circle">M</a>
-  </div>
-  <a routerLink="" routerLinkActive="active">Mitch's Website</a>
-  <div class="nav-bar-item-container">
-    <div class="flex-container nav-links">
-      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-      <a routerLink="/blog" routerLinkActive="active">Blog</a>
-      <a routerLink="/caving" routerLinkActive="active">Caving</a>
-      <a routerLink="/radio" routerLinkActive="active">Radio</a>
-      <a routerLink="/login" routerLinkActive="active">Sign In</a>
+  <div class="flex-container">
+    <div class="logo-container" routerLink="" routerLinkActive="active">
+      <a class="nav-logo circle">M</a>
     </div>
   </div>
+  <div class="flex-container nav-links links-center">
+    <a routerLink="" routerLinkActive="active">Mitch's Website</a>
+    <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+    <a routerLink="/blog" routerLinkActive="active">Blog</a>
+    <a routerLink="/caving" routerLinkActive="active">Caving</a>
+    <a routerLink="/radio" routerLinkActive="active">Radio</a>
+  </div>
+  <div class="flex-container nav-links links-right">
+    <a routerLink="/login" routerLinkActive="active">Sign In</a>
+    <button class="dark-toggle">light/dark</button>
+  </div>
+
 </header>
