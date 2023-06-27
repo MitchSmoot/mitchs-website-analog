@@ -5,11 +5,12 @@
 
 /* Custom Variables */
 :root {
-  --clr-bg-primary: #333;
-  --clr-bg-secondary: #555;
-  --clr-bg-accent: rgb(85, 90, 75);
+
+  --clr-bg-primary: #fff;
+  --clr-bg-secondary: #eee;
+  --clr-bg-accent: rgb(140, 148, 124);
   --clr-bg-white: #fff;
-  --clr-text-primary: #eee;
+  --clr-text-primary: #333;
   --clr-text-accent: #e9cf59;
   --clr-text-black: #000;
 
@@ -21,12 +22,12 @@
   --ff-serif: 'Roboto Slab', serif;
   --ff-sans: 'Roboto', sans-serif;
 
-  .light {
-    --clr-bg-primary: #fff;
-    --clr-bg-secondary: #eee;
-    --clr-bg-accent: rgb(140, 148, 124);
+  .dark {
+    --clr-bg-primary: #333;
+    --clr-bg-secondary: #555;
+    --clr-bg-accent: rgb(85, 90, 75);
     --clr-bg-white: #fff;
-    --clr-text-primary: #333;
+    --clr-text-primary: #ddd;
     --clr-text-accent: #e9cf59;
     --clr-text-black: #000;
   }
