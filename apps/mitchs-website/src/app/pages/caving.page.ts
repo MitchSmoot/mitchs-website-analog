@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'mitchs-website-analog-portfolio-page',
+  selector: 'mitchs-caving-page',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './portfolio-page.component.html',
-  styleUrls: ['./portfolio-page.component.scss'],
+  templateUrl: './caving/caving-page.component.html',
+  styleUrls: ['./caving/caving-page.component.scss'],
 })
-export default class PortfolioPageComponent {}
+export default class CavingPageComponent {}
