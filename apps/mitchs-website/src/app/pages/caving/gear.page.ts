@@ -6,7 +6,9 @@ import { RouterOutlet } from "@angular/router";
   selector: 'caving-gear-page',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  template: `<p>Cave Gear!</p>`,
+  template: `
+  <h2>Cave Gear!</h2>
+  `,
 
 })
 export default class CavingGearPageComponent {}

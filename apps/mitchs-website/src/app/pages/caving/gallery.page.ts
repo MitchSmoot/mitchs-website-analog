@@ -6,7 +6,14 @@ import { RouterOutlet } from "@angular/router";
   selector: 'cave-gallery-page',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  template: `<p>Cave Gallery</p>`,
+  template: `
+  <H2>Cave Gallery</H2>
+  <div class="flex-container">
+    <div class="img-container">
+      <img src="img/IMG_2001.jpg" alt=""/>
+    </div> 
+  </div>
+  `,
 
 })
 export default class CaveGalleryComponent {}
