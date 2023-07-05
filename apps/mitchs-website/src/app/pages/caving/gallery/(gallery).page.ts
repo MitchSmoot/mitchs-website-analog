@@ -9,4 +9,4 @@ import { RouterOutlet } from "@angular/router";
   templateUrl: './gallery.component.html',
 
 })
-export default class CaveGalleryComponent {}
+export default class CaveGalleryPageComponent {}

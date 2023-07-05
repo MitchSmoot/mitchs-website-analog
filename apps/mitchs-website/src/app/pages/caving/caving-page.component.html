@@ -1,7 +1,13 @@
 <div class="flex-container">
   <h2 routerLink="/caving" routerLinkActive="active">Caving</h2>
 </div>
-  <router-outlet></router-outlet>
+<div class="flex-container">
+  <div class="flex-container sidebar" style="flex-direction: column;">
+    <a routerLink="/caving/gear" routerLinkActive="active">Caving Gear</a>
+    <a routerLink="/caving/gallery" routerLinkActive="active">Cave Gallery</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
 
 <!--
   TODO sections

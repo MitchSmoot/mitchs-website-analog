@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import CavingPageComponent from '../caving.page';
+import CavingPageComponent from './(caving).page';
 
 describe('CavingPageComponent', () => {
   let component: CavingPageComponent;
