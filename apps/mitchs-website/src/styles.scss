@@ -158,3 +158,18 @@ p {
   padding: 0.5rem 0.2rem;
   letter-spacing: 1px;
 }
+
+th {
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid var(--clr-bg-accent);
+}
+
+td {
+  padding: 0.5rem 0.2rem;
+  border: 1px solid var(--clr-bg-accent);
+}
+
+li {
+  padding: 0.5rem 0.2rem;
+}
