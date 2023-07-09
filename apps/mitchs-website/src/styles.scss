@@ -162,14 +162,17 @@ p {
 th {
   font-weight: bold;
   text-align: left;
-  border: 1px solid var(--clr-bg-accent);
+  padding: 0.5rem 0.3rem;
+  background-color: var(--clr-bg-accent);
+  border: 1px solid var(--clr-bg-primary);
 }
 
 td {
-  padding: 0.5rem 0.2rem;
-  border: 1px solid var(--clr-bg-accent);
+  padding: 0.5rem 0.3rem;
+  background-color: var(--clr-bg-secondary);
+  border: 1px solid var(--clr-bg-primary);
 }
 
 li {
-  padding: 0.5rem 0.2rem;
+  padding: 0.5rem 0.3rem;
 }
