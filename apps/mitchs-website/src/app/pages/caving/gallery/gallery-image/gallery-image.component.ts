@@ -5,9 +5,9 @@ import { galleryImage } from "../gallery.service";
   selector: "mitchs-gallery-image",
   standalone: true,
   template: `
-  <div>
+  <div style="width: 400px">
     <h2>{{this.image.title}}</h2>
-    <img src="this.image.url" alt="this.image.title" />
+    <img src="{{this.image.url}}" alt="{{this.image.title}}" />
   </div>
     `,
 })
