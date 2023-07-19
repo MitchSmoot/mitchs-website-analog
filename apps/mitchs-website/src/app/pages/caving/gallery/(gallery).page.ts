@@ -8,7 +8,12 @@ import GalleryImageComponent from "./gallery-image/gallery-image.component";
   selector: 'cave-gallery-page',
   standalone: true,
   imports: [CommonModule, RouterOutlet, GalleryImageComponent],
-  templateUrl: './gallery.component.html',
+  template: `
+    <H2>Cave Gallery</H2>
+    <div class="flex-container">
+      <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
+    </div>
+  `
 
 })
 export default class CaveGalleryPageComponent {

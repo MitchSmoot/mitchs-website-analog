@@ -5,6 +5,6 @@ import { Component } from "@angular/core";
   standalone: true,
   template: `
     <h2>Gallery Image in Detail</h2>
-    `,
+  `,
 })
 export default class GalleryImageDetailComponent {}
