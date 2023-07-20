@@ -52,6 +52,26 @@ export default class GalleryService {
       title: "Image 8",
       url: "/img/gallery4.jpg",
       description: "This is a description of image 4",
+    },
+    {
+      title: "Image 9",
+      url: "/img/gallery4.jpg",
+      description: "This is a description of image 1",
+    },
+    {
+      title: "Image 10",
+      url: "/img/gallery2.jpg",
+      description: "This is a description of image 2",
+    },
+    {
+      title: "Image 11",
+      url: "/img/gallery1.jpg",
+      description: "This is a description of image 3",
+    },
+    {
+      title: "Image 12",
+      url: "/img/gallery3.jpg",
+      description: "This is a description of image 4",
     }
   ]
 

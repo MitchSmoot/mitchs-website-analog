@@ -13,7 +13,14 @@ import GalleryImageComponent from "./gallery-image/gallery-image.component";
     <div class="flex-container">
       <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
     </div>
-  `
+  `,
+  styles: [`
+    mitchs-gallery-image {
+      width: 400px;
+      margin: 0px;
+      padding: 0px;
+    }
+  `]
 
 })
 export default class CaveGalleryPageComponent {
