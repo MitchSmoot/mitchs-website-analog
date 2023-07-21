@@ -16,7 +16,7 @@ import GalleryImageComponent from "./gallery-image/gallery-image.component";
   `,
   styles: [`
     mitchs-gallery-image {
-      width: 400px;
+      width: 25em;
       margin: 0px;
       padding: 0px;
     }
