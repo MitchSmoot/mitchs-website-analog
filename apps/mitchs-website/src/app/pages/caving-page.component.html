@@ -1,13 +1,17 @@
-<div class="flex-container">
-  <h2 routerLink="/caving" routerLinkActive="active">Caving</h2>
+
+<div class="" style="
+  display: flex;
+  background-color: var(--clr-bg-secondary);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+">
+  <a routerLink="/caving" routerLinkActive="active"><b>Caving</b></a>
+  <a routerLink="/caving/gear" routerLinkActive="active">Caving Gear</a>
+  <a routerLink="/caving/gallery" routerLinkActive="active">Cave Gallery</a>
+  <a routerLink="/caving/cave-repair" routerLinkActive="active">Cave Formation Repair</a>
 </div>
-<div class="flex-container">
-  <div class="flex-container sidebar" style="flex-direction: column;">
-    <a routerLink="/caving/gear" routerLinkActive="active">Caving Gear</a>
-    <a routerLink="/caving/gallery" routerLinkActive="active">Cave Gallery</a>
-    <a routerLink="/caving/cave-repair" routerLinkActive="active">Cave Formation Repair</a>
-  </div>
-</div>
+
 <router-outlet></router-outlet>
 
 <!--
