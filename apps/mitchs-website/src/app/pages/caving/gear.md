@@ -1,5 +1,6 @@
 <div class=container>
-# Caving Gear!
+
+# Caving Gear
 
 ## Introduction
 
@@ -42,4 +43,11 @@ Be sure to go prepared with the right gear!
 1. Primary Headlamp
 2. Backup headlamp 
 3. Backup flashlight
+
+| Headlamp            | Description | Price | Link |
+| ------------------- | ----------- | ----- | ---- |
+| Fenix HM65R         | | $95 | https://www.amazon.com/Fenix-HM65R-Rechargeable-Spotlight-Floodlight/dp/B07TDRJN7F |
+| zebralight H604d | floodlight for better pictures | https://www.zebralight.com/H604d-18650-XHP502-Flood-5000K-High-CRI-Headlamp_p_224.html |
+| Cheap Amazon Headlamp | For tight budgets | $20 | |
+
 </div>
