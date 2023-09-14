@@ -26,5 +26,5 @@ import GalleryImageComponent from "./gallery-image/gallery-image.component";
 export default class CaveGalleryPageComponent {
 constructor(private galleryService: GalleryService) {}
 images: galleryImage[] = this.galleryService.get();
-
+focusedImage = this.galleryService.focusedImage
 }

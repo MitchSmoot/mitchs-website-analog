@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, signal } from "@angular/core";
 
 export interface galleryImage {
   title: string;
@@ -12,6 +12,10 @@ export interface galleryImage {
   providedIn: 'root'
 })
 export default class GalleryService {
+
+  #focusedImage = signal<galleryImage | null>(null)
+  focusedImage = this.#focusedImage.asReadonly()
+
   public images: galleryImage[] = [
     {
       title: "Image 1",
