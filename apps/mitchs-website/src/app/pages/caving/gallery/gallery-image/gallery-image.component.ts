@@ -1,11 +1,11 @@
 import { Component, Input } from "@angular/core";
-import { galleryImage } from "../gallery.service";
+import GalleryService, { galleryImage } from "../gallery.service";
 
 @Component({
   selector: "mitchs-gallery-image",
   standalone: true,
   template: `
-    <div style="background-image: url('{{this.image.url}}');">
+    <div (click)="onClick()" style="background-image: url('{{this.image.url}}');">
       <h2>{{this.image.title}}</h2>
     </div>
   `,
@@ -22,4 +22,10 @@ import { galleryImage } from "../gallery.service";
 })
 export default class GalleryImageComponent {
   @Input() image: galleryImage = {} as galleryImage;
+  constructor(private galleryService: GalleryService) {}
+
+  onClick() {
+    console.log(this.image);
+    this.galleryService.set(this.image)
+  }
 }

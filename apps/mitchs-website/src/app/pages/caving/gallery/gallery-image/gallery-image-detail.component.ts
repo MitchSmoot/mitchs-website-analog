@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
   selector: "mitchs-gallery-image-detail",
   standalone: true,
   template: `
-    <h2>Gallery Image in Detail</h2>
+    <dialog open>Gallery Image in Detail</dialog>
   `,
 })
 export default class GalleryImageDetailComponent {}
