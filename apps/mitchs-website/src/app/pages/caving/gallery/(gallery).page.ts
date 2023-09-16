@@ -13,7 +13,7 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
     <mitchs-gallery-image-detail/>
     <H2>Cave Gallery</H2>
     <div class="flex-container">
-      <mitchs-gallery-image *ngFor="let image of images" [image]="image" (click)="onClick()"/>
+      <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
     </div>
   `,
   styles: [`
@@ -28,5 +28,5 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
 export default class CaveGalleryPageComponent {
 constructor(private galleryService: GalleryService) {}
 images: galleryImage[] = this.galleryService.get();
-focusedImage = this.galleryService.focusedImage
+focusedImage = this.galleryService.focusedImage;
 }

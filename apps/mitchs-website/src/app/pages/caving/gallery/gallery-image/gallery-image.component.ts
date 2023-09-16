@@ -5,7 +5,7 @@ import GalleryService, { galleryImage } from "../gallery.service";
   selector: "mitchs-gallery-image",
   standalone: true,
   template: `
-    <div (click)="onClick()" style="background-image: url('{{this.image.url}}');">
+    <div (click)="onImageClick()" style="background-image: url('{{this.image.url}}');">
       <h2>{{this.image.title}}</h2>
     </div>
   `,
@@ -24,8 +24,9 @@ export default class GalleryImageComponent {
   @Input() image: galleryImage = {} as galleryImage;
   constructor(private galleryService: GalleryService) {}
 
-  onClick() {
+  onImageClick() {
     console.log(this.image);
-    this.galleryService.set(this.image)
+    this.galleryService.focusedImage.set(this.image);
   }
+
 }

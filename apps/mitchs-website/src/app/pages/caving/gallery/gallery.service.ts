@@ -13,8 +13,7 @@ export interface galleryImage {
 })
 export default class GalleryService {
 
-  #focusedImage = signal<galleryImage | null>(null)
-  focusedImage = this.#focusedImage.asReadonly()
+  focusedImage = signal<galleryImage | null>(null)
 
   public images: galleryImage[] = [
     {
