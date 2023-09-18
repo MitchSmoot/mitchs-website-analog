@@ -5,7 +5,12 @@ import GalleryService from "../gallery.service";
   selector: "mitchs-gallery-image-detail",
   standalone: true,
   template: `
-    <dialog open>Gallery Image in Detail
+    <dialog open>
+      <h3>{{currentImage()?.title}}</h3>
+      <div class="flex-container">
+        <img [src]="currentImage()?.url" />
+        <p>{{currentImage()?.description}}</p>
+      </div>
       <button (click)="close()">Close</button>
     </dialog>
   `,
@@ -15,6 +20,7 @@ import GalleryService from "../gallery.service";
 })
 export default class GalleryImageDetailComponent {
   constructor(private galleryService: GalleryService) {}
+  currentImage = this.galleryService.focusedImage;
 
   close() {
     this.galleryService.focusedImage.set(null);
