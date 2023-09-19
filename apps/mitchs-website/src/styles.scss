@@ -184,7 +184,9 @@ article {
 }
 
 dialog {
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 0.7rem;
 }
 
 dialog::backdrop {
