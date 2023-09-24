@@ -5,15 +5,20 @@ import GalleryService, { galleryImage } from "../gallery.service";
   selector: "mitchs-gallery-image",
   standalone: true,
   template: `
-    <div (click)="onImageClick()" style="background-image: url('{{this.image.url}}');">
+    <div id="gallery-image" (click)="onImageClick()" style="background-image: url('{{this.image.url}}');">
       <h2>{{this.image.title}}</h2>
     </div>
   `,
   styles: [`
-  div {
+  #gallery-image {
     min-width: 400px;
     height: 400px;
+    z-index: 1;
     background-size: cover;
+    transition: transform 0.25s ease-in-out;
+      &:hover {
+    transform: scale(1.05);
+  }
   }
   h2 {
     display: none;

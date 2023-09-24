@@ -15,7 +15,9 @@ import GalleryService from "../gallery.service";
     </dialog>
   `,
   styles: [`
-  
+    dialog {
+      z-index: 2;
+    }
   `]
 })
 export default class GalleryImageDetailComponent {

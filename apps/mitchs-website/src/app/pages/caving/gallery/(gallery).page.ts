@@ -10,10 +10,12 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
   standalone: true,
   imports: [CommonModule, RouterOutlet, GalleryImageComponent, GalleryImageDetailComponent],
   template: `
-    <mitchs-gallery-image-detail *ngIf="this.focusedImage()"/>
-    <H2>Cave Gallery</H2>
-    <div class="flex-container">
-      <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
+    <div id="gallery-container">
+      <mitchs-gallery-image-detail *ngIf="this.focusedImage()"/>
+      <H2>Cave Gallery</H2>
+      <div class="flex-container">
+        <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
+      </div>
     </div>
   `,
   styles: [`
@@ -21,6 +23,9 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
       width: 25em;
       margin: 0px;
       padding: 0px;
+    }
+    #gallery-container {
+      margin: 0rem 1rem;
     }
   `]
 
