@@ -1,4 +1,4 @@
-<div class=container>
+<article>
 
 # Caving Gear
 
@@ -50,4 +50,33 @@ Be sure to go prepared with the right gear!
 | zebralight H604d | floodlight for better pictures | https://www.zebralight.com/H604d-18650-XHP502-Flood-5000K-High-CRI-Headlamp_p_224.html |
 | Cheap Amazon Headlamp | For tight budgets | $20 | |
 
-</div>
+### Harnesses
+1: Frog Harness
+2: D-link or Maillon
+3: Cow's Tail
+4: Carabiners
+
+### Ascenders
+1: Chest Ascender
+2: Hand Ascender
+3: foot loop
+4: Foot Ascender (Optional)
+
+### Descenders
+
+| Descender           | Description | Price | Link |
+| ------------------- | ----------- | ----- | ---- |
+| SMC Micro Rack      | | $ |  |
+| Petzl Stop          | | $ |  |
+| Petzl Simple        | | $ |  |
+
+#### Braking Carabiners
+
+| Carabiner           | Used With | Description | Price | Link |
+| ------------------- | --------- | ----------- | ----- | ---- |
+| Petzl Freino Z      | Petzl Simple, Stop (Newer versions) | | $ | |
+| Petzl Freino        | Petzl Simple, Stop (Older versions) | | $ | |
+| Handy Raumer        | Any Bobbin-type Descender | | $ | |
+
+
+</article>
