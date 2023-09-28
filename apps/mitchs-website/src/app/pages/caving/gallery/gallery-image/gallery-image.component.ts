@@ -7,7 +7,7 @@ import GalleryService, { galleryImage } from "../gallery.service";
   template: `
     <div id="gallery-image" (click)="onImageClick()" loading="lazy">
       <h2>{{this.image.title}}</h2>
-      <img src="{{this.image.url}}"/>
+      <img src="{{this.image.thumbnailUrl}}"/>
     </div>
   `,
   styles: [`
@@ -16,10 +16,10 @@ import GalleryService, { galleryImage } from "../gallery.service";
     height: 400px;
     z-index: 1;
     background-size: cover;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.05s ease-in-out;
   }
   #gallery-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   h2 {
     display: none;
@@ -29,6 +29,7 @@ import GalleryService, { galleryImage } from "../gallery.service";
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 0.5rem;
   }
   `]
 })
