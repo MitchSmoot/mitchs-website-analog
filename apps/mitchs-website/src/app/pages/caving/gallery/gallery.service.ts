@@ -19,7 +19,7 @@ export default class GalleryService {
     {
       title: "Image 1",
       url: "/img/gallery1.jpg",
-      description: "This is a description of image 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt vel massa eget egestas. Ut risus dolor, volutpat ac vulputate at, placerat vitae eros. Donec quis hendrerit ipsum. Nam porttitor faucibus ipsum nec tempor. Cras mollis odio quis dolor dignissim malesuada. Integer vulputate lacus ac tellus rhoncus, malesuada sagittis sem ullamcorper. Donec euismod dictum velit, eu elementum ligula ultrices ut. Integer tempor ut nulla ut pharetra. Nullam ut diam mi. Phasellus mollis sem porta, porta libero ac, pellentesque nunc. Nulla tellus ex, hendrerit at sapien et, blandit lobortis tortor. Ut vitae tincidunt enim, sed vulputate arcu. Duis sit amet dolor.",
     },
     {
       title: "Image 2",

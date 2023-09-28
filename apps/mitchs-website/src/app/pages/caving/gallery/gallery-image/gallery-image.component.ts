@@ -16,10 +16,10 @@ import GalleryService, { galleryImage } from "../gallery.service";
     height: 400px;
     z-index: 1;
     background-size: cover;
-    transition: transform 0.25s ease-in-out;
-      &:hover {
+    transition: transform 0.1s ease-in-out;
+  }
+  #gallery-image:hover {
     transform: scale(1.05);
-    }
   }
   h2 {
     display: none;
