@@ -20,8 +20,8 @@ export default class GalleryService {
     {
       title: "Black Stream",
       url: "/img/gallery1.jpg",
-      thumbnailUrl: "/img/gallery1.jpg",
-      description: 'This is an underground river known as "Black Stream" located at a far end of one of Utah\'s longest caves. ',
+      thumbnailUrl: "/img/gallery1t.jpg",
+      description: 'This is an underground river known as "Black Stream" located deep within Utah\'s longest cave. ',
     },
     {
       title: "Image 2",
