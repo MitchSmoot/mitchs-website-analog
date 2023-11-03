@@ -12,7 +12,6 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
   template: `
     <div id="gallery-container">
       <mitchs-gallery-image-detail *ngIf="this.focusedImage()"/>
-      <H2>Cave Gallery</H2>
       <div class="flex-container">
         <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
       </div>
@@ -25,7 +24,7 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
       padding: 0px;
     }
     #gallery-container {
-      margin: 0rem 1rem;
+      margin: 1rem;
     }
   `]
 
