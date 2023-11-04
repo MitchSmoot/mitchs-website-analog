@@ -9,17 +9,17 @@ export class AppService {
   private renderer = inject(RendererFactory2).createRenderer(null, null);
   private document = inject(DOCUMENT);
 
-  #darkMode = signal<boolean>(JSON.parse(localStorage.getItem('darkMode') ?? 'true'));
+  public darkMode = signal<boolean>(JSON.parse(localStorage.getItem('darkMode') ?? 'true'));
   
   updateDarkClassInHTML = effect(() => {
-    this.#darkMode() ?
+    this.darkMode() ?
       this.renderer.addClass(this.document.body, 'dark') :
       this.renderer.removeClass(this.document.body, 'dark')
     }
   );
 
   toggleDarkMode() {
-    this.#darkMode.set(!this.#darkMode());
-    localStorage.setItem('darkMode', JSON.stringify(this.#darkMode()));
+    this.darkMode.set(!this.darkMode());
+    localStorage.setItem('darkMode', JSON.stringify(this.darkMode()));
   }
 }

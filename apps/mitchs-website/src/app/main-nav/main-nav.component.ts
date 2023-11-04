@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AppService } from '../services/app.service';
@@ -12,6 +12,8 @@ import { AppService } from '../services/app.service';
 })
 export class MainNavComponent {
   constructor(private appService: AppService) {}
+
+  isDarkModeActive: Signal<boolean> = this.appService.darkMode;
 
   darkModeToggle() {
     this.appService.toggleDarkMode();

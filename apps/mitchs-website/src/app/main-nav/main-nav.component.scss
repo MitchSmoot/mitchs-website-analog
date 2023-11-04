@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 32px;
+  height: 3rem;
   div {
-    margin: 0px 20px;
+    margin: 0px 1rem;
   }
 }
 
@@ -32,8 +32,15 @@
 }
 
 .dark-toggle {
-  padding: 0px 5px;
+  height: 2rem;
+  width: 2rem;
   border: 2px solid red;
+  border-radius: .5rem;
   background-color: greenyellow;
   color: black;
+  img {
+    margin: auto;
+    width: 1.5rem;
+    height: 1.5rem;    
+  }
 }
