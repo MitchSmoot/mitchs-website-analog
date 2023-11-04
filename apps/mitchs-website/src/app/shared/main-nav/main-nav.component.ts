@@ -1,7 +1,7 @@
 import { Component, Signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { AppService } from '../services/app.service';
+import { AppService } from '../../services/app.service';
 
 @Component({
   selector: 'main-nav',
