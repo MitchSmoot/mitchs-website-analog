@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run mitchs-website:serve",
+    "startTime": "2023-11-09T06:53:18.257Z",
+    "endTime": "2023-11-09T06:53:23.817Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "mitchs-website:serve:development",
+      "target": "serve",
+      "projectName": "mitchs-website",
+      "hash": "9058668838674859522",
+      "startTime": "2023-11-09T06:53:18.263Z",
+      "endTime": "2023-11-09T06:53:23.816Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
