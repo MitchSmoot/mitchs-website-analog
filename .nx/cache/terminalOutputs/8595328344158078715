@@ -1,0 +1,24 @@
+
+
+The server endpoints are accessible under the "/api" path.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:53:43 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/app/shared/media-scroller/media-scroller.component.html[22m

@@ -1002,3 +1002,27 @@
 [NX Daemon Server] - 2023-11-09T06:54:09.869Z - [WATCHER]: Processing file changes in outputs
 [NX Daemon Server] - 2023-11-09T06:54:09.923Z - [WATCHER]: Processing file changes in outputs
 [NX Daemon Server] - 2023-11-09T06:54:09.925Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (sources)
+[NX Daemon Server] - 2023-11-13T06:52:53.796Z - Started listening on: /tmp/647c8209db067fac6464/d.sock
+[NX Daemon Server] - 2023-11-13T06:52:53.800Z - [WATCHER]: Subscribed to changes within: /home/mitch/mitchs-website-analog (native)
+[NX Daemon Server] - 2023-11-13T06:52:53.802Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-13T06:52:53.803Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-13T06:52:53.805Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-13T06:52:53.861Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-13T06:52:53.861Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-13T06:52:53.861Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-13T06:52:54.002Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-13T06:52:54.004Z - Time taken for 'total for creating and serializing project graph' 196.74259799718857ms
+[NX Daemon Server] - 2023-11-13T06:52:54.004Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-13T06:52:54.005Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-13T06:52:54.005Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 197. Response time: 3.
+[NX Daemon Server] - 2023-11-13T06:52:54.115Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-13T06:52:54.115Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-13T06:52:54.115Z - Handled HASH_TASKS. Handling time: 42. Response time: 0.
+[NX Daemon Server] - 2023-11-13T06:52:56.112Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-13T06:52:58.723Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-13T06:53:43.185Z - [WATCHER]: apps/mitchs-website/src/app/shared/media-scroller/media-scroller.component.html was modified
+[NX Daemon Server] - 2023-11-13T06:53:43.186Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-13T06:53:43.301Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-13T06:53:43.302Z - [REQUEST]: apps/mitchs-website/src/app/shared/media-scroller/media-scroller.component.html
+[NX Daemon Server] - 2023-11-13T06:53:43.302Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-13T06:53:43.381Z - Time taken for 'hash changed files from watcher' 0.2449989914894104ms

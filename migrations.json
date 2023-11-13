@@ -1,20 +1,25 @@
 {
   "migrations": [
     {
-      "cli": "nx",
-      "version": "16.2.0-beta.0",
-      "description": "Remove outputPath from run commands",
-      "implementation": "./src/migrations/update-16-2-0/remove-run-commands-output-path",
-      "package": "nx",
-      "name": "16.2.0-remove-output-path-from-run-commands"
+      "version": "17.0.0",
+      "factory": "./update-17/replace-nguniversal-builders",
+      "description": "Replace usages of '@nguniversal/builders' with '@angular-devkit/build-angular'.",
+      "package": "@angular/cli",
+      "name": "replace-nguniversal-builders"
     },
     {
-      "cli": "nx",
-      "version": "16.2.0-beta.0",
-      "description": "Normalize tsconfig.cy.json files to be located at '<projectRoot>/cypress/tsconfig.json'",
-      "implementation": "./src/migrations/update-16-2-0/update-cy-tsconfig",
-      "package": "@nx/cypress",
-      "name": "update-16-2-0-normalize-tsconfigs"
+      "version": "17.0.0",
+      "factory": "./update-17/replace-nguniversal-engines",
+      "description": "Replace usages of '@nguniversal/' packages with '@angular/ssr'.",
+      "package": "@angular/cli",
+      "name": "replace-nguniversal-engines"
+    },
+    {
+      "version": "17.0.0",
+      "factory": "./update-17/update-workspace-config",
+      "description": "Replace deprecated options in 'angular.json'.",
+      "package": "@angular/cli",
+      "name": "update-workspace-config"
     }
   ]
 }
