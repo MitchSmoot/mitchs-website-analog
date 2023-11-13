@@ -54,7 +54,7 @@
     "@typescript-eslint/parser": "6.10.0",
     "cypress": "^12.11.0",
     "eslint": "~8.15.0",
-    "eslint-config-prettier": "8.1.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-cypress": "^2.10.3",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
@@ -189,7 +189,7 @@
       },
       {
         "file": "package.json",
-        "hash": "8702593905191131357"
+        "hash": "16016239846276136683"
       },
       {
         "file": "prisma/migrations/20230513070604_init/migration.sql",

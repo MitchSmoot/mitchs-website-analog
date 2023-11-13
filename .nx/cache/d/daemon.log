@@ -1026,3 +1026,13 @@
 [NX Daemon Server] - 2023-11-13T06:53:43.302Z - [REQUEST]: apps/mitchs-website/src/app/shared/media-scroller/media-scroller.component.html
 [NX Daemon Server] - 2023-11-13T06:53:43.302Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-13T06:53:43.381Z - Time taken for 'hash changed files from watcher' 0.2449989914894104ms
+[NX Daemon Server] - 2023-11-13T06:56:52.341Z - [WATCHER]: package.json was modified
+[NX Daemon Server] - 2023-11-13T06:56:52.342Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-13T06:56:52.557Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-13T06:56:52.558Z - [REQUEST]: package.json
+[NX Daemon Server] - 2023-11-13T06:56:52.558Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-13T06:56:52.612Z - Time taken for 'hash changed files from watcher' 0.2641249895095825ms
+[NX Daemon Server] - 2023-11-13T06:56:56.776Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-13T06:56:56.778Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (sources)
+[NX Daemon Server] - 2023-11-13T06:56:56.778Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (outputs)
+[NX Daemon Server] - 2023-11-13T06:56:56.778Z - Server stopped because: "Lock file changed"
