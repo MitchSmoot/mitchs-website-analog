@@ -44,9 +44,9 @@ export class PostService {
       content: post.content
     }])
     .then((response) => {
-      console.log(response)
-      this.#isLoading.set(false)
-      this.#posts.mutate((posts) => posts.push(post))
+      console.log(response);
+      this.#isLoading.set(false);
+      this.#posts.update((posts) => [posts, post]);
     });
     //TODO: Populate newly pushed post with ID from database
   }
