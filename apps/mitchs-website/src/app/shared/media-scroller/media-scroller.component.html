@@ -1,7 +1,13 @@
 <div class="media-scroller inline-snap">
-  <div *ngFor="let item of media"
-    class="media-element"
-    style="background-image:
-    url({{this.item.thumbnailUrl}});">
-  </div>
+  @for (item of media; track item.id) {
+    <div
+      class="media-element"
+      style="background-image:
+      url({{this.item.thumbnailUrl}});">
+    </div>
+  } @empty {
+    <div class="media-element">
+      <p>No media found.</p>
+    </div>
+  }
 </div>

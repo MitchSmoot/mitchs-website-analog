@@ -1036,3 +1036,45 @@
 [NX Daemon Server] - 2023-11-13T06:56:56.778Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (sources)
 [NX Daemon Server] - 2023-11-13T06:56:56.778Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (outputs)
 [NX Daemon Server] - 2023-11-13T06:56:56.778Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2023-11-14T06:43:48.982Z - Started listening on: /tmp/647c8209db067fac6464/d.sock
+[NX Daemon Server] - 2023-11-14T06:43:48.992Z - [WATCHER]: Subscribed to changes within: /home/mitch/mitchs-website-analog (native)
+[NX Daemon Server] - 2023-11-14T06:43:48.995Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T06:43:48.996Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-14T06:43:49.010Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-14T06:43:49.379Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T06:43:49.380Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T06:43:49.380Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T06:43:49.610Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-14T06:43:49.620Z - Time taken for 'total for creating and serializing project graph' 600.317784011364ms
+[NX Daemon Server] - 2023-11-14T06:43:49.620Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T06:43:49.622Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-14T06:43:49.622Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 600. Response time: 12.
+[NX Daemon Server] - 2023-11-14T06:43:49.821Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-14T06:43:49.822Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-14T06:43:49.822Z - Handled HASH_TASKS. Handling time: 63. Response time: 1.
+[NX Daemon Server] - 2023-11-14T06:43:52.437Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T06:43:55.617Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T06:44:51.527Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T06:44:51.529Z - [WATCHER]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts was modified
+[NX Daemon Server] - 2023-11-14T06:44:51.645Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T06:44:51.645Z - [REQUEST]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts
+[NX Daemon Server] - 2023-11-14T06:44:51.645Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T06:44:51.725Z - Time taken for 'hash changed files from watcher' 0.35610800981521606ms
+[NX Daemon Server] - 2023-11-14T06:45:59.230Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T06:45:59.231Z - [WATCHER]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts was modified
+[NX Daemon Server] - 2023-11-14T06:45:59.443Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T06:45:59.443Z - [REQUEST]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts
+[NX Daemon Server] - 2023-11-14T06:45:59.443Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T06:45:59.517Z - Time taken for 'hash changed files from watcher' 0.2727310061454773ms
+[NX Daemon Server] - 2023-11-14T06:47:49.362Z - [WATCHER]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts was modified
+[NX Daemon Server] - 2023-11-14T06:47:49.362Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T06:47:49.773Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T06:47:49.774Z - [REQUEST]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts
+[NX Daemon Server] - 2023-11-14T06:47:49.774Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T06:47:49.842Z - Time taken for 'hash changed files from watcher' 0.35348302125930786ms
+[NX Daemon Server] - 2023-11-14T06:53:20.566Z - [WATCHER]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts was modified
+[NX Daemon Server] - 2023-11-14T06:53:20.567Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T06:53:21.381Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T06:53:21.381Z - [REQUEST]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts
+[NX Daemon Server] - 2023-11-14T06:53:21.382Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T06:53:21.452Z - Time taken for 'hash changed files from watcher' 0.2666899561882019ms

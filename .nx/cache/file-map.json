@@ -66,7 +66,7 @@
     "prisma": "^4.14.0",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
-    "typescript": "^5.0.2",
+    "typescript": "^5.2.0",
     "vite": "^4.3.5",
     "vite-tsconfig-paths": "^4.0.2",
     "vitest": "^0.31.0"
@@ -109,31 +109,35 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "7593255945064066597"
+        "hash": "6653659029749075634"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "3244421341483603138"
+        "hash": "1813411169821073022"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "13022173143054743372"
+        "hash": "5786285527297493310"
       },
       {
         "file": ".nx/cache/lockfile.hash",
-        "hash": "14620170315780177120"
+        "hash": "5547994310415752128"
       },
       {
         "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "16392045018894648827"
+        "hash": "10601643385698630684"
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "9790715788603221100"
+        "hash": "6607986817587104549"
       },
       {
         "file": ".nx/cache/run.json",
         "hash": "928309282673564038"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/8595328344158078715",
+        "hash": "14806189424991585559"
       },
       {
         "file": ".nx/cache/terminalOutputs/9058668838674859522",
@@ -185,11 +189,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "12014203993320150583"
+        "hash": "12962076387157500523"
       },
       {
         "file": "package.json",
-        "hash": "16016239846276136683"
+        "hash": "6082222494017742689"
       },
       {
         "file": "prisma/migrations/20230513070604_init/migration.sql",
@@ -237,6 +241,48 @@
       }
     ],
     "projectFileMap": {
+      "mitchs-website-e2e": [
+        {
+          "file": "apps/mitchs-website-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/cypress.config.ts",
+          "hash": "15414076024138857470",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "apps/mitchs-website-e2e/project.json",
+          "hash": "11712521099916762276"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/e2e/app.cy.ts",
+          "hash": "10009507791360451292"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/tsconfig.json",
+          "hash": "15439127571515986436"
+        }
+      ],
       "mitchs-website": [
         {
           "file": "apps/mitchs-website/.eslintrc.json",
@@ -482,7 +528,7 @@
         },
         {
           "file": "apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts",
-          "hash": "16176158431038320303",
+          "hash": "7215749704004713908",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -648,7 +694,7 @@
         },
         {
           "file": "apps/mitchs-website/src/app/services/blog/post.service.ts",
-          "hash": "8123329647516767973",
+          "hash": "11071606392129962367",
           "deps": [
             "npm:@angular/core",
             "npm:@prisma/client"
@@ -709,7 +755,7 @@
         },
         {
           "file": "apps/mitchs-website/src/app/shared/media-scroller/media-scroller.component.html",
-          "hash": "3733115232663118918"
+          "hash": "15806054944080222066"
         },
         {
           "file": "apps/mitchs-website/src/app/shared/media-scroller/media-scroller.component.scss",
@@ -863,48 +909,6 @@
             "npm:vite",
             "npm:vite-tsconfig-paths"
           ]
-        }
-      ],
-      "mitchs-website-e2e": [
-        {
-          "file": "apps/mitchs-website-e2e/.eslintrc.json",
-          "hash": "14060216369337943343"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/cypress.config.ts",
-          "hash": "15414076024138857470",
-          "deps": [
-            "npm:cypress",
-            "npm:@nx/cypress"
-          ]
-        },
-        {
-          "file": "apps/mitchs-website-e2e/project.json",
-          "hash": "11712521099916762276"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/e2e/app.cy.ts",
-          "hash": "10009507791360451292"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/support/commands.ts",
-          "hash": "7314691991044890572"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/tsconfig.json",
-          "hash": "15439127571515986436"
         }
       ]
     }

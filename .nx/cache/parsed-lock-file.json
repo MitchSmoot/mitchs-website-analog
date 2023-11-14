@@ -8986,9 +8986,9 @@
       "type": "npm",
       "name": "npm:eslint-config-prettier",
       "data": {
-        "version": "8.1.0",
+        "version": "9.0.0",
         "packageName": "eslint-config-prettier",
-        "hash": "sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw=="
+        "hash": "sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw=="
       }
     },
     "npm:eslint-plugin-cypress": {
@@ -22647,6 +22647,11 @@
     {
       "source": "npm:@nx/eslint-plugin",
       "target": "npm:@typescript-eslint/parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nx/eslint-plugin",
+      "target": "npm:eslint-config-prettier",
       "type": "static"
     },
     {

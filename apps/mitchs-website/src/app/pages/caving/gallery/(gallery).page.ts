@@ -11,7 +11,9 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
   imports: [CommonModule, RouterOutlet, GalleryImageComponent, GalleryImageDetailComponent],
   template: `
     <div id="gallery-container">
-      <mitchs-gallery-image-detail *ngIf="this.focusedImage()"/>
+      @if (this.focusedImage()) {
+        <mitchs-gallery-image-detail/>
+      }
       <div class="flex-container">
         <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
       </div>
