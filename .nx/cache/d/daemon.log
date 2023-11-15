@@ -1078,3 +1078,78 @@
 [NX Daemon Server] - 2023-11-14T06:53:21.381Z - [REQUEST]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts
 [NX Daemon Server] - 2023-11-14T06:53:21.382Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-14T06:53:21.452Z - Time taken for 'hash changed files from watcher' 0.2666899561882019ms
+[NX Daemon Server] - 2023-11-14T08:12:30.137Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (sources)
+[NX Daemon Server] - 2023-11-14T08:12:40.264Z - Started listening on: /tmp/647c8209db067fac6464/d.sock
+[NX Daemon Server] - 2023-11-14T08:12:40.296Z - [WATCHER]: Subscribed to changes within: /home/mitch/mitchs-website-analog (native)
+[NX Daemon Server] - 2023-11-14T08:12:40.297Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:12:40.298Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-14T08:12:40.303Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-14T08:12:40.494Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T08:12:40.494Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T08:12:40.495Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T08:12:40.731Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-14T08:12:40.750Z - Time taken for 'total for creating and serializing project graph' 428.1530519723892ms
+[NX Daemon Server] - 2023-11-14T08:12:40.750Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:12:40.751Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-14T08:12:40.751Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 428. Response time: 20.
+[NX Daemon Server] - 2023-11-14T08:12:40.765Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-14T08:12:40.766Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:12:40.767Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-14T08:12:40.767Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:12:40.769Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-11-14T08:12:40.769Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-11-14T08:12:40.769Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2023-11-14T08:13:03.445Z - Started listening on: /tmp/647c8209db067fac6464/d.sock
+[NX Daemon Server] - 2023-11-14T08:13:03.448Z - [WATCHER]: Subscribed to changes within: /home/mitch/mitchs-website-analog (native)
+[NX Daemon Server] - 2023-11-14T08:13:03.456Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:13:03.457Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-14T08:13:03.460Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-14T08:13:03.526Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T08:13:03.527Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T08:13:03.527Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T08:13:03.642Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-14T08:13:03.646Z - Time taken for 'total for creating and serializing project graph' 182.08476603031158ms
+[NX Daemon Server] - 2023-11-14T08:13:03.646Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:13:03.647Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-14T08:13:03.647Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 182. Response time: 5.
+[NX Daemon Server] - 2023-11-14T08:13:03.659Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-14T08:13:03.661Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:13:03.662Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-14T08:13:03.662Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-14T08:13:03.663Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-11-14T08:13:03.663Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-11-14T08:13:03.664Z - Handled REQUEST_FILE_DATA. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2023-11-14T11:39:34.583Z - There are 1 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-14T15:06:03.888Z - There are 1 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-14T18:36:07.035Z - There are 1 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-14T21:36:07.111Z - There are 1 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-15T00:36:07.149Z - There are 1 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-15T01:08:54.260Z - [WATCHER]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts was modified
+[NX Daemon Server] - 2023-11-15T01:08:54.270Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T01:08:54.503Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T01:08:54.503Z - [REQUEST]: apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts
+[NX Daemon Server] - 2023-11-15T01:08:54.503Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T01:08:54.693Z - Time taken for 'hash changed files from watcher' 10.277469038963318ms
+[NX Daemon Server] - 2023-11-15T01:12:19.700Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T01:12:19.701Z - [WATCHER]: apps/mitchs-website/src/app/shared/main-nav/main-nav.component.html was modified
+[NX Daemon Server] - 2023-11-15T01:12:19.920Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T01:12:19.921Z - [REQUEST]: apps/mitchs-website/src/app/shared/main-nav/main-nav.component.html
+[NX Daemon Server] - 2023-11-15T01:12:19.921Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T01:12:19.997Z - Time taken for 'hash changed files from watcher' 0.31105297803878784ms
+[NX Daemon Server] - 2023-11-15T01:12:49.509Z - [WATCHER]: apps/mitchs-website/src/app/shared/main-nav/main-nav.component.html was modified
+[NX Daemon Server] - 2023-11-15T01:12:49.509Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T01:12:49.956Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T01:12:49.956Z - [REQUEST]: apps/mitchs-website/src/app/shared/main-nav/main-nav.component.html
+[NX Daemon Server] - 2023-11-15T01:12:49.956Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T01:12:50.239Z - Time taken for 'hash changed files from watcher' 0.3457790017127991ms
+[NX Daemon Server] - 2023-11-15T01:13:52.355Z - [WATCHER]: apps/mitchs-website/src/app/shared/main-nav/main-nav.component.html was modified
+[NX Daemon Server] - 2023-11-15T01:13:52.355Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T01:13:53.197Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T01:13:53.197Z - [REQUEST]: apps/mitchs-website/src/app/shared/main-nav/main-nav.component.html
+[NX Daemon Server] - 2023-11-15T01:13:53.197Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T01:13:53.275Z - Time taken for 'hash changed files from watcher' 0.25044000148773193ms
+[NX Daemon Server] - 2023-11-15T01:48:18.544Z - [WATCHER]: .gitignore was modified
+[NX Daemon Server] - 2023-11-15T01:48:18.546Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T01:48:18.547Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (sources)
+[NX Daemon Server] - 2023-11-15T01:48:18.548Z - [WATCHER]: Stopping the watcher for /home/mitch/mitchs-website-analog (outputs)
+[NX Daemon Server] - 2023-11-15T01:48:18.548Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"

@@ -109,31 +109,35 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "6653659029749075634"
+        "hash": "13072877455263818858"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "1813411169821073022"
+        "hash": "4772229256622260744"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "5786285527297493310"
+        "hash": "9197213638846727323"
       },
       {
         "file": ".nx/cache/lockfile.hash",
-        "hash": "5547994310415752128"
+        "hash": "11101118979343917482"
       },
       {
         "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "10601643385698630684"
+        "hash": "15758650460943224814"
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "6607986817587104549"
+        "hash": "8336093037455459247"
       },
       {
         "file": ".nx/cache/run.json",
         "hash": "928309282673564038"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/15614401205564759532",
+        "hash": "700356703266956736"
       },
       {
         "file": ".nx/cache/terminalOutputs/8595328344158078715",
@@ -241,48 +245,6 @@
       }
     ],
     "projectFileMap": {
-      "mitchs-website-e2e": [
-        {
-          "file": "apps/mitchs-website-e2e/.eslintrc.json",
-          "hash": "14060216369337943343"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/cypress.config.ts",
-          "hash": "15414076024138857470",
-          "deps": [
-            "npm:cypress",
-            "npm:@nx/cypress"
-          ]
-        },
-        {
-          "file": "apps/mitchs-website-e2e/project.json",
-          "hash": "11712521099916762276"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/e2e/app.cy.ts",
-          "hash": "10009507791360451292"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/support/commands.ts",
-          "hash": "7314691991044890572"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "apps/mitchs-website-e2e/tsconfig.json",
-          "hash": "15439127571515986436"
-        }
-      ],
       "mitchs-website": [
         {
           "file": "apps/mitchs-website/.eslintrc.json",
@@ -528,7 +490,7 @@
         },
         {
           "file": "apps/mitchs-website/src/app/pages/caving/gallery/(gallery).page.ts",
-          "hash": "7215749704004713908",
+          "hash": "7249877117095447998",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -731,7 +693,7 @@
         },
         {
           "file": "apps/mitchs-website/src/app/shared/main-nav/main-nav.component.html",
-          "hash": "10454073270070694023"
+          "hash": "14698380834604947602"
         },
         {
           "file": "apps/mitchs-website/src/app/shared/main-nav/main-nav.component.scss",
@@ -909,6 +871,48 @@
             "npm:vite",
             "npm:vite-tsconfig-paths"
           ]
+        }
+      ],
+      "mitchs-website-e2e": [
+        {
+          "file": "apps/mitchs-website-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/cypress.config.ts",
+          "hash": "15414076024138857470",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "apps/mitchs-website-e2e/project.json",
+          "hash": "11712521099916762276"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/e2e/app.cy.ts",
+          "hash": "10009507791360451292"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/mitchs-website-e2e/tsconfig.json",
+          "hash": "15439127571515986436"
         }
       ]
     }

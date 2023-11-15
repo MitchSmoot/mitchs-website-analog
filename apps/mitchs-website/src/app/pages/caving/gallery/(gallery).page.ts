@@ -15,7 +15,9 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
         <mitchs-gallery-image-detail/>
       }
       <div class="flex-container">
-        <mitchs-gallery-image *ngFor="let image of images" [image]="image"/>
+        @for (image of images; track image.title) {
+          <mitchs-gallery-image [image]="image"/>
+        }
       </div>
     </div>
   `,

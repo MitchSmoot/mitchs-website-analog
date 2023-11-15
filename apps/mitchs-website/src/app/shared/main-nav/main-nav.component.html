@@ -14,8 +14,11 @@
   <div class="flex-container nav-links links-right">
     <a routerLink="/login" routerLinkActive="active">Sign In</a>
     <button class="dark-toggle" (click)="darkModeToggle()">
-      <img *ngIf="this.isDarkModeActive()" src="/svg/light-mode.svg" />
-      <img *ngIf="!this.isDarkModeActive()" src="/svg/dark-mode.svg" />
+      @if (!this.isDarkModeActive()) {
+        <img *ngIf="!this.isDarkModeActive()" src="/svg/dark-mode.svg" />
+      } @else {
+        <img *ngIf="this.isDarkModeActive()" src="/svg/light-mode.svg" />
+      }
     </button>
   </div>
 
