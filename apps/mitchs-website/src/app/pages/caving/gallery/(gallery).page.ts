@@ -21,16 +21,7 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
       </div>
     </div>
   `,
-  styles: [`
-    mitchs-gallery-image {
-      width: 25em;
-      margin: 0px;
-      padding: 0px;
-    }
-    #gallery-container {
-      margin: 1rem;
-    }
-  `]
+  styleUrls: ["./gallery.scss"]
 
 })
 export default class CaveGalleryPageComponent {

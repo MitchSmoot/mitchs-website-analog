@@ -9,16 +9,14 @@ import GalleryService from "../gallery.service";
       <h3>{{currentImage()?.title}}</h3>
       <div class="flex-container">
         <img [src]="currentImage()?.url" />
-        <p>{{currentImage()?.description}}</p>
+        <div>
+          <p>{{currentImage()?.description}}</p>
+          <button (click)="close()">Close</button>
+        </div>
       </div>
-      <button (click)="close()">Close</button>
     </dialog>
   `,
-  styles: [`
-    dialog {
-      z-index: 2;
-    }
-  `]
+  styleUrls: ["../gallery.scss"]
 })
 export default class GalleryImageDetailComponent {
   constructor(private galleryService: GalleryService) {}

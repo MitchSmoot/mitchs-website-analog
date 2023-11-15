@@ -6,6 +6,8 @@
   height: 3rem;
   div {
     margin: 0px 1rem;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -33,16 +35,12 @@
 
 .links-center {
   grid-column: 2;
-  display: flex;
-  align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
 .links-right {
   grid-column: 3;
-  display: flex;
-  align-items: center;
   justify-content: end;
   gap: 2rem;
   padding-left: 1rem;

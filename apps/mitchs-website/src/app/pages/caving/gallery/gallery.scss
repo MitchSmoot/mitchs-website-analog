@@ -1,0 +1,34 @@
+
+mitchs-gallery-image {
+  width: 25em;
+  margin: 0px;
+  padding: 0px;
+}
+#gallery-container {
+  margin: 1rem;
+}
+
+#gallery-image {
+  min-width: 400px;
+  height: 400px;
+  z-index: 1;
+  background-size: cover;
+  transition: transform 0.05s ease-in-out;
+}
+#gallery-image:hover {
+  transform: scale(1.03);
+}
+h2 {
+  display: none;
+}
+.img-tile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+dialog {
+  z-index: 2;
+}
