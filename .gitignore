@@ -45,6 +45,7 @@ Thumbs.db
 .env.local
 .env.development
 /environments
+apps/mitchs-website/src/environments
 
 # NX Cache
 .nx/cache
