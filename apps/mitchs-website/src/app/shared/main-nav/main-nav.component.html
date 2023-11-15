@@ -3,6 +3,9 @@
     <div class="logo-container" routerLink="" routerLinkActive="active">
       <a class="nav-logo circle">M</a>
     </div>
+    @if (!(this.environment() === "Prod")) {
+      <P>{{this.environment()}}</P>
+    }
   </div>
   <div class="flex-container nav-links links-center">
     <a routerLink="" routerLinkActive="active">Mitch's Website</a>

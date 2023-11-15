@@ -14,6 +14,7 @@ export class MainNavComponent {
   constructor(private appService: AppService) {}
 
   isDarkModeActive: Signal<boolean> = this.appService.darkMode;
+  environment: Signal<string> = this.appService.environment;
 
   darkModeToggle() {
     this.appService.toggleDarkMode();
