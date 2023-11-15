@@ -1,7 +1,7 @@
 #main-nav {
   background-color: var(--clr-bg-accent);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
   align-items: center;
   height: 3rem;
   div {
@@ -10,7 +10,6 @@
 }
 
 .nav-links a {
-  --gap: 2rem;
   border-bottom: .2rem solid transparent;
 }
 
@@ -25,10 +24,28 @@
   border: 2px solid red;
   background-color: greenyellow;
   color: black;
+  height: 2rem;
+}
+
+.nav-left {
+  grid-column: 1;
 }
 
 .links-center {
+  grid-column: 2;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links-right {
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+  padding-left: 1rem;
 }
 
 .dark-toggle {

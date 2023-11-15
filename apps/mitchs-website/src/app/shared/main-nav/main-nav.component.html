@@ -1,5 +1,5 @@
 <header id="main-nav">
-  <div class="flex-container">
+  <div class="nav-left">
     <div class="logo-container" routerLink="" routerLinkActive="active">
       <a class="nav-logo circle">M</a>
     </div>
@@ -7,14 +7,14 @@
       <P>{{this.environment()}}</P>
     }
   </div>
-  <div class="flex-container nav-links links-center">
+  <div class="nav-links links-center">
     <a routerLink="" routerLinkActive="active">Mitch's Website</a>
     <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
     <a routerLink="/blog" routerLinkActive="active">Blog</a>
     <a routerLink="/caving" routerLinkActive="active">Caving</a>
     <a routerLink="/radio" routerLinkActive="active">Radio</a>
   </div>
-  <div class="flex-container nav-links links-right">
+  <div class="nav-links links-right">
     <a routerLink="/login" routerLinkActive="active">Sign In</a>
     <button class="dark-toggle" (click)="darkModeToggle()">
       @if (!this.isDarkModeActive()) {
