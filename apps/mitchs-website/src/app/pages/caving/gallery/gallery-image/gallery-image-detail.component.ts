@@ -5,11 +5,11 @@ import GalleryService from "../gallery.service";
   selector: "mitchs-gallery-image-detail",
   standalone: true,
   template: `
-    <dialog open>
+    <dialog open class="gallery-image-detail">
       <h3>{{currentImage()?.title}}</h3>
       <div class="flex-container">
         <img [src]="currentImage()?.url" />
-        <div>
+        <div class="text-container">
           <p>{{currentImage()?.description}}</p>
           <button (click)="close()">Close</button>
         </div>

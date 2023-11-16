@@ -37,7 +37,31 @@ h2 {
   border-radius: 0.5rem;
 }
 
-
-dialog {
+.gallery-image-detail {
   z-index: 2;
+  background-color: var(--clr-bg-secondary);
+  div {
+    .text-container {
+      background-color: var(--clr-bg-white);
+      border-radius: .5rem;
+      padding: .5rem;
+      align-self: flex-start;
+      width: 20rem;
+      min-height: 30rem;
+      display: flex;
+      flex-direction: column;
+      p {
+        text-wrap: wrap;
+      }
+      button {
+        max-height: 3rem;
+        width: 6rem;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        background-color: var(--clr-text-accent);
+        align-self: flex-end;
+        justify-self: flex-end;
+      }
+    }
+  }
 }
