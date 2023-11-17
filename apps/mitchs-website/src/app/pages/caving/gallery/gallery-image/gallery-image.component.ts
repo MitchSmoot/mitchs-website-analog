@@ -7,7 +7,7 @@ import GalleryService, { galleryImage } from "../gallery.service";
   template: `
     <div id="gallery-image" (click)="onImageClick()" loading="lazy">
       <h2>{{this.image.title}}</h2>
-      <img class="img-tile" src="{{this.image.thumbnailUrl}}"/>
+      <img src="{{this.image.thumbnailUrl}}"/>
     </div>
   `,
   styleUrls: ["../gallery.scss"]

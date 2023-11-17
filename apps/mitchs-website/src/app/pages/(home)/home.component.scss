@@ -32,15 +32,6 @@ section {
   transform: skewY(var(--skew));
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 #intro-slider {
   overflow: hidden;
   white-space: nowrap;

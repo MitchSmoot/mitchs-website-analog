@@ -6,13 +6,11 @@ import GalleryService from "../gallery.service";
   standalone: true,
   template: `
     <dialog open class="gallery-image-detail">
-      <h3>{{currentImage()?.title}}</h3>
-      <div class="flex-container">
-        <img [src]="currentImage()?.url" />
-        <div class="text-container">
-          <p>{{currentImage()?.description}}</p>
-          <button (click)="close()">Close</button>
-        </div>
+      <img [src]="currentImage()?.url" />
+      <div class="text-container">
+        <h3>{{currentImage()?.title}}</h3>
+        <p>{{currentImage()?.description}}</p>
+        <button (click)="close()">Close</button>
       </div>
     </dialog>
   `,
