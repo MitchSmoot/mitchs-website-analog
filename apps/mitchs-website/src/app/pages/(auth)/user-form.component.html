@@ -19,18 +19,22 @@
       <input id="password" type="text" formControlName="password">
     </div>
 
+    @if (this.signUp) {
     <div *ngIf="this.signUp">
       <label for="password">Confirm Password:</label>
       <input id="password-confirmation" type="text" formControlName="passwordConfirmation">
     </div>
+  }
 
     <button type="submit">Submit</button>
+    @if (this.currentUser()) {
+      <button click="signOutButtonClicked">Sign Out</button>
+    }
 
   </form>
 
-  <div *ngIf="this.currentUser()">
-    <button click="signOutButtonClicked">Sign Out</button>
-  </div>
-  
-  <div *ngIf="authLoading()"><h1>Loading!</h1></div>
+  @if(this.authLoading()) {
+    <h1>Loading!</h1>
+  }
+
 </div>
