@@ -5,13 +5,43 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 30rem;
+  margin: auto;
   form {
-    width: 50em;
     background-color: var(--clr-bg-secondary);
     padding: 1rem;
     border-radius: .5rem;
     div {
       row-gap: 1rem;
     }
+  }
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: .5rem;
+  border: 1px solid var(--clr-bg-primary);
+  background-color: var(--clr-bg-secondary);
+  color: var(--clr-text-primary);
+  font-size: var(--fs-text);
+  &:focus {
+    outline: none;
+    border: 1px solid var(--clr-text-accent);
+  }
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: .5rem;
+  border: 1px solid var(--clr-bg-primary);
+  background-color: var(--clr-bg-accent);
+  color: var(--clr-text-primary);
+  font-size: var(--fs-text);
+  margin-top: 1rem;
+  &:hover {
+    background-color: var(--clr-bg-accent);
+    color: var(--clr-text-accent);
   }
 }

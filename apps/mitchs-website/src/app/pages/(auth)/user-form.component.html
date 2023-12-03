@@ -1,37 +1,49 @@
 <div id="user-form-container">
-  <!-- <button (click)="toggleButtonClicked()">
-    <p *ngIf="signUp">Sign In</p>
-    <p *ngIf="!signUp">Sign Up</p>
-  </button> -->
-  <form *ngIf="!this.currentUser()"[formGroup]="userForm" (ngSubmit)="onSubmit()">
-    <div>
-      <label for="email">Email:</label>
-      <input id="email" type="text" formControlName="email">
-    </div>
 
-    <div *ngIf="this.signUp">
-      <label for="name">Name:</label>
-      <input id="name" type="text" formControlName="name">
-    </div>
-
-    <div>
-      <label for="password">Password:</label>
-      <input id="password" type="text" formControlName="password">
-    </div>
-
-    @if (this.signUp) {
-    <div *ngIf="this.signUp">
-      <label for="password">Confirm Password:</label>
-      <input id="password-confirmation" type="text" formControlName="passwordConfirmation">
-    </div>
+  @if (this.currentUser()) {
+    <h1>Logged in as {{this.currentUser().name}}</h1>
+  } @else {
+    <h1>Sign In</h1>
   }
 
-    <button type="submit">Submit</button>
-    @if (this.currentUser()) {
-      <button click="signOutButtonClicked">Sign Out</button>
-    }
 
-  </form>
+  @if (!this.currentUser()) {    
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="text" formControlName="email">
+      </div>
+  
+      @if (this.signUp) {
+      <label for="name">Name:</label>
+      <input id="name" type="text" formControlName="name">
+      }
+  
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" type="text" formControlName="password">
+      </div>
+  
+      @if (this.signUp) {
+      <label for="password">Confirm Password:</label>
+      <input id="password-confirmation" type="text" formControlName="passwordConfirmation">
+    }
+  
+      <button type="submit">Submit</button>
+      <button (click)="toggleButtonClicked()">
+        @if (this.signUp) {
+          Sign In
+        } @else {
+          Sign Up 
+        }
+      </button>
+      
+    </form>
+  }
+  
+  @if (this.currentUser()) {
+    <button click="signOutButtonClicked">Sign Out</button>
+  }
 
   @if(this.authLoading()) {
     <h1>Loading!</h1>
