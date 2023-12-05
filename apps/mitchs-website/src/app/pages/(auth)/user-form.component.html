@@ -2,8 +2,10 @@
 
   @if (this.currentUser()) {
     <h1>Logged in as {{this.currentUser().name}}</h1>
-  } @else {
+  } @else if (!this.signUp) {
     <h1>Sign In</h1>
+  } @else if (this.signUp) {
+    <h1>Sign Up</h1>
   }
 
 
@@ -31,11 +33,7 @@
   
       <button type="submit">Submit</button>
       <button (click)="toggleButtonClicked()">
-        @if (this.signUp) {
-          Sign In
-        } @else {
-          Sign Up 
-        }
+        @if (this.signUp) { Sign In } @else { Sign Up }
       </button>
       
     </form>
