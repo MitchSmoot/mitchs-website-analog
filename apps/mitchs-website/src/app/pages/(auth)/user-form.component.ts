@@ -15,7 +15,7 @@ export class UserFormComponent implements OnInit {
 
   authLoading = this.authService.isLoading
   currentUser: any
-  signUp = false
+  signUpMode = false
   userForm = new FormGroup({
     email: new FormControl<string>(''),
     name: new FormControl<string>(''),
@@ -30,7 +30,7 @@ export class UserFormComponent implements OnInit {
   onSubmit() {
     console.log(this.userForm.value)
     if(this.userForm.value.email && this.userForm.value.password)
-    if (!this.signUp) {
+    if (!this.signUpMode) {
       this.authService.userSignIn(this.userForm.value.email, this.userForm.value.password)
     } else {
       if (this.userForm.value.name) {
@@ -40,7 +40,7 @@ export class UserFormComponent implements OnInit {
   }
 
   toggleButtonClicked() {
-    this.signUp = !this.signUp
+    this.signUpMode = !this.signUpMode
     this.userForm.reset()
   }
 
