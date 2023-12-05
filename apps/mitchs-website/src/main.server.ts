@@ -9,7 +9,7 @@ import {
 import { AppComponent } from './app/app.component';
 import { mainProviders } from './main.providers';
 
-if (import.meta.env.PROD) {
+if (import.meta.env.VITE_MODE === "Prod") {
   enableProdMode();
 }
 
