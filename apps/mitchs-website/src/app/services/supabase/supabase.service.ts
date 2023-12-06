@@ -10,7 +10,7 @@ export class SupabaseService {
 
   //Initialize Supabase Client
   constructor() {
-    this.supabase = createClient(environment.SUPABASE_URL, environment.SUPABASE_KEY)
+    this.supabase = createClient(environment.SUPABASE_URL, environment.SUPABASE_ANON_KEY)
   }
 
   //SUPABASE API CALLS
