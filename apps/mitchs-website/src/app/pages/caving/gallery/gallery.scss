@@ -80,4 +80,9 @@ mitchs-gallery-image {
       background-color: var(--clr-text-accent);
     }
   }
+  img {
+    width: auto;
+    height: auto;
+    z-index: 1;
+  }
 }

@@ -1,13 +1,17 @@
 import { Component, Input } from "@angular/core";
 import GalleryService, { galleryImage } from "../gallery.service";
+import { NgOptimizedImage } from '@angular/common'
+
 
 @Component({
   selector: "mitchs-gallery-image",
   standalone: true,
+  imports: [NgOptimizedImage],
   template: `
     <div id="gallery-image" (click)="onImageClick()" loading="lazy">
       <h2>{{this.image.title}}</h2>
-      <img src="{{this.image.thumbnailUrl}}"/>
+      <img ngSrc="{{this.image.thumbnailUrl}}" fill priority/>
+      <!-- <img src="{{this.image.thumbnailUrl}}"/> -->
     </div>
   `,
   styleUrls: ["../gallery.scss"]
@@ -17,7 +21,6 @@ export default class GalleryImageComponent {
   constructor(private galleryService: GalleryService) {}
 
   onImageClick() {
-    console.log(this.image);
     this.galleryService.focusedImage.set(this.image);
   }
 
