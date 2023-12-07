@@ -8,14 +8,16 @@ import GalleryService from './gallery/gallery.service';
     selector: 'mitchs-caving-homepage',
     standalone: true,
     template: `
-  <h2>Mitch's Caving Site</h2>
-  <h4>Exploring the Unknown, Protecting the Known</h4>
-  <article>
-    <p>
-      Welcome to my personal caving site! I am a caver based in the Western US, and I love exploring caves and learning about the underground world. I am also passionate about protecting caves and their unique environments.
-    </p>
-
-  </article>
+  <section id="entry-section">
+    <h1>Caving</h1>
+    <h3>Exploring the Unknown, Protecting the Known</h3>
+    <article>
+      <p>
+        Welcome to my personal caving site! I am a caver based in the Western US, and I love exploring caves and learning about the underground world. I am also passionate about protecting caves and their unique environments.
+      </p>
+  
+    </article>
+  </section>
 
   <section>
     <media-scroller [media]="galleryPreviewImages"/>

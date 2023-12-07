@@ -7,6 +7,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './caving-page.component.html',
-  styleUrls: ['./caving-page.component.scss'],
+  styleUrls: ['./caving/caving.scss'],
 })
 export default class CavingPageComponent {}
