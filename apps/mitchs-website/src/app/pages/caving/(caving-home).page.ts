@@ -8,7 +8,7 @@ import GalleryService from './gallery/gallery.service';
     selector: 'mitchs-caving-homepage',
     standalone: true,
     template: `
-  <section id="entry-section">
+  <section class="entry-section">
     <h1>Caving</h1>
     <h3>Exploring the Unknown, Protecting the Known</h3>
     <article>
