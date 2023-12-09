@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MediaScrollerComponent } from "../../shared/media-scroller/media-scroller.component";
 import GalleryService from './gallery/gallery.service';
+import { NgtCanvas, extend } from 'angular-three';
+import * as THREE from 'three';
+
+extend(THREE);
 
 @Component({
     selector: 'mitchs-caving-homepage',
@@ -32,10 +36,14 @@ import GalleryService from './gallery/gallery.service';
       <a routerLink="/caving/gear" routerLinkActive="active">Lear more about caving gear</a>
     </article>
   </section>
+  <section id="three-canvas">
+    <ngt-canvas [sceneGraph]="SceneGraph" />
+  </section>
   `,
-    imports: [CommonModule, RouterModule, MediaScrollerComponent]
+    imports: [CommonModule, RouterModule, MediaScrollerComponent, NgtCanvas]
 })
 export default class CavingHomePageComponent {
   constructor(private galleryService: GalleryService) {}
   galleryPreviewImages = this.galleryService.get();
+  readonly SceneGraph = SceneGraph;
 }
