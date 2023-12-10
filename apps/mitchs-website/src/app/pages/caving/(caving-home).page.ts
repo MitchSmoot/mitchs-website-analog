@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MediaScrollerComponent } from "../../shared/media-scroller/media-scroller.component";
 import GalleryService from './gallery/gallery.service';
-import { ThreeCanvasComponent } from "../../shared/three/three-canvas.component";
 
 
 @Component({
@@ -35,7 +34,7 @@ import { ThreeCanvasComponent } from "../../shared/three/three-canvas.component"
     </article>
   </section>
   `,
-    imports: [CommonModule, RouterModule, MediaScrollerComponent, ThreeCanvasComponent]
+    imports: [CommonModule, RouterModule, MediaScrollerComponent]
 })
 export default class CavingHomePageComponent {
   constructor(private galleryService: GalleryService) {}
