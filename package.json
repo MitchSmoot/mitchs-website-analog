@@ -31,7 +31,7 @@
     "drizzle-orm": "^0.29.1",
     "front-matter": "^4.0.2",
     "highcharts": "^11.1.0",
-    "highcharts-angular": "^3.1.2",
+    "highcharts-angular": "^4.0.0",
     "marked": "^5.0.2",
     "marked-gfm-heading-id": "^3.1.0",
     "marked-highlight": "^2.0.9",
