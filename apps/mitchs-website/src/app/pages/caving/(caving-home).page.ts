@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MediaScrollerComponent } from "../../shared/media-scroller/media-scroller.component";
 import GalleryService from './gallery/gallery.service';
-import { ThreeCanvasComponent } from "../../shared/three-canvas/three-canvas.component";
+import { ThreeCanvasComponent } from "../../shared/three/three-canvas.component";
 
 
 @Component({
@@ -33,9 +33,6 @@ import { ThreeCanvasComponent } from "../../shared/three-canvas/three-canvas.com
       </p>
       <a routerLink="/caving/gear" routerLinkActive="active">Lear more about caving gear</a>
     </article>
-  </section>
-  <section id="three-canvas">
-    <three-canvas />
   </section>
   `,
     imports: [CommonModule, RouterModule, MediaScrollerComponent, ThreeCanvasComponent]

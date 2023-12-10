@@ -7,7 +7,6 @@ import { Scene } from "./scene.component"
   standalone: true,
   styleUrls: ["./three.scss"],
   template: `
-  <h1>Three Canvas</h1>
   <ngt-canvas class="canvas" [sceneGraph]="Scene" />
   `,
   imports: [NgtCanvas],
