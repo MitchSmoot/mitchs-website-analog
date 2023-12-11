@@ -1,12 +1,12 @@
-import { Directive, ElementRef, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Renderer2, OnInit } from '@angular/core';
 
 const isProd = import.meta.env.VITE_MODE === "Prod";
 
-@Directive({ selector: 'HideInProd' })
-export class HideinProdDirective {
-  constructor(private element: ElementRef, private renderer: Renderer2) {
+@Directive({ selector: '[HideInProd]', standalone: true })
+export class HideinProdDirective implements OnInit {
+  constructor(private element: ElementRef, private renderer: Renderer2) {}
+  ngOnInit() {
     if (isProd) {
-      console.log('Hiding element in production');
       this.renderer.setStyle(this.element.nativeElement, 'display', 'none');
     }
   }
