@@ -52,6 +52,7 @@ mitchs-gallery-image {
 }
 
 .gallery-image-detail {
+  position: fixed;
   display: inline-flex;
   z-index: 2;
   background: none;
