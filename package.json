@@ -8,9 +8,9 @@
     "seed": "ts-node prisma/seeds.ts"
   },
   "dependencies": {
-    "@analogjs/content": "0.2.24",
-    "@analogjs/platform": "0.2.24",
-    "@analogjs/router": "0.2.24",
+    "@analogjs/content": "0.2.29",
+    "@analogjs/platform": "0.2.29",
+    "@analogjs/router": "0.2.29",
     "@angular/animations": "17.0.2",
     "@angular/cdk": "17.0.0",
     "@angular/common": "17.0.2",
@@ -87,3 +87,4 @@
     "vitest": "^0.31.0"
   }
 }
+
