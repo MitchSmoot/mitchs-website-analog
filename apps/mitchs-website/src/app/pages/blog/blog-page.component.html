@@ -1,8 +1,11 @@
 <div id="blog-container">
   <h1>Mitch's Blog!</h1>
-  <button (click)="newBlogButtonClicked()">New</button>
 
-  <post-form />
+  @if (devModeIsActive) {
+    <button (click)="newBlogButtonClicked()">New</button>
+  
+    <post-form />
+  }
 
   <div *ngFor="let post of posts()">
     <post [post]="post"/>
