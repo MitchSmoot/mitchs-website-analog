@@ -57,7 +57,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 2em;
+  width: 1em;
 }
 
 ::-webkit-scrollbar-track {
@@ -67,8 +67,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--clr-bg-accent);
-  border: .25em solid var(--clr-text-accent);
+  background-image: linear-gradient( 45deg, #027, #394, #063);
   border-radius: 100vw;
 }
 
