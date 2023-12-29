@@ -1,3 +1,4 @@
+import { HideinProdDirective } from './../../../shared/hide-in-prod.directive';
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PostService } from '../../../services/blog/post.service';
@@ -5,7 +6,7 @@ import { PostService } from '../../../services/blog/post.service';
 @Component({
   selector: 'post',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HideinProdDirective],
   templateUrl: './post.component.html',
   styleUrls: ['../blog-styles.scss'],
 })

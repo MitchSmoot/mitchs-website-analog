@@ -4,7 +4,9 @@
   @if (devModeIsActive) {
     <button (click)="newBlogButtonClicked()">New</button>
   
-    <post-form />
+    @if (showPostForm) {
+      <post-form />
+    }
   }
 
   <div *ngFor="let post of posts()">
