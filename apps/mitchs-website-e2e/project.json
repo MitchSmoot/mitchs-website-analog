@@ -1,22 +1,22 @@
 {
-  "name": "mitchs-website-e2e",
+  "name": "mitchs-website-old-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/mitchs-website-e2e/src",
+  "sourceRoot": "apps/mitchs-website-old-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/mitchs-website-e2e/cypress.config.ts",
-        "devServerTarget": "mitchs-website:serve:development",
+        "cypressConfig": "apps/mitchs-website-old-e2e/cypress.config.ts",
+        "devServerTarget": "mitchs-website-old:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "mitchs-website:serve:production"
+          "devServerTarget": "mitchs-website-old:serve:production"
         },
         "ci": {
-          "devServerTarget": "mitchs-website:serve-static"
+          "devServerTarget": "mitchs-website-old:serve-static"
         }
       }
     },
@@ -24,10 +24,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/mitchs-website-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/mitchs-website-old-e2e/**/*.{js,ts}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": ["mitchs-website"]
+  "implicitDependencies": ["mitchs-website-old"]
 }

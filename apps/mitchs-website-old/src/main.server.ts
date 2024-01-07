@@ -1,23 +1,29 @@
 import 'zone.js/node';
-import '@angular/platform-server/init';
-
 import { enableProdMode } from '@angular/core';
-import { renderApplication } from '@angular/platform-server';
 import { bootstrapApplication } from '@angular/platform-browser';
+import {
+  provideServerRendering,
+  renderApplication,
+} from '@angular/platform-server';
 
 import { AppComponent } from './app/app.component';
-import { config } from './app/app.config.server';
+import { mainProviders } from './main.providers';
 
-if (import.meta.env.PROD) {
+if (import.meta.env.VITE_MODE === "Prod") {
   enableProdMode();
 }
 
-const bootstrap = () => bootstrapApplication(AppComponent, config);
+export function bootstrap() {
+  return bootstrapApplication(AppComponent, {
+    providers: [mainProviders, provideServerRendering()],
+  });
+}
 
 export default async function render(url: string, document: string) {
   const html = await renderApplication(bootstrap, {
     document,
     url,
   });
+
   return html;
 }

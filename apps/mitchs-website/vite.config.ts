@@ -1,68 +1,30 @@
 /// <reference types="vitest" />
 
 import analog from '@analogjs/platform';
-import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig, Plugin, splitVendorChunkPlugin } from 'vite';
-import tsConfigPaths from 'vite-tsconfig-paths';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    publicDir: 'src/assets',
-    optimizeDeps: {
-      include: ['@angular/common', '@angular/forms']
-    },
+    publicDir: 'src/public',
+
     build: {
-      target: ['es2020']
+      target: ['es2020'],
     },
-    plugins: [
-      analog({
-        ssr: false,
-        ssrBuildDir: '../../dist/apps/mitchs-website/ssr',
-        entryServer: 'apps/mitchs-website/src/main.server.ts',
-        vite: {
-          inlineStylesExtension: 'css',
-          tsconfig:
-            mode === 'test'
-              ? 'apps/mitchs-website/tsconfig.spec.json'
-              : 'apps/mitchs-website/tsconfig.app.json'
-        },
-        nitro: {
-          rootDir: 'apps/mitchs-website',
-          routeRules: {
-            '/**': { prerender: true },
-          },
-          output: {
-            dir: '../../../dist/apps/mitchs-website/analog',
-            publicDir: '../../../dist/apps/mitchs-website/analog/public'
-          },
-          publicAssets: [{ dir: `../../../dist/apps/mitchs-website/client` }],
-          serverAssets: [
-            { baseName: 'public', dir: `./dist/apps/mitchs-website/client` }
-          ],
-          buildDir: '../../dist/apps/mitchs-website/.nitro',
-          prerender: {
-            routes: ['/']
-          }
-        }
-      }),
-      tsConfigPaths({
-        root: '../../'
-      }),
-      visualizer() as Plugin,
-      splitVendorChunkPlugin()
-    ],
+    plugins: [analog(), nxViteTsPaths(), splitVendorChunkPlugin()],
     test: {
       globals: true,
       environment: 'jsdom',
       setupFiles: ['src/test-setup.ts'],
       include: ['**/*.spec.ts'],
+      reporters: ['default'],
       cache: {
-        dir: `../../node_modules/.vitest`
-      }
+        dir: `../../node_modules/.vitest`,
+      },
     },
     define: {
-      'import.meta.vitest': mode !== 'production'
-    }
+      'import.meta.vitest': mode !== 'production',
+    },
   };
 });
