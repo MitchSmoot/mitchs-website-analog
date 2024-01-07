@@ -1,0 +1,120 @@
+{
+  "name": "mitchs-website-old",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "mitchs",
+  "sourceRoot": "apps/mitchs-website-old/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}",
+        "dist/apps/mitchs-website-old/.nitro",
+        "dist/apps/mitchs-website-old/ssr",
+        "dist/apps/mitchs-website-old/analog"
+      ],
+      "options": {
+        "configFile": "apps/mitchs-website-old/vite.config.ts",
+        "outputPath": "dist/apps/mitchs-website-old",
+        "assets": [
+          "apps/mitchs-website-old/src/favicon.ico",
+          "apps/mitchs-website-old/src/assets"
+        ],
+        "styles": [
+          "apps/mitchs-website-old/src/styles.scss",
+          "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true,
+          "fileReplacements": [
+            {
+              "replace": "apps/mitchs-website-old/src/environments/environment.ts",
+              "with": "apps/mitchs-website-old/src/environments/environment.development.ts"
+            }
+          ]
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mitchs-website-old:build",
+        "port": 4200
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "mitchs-website-old:build:production"
+        },
+        "development": {
+          "browserTarget": "mitchs-website-old:build:development"
+        }
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "mitchs-website-old:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/mitchs-website-old/**/*.ts",
+          "apps/mitchs-website-old/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "apps/mitchs-website-old/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "mitchs-website-old:build"
+      }
+    }
+  }
+}

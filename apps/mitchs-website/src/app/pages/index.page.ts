@@ -14,12 +14,12 @@ export default class HomePageComponent implements OnInit{
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
-    this.getHello();
+    // this.getHello();
   }
 
-  async getHello() {
-  let hello: any = "blah"
-  hello = await this.apiService.getHello();
-  setTimeout(() => {console.log(hello)}, 1000
-  )}
+  // async getHello() {
+  // let hello: any = "blah"
+  // hello = await this.apiService.getHello();
+  // setTimeout(() => {console.log(hello)}, 1000
+  // )}
 }
