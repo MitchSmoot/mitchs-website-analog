@@ -8,7 +8,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { config } from './app/app.config.server';
 
-if (import.meta.env.PROD) {
+if (import.meta.env.VITE_MODE === "Prod") {
   enableProdMode();
 }
 

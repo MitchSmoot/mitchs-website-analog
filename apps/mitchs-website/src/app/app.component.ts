@@ -1,10 +1,16 @@
+import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'mitchs-website-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: ` <router-outlet></router-outlet> `,
+  imports: [RouterOutlet, MainNavComponent],
+  selector: 'mitchs-website-root',
+  template: `
+  <main-nav />
+  <router-outlet />
+  `,
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'mitchs-website';
+}
