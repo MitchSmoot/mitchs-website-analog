@@ -5,8 +5,19 @@
     <p>Text description on what will make me an amazing employee</p>
   </article>
 </section>
-<section class="flex-container">
-  <!-- work history -->
+<section>
+  <article>
+    @for (portfolioItem of portfolioItems; track portfolioItem.title) {
+    
+      <mitchs-portfolio-item [item]="portfolioItem" />
+    
+    }
+  </article>
+</section>
+
+
+<!-- <section class="flex-container">
+  work history
   <article>
     <h2>Previous Job: Telenotes CRM</h2>
     <p>Angular</p>
@@ -20,7 +31,7 @@
   </article>
 </section>
 <section class="flex-container">
-  <!-- projects history -->
+  projects history
   <article>
     <h2>Current Project: This Website</h2>
     <ul>
@@ -36,4 +47,5 @@
     </ul>
     <p>Seeing the latest with Angular 16 and the Analog beta got me looking to build a project to try them all out. I also wanted a new personal website! So this project was born.</p>
   </article>
-</section>
+</section> -->
+
