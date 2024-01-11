@@ -86,7 +86,48 @@ export class TechIconComponent implements OnInit {
       case Technology.Angular17Plus:
         this.iconUrl = "assets/tech-icons/angular17plus.png";
         break;
+      case Technology.Vim:
+        this.iconUrl = "assets/tech-icons/vim.svg";
+        break;
+      case Technology.Neovim:
+        this.iconUrl = "assets/tech-icons/neovim.svg";
+        break;
+      case Technology.Linux:
+        this.iconUrl = "assets/tech-icons/linux.svg";
+        break;
+      case Technology.ArchLinux:
+        this.iconUrl = "assets/tech-icons/arch.svg";
+        break;
+      case Technology.Ubuntu:
+        this.iconUrl = "assets/tech-icons/ubuntu.svg";
+        break;
+      case Technology.Git:
+        this.iconUrl = "assets/tech-icons/git.svg";
+        break;
+      case Technology.GitHub:
+        this.iconUrl = "assets/tech-icons/github.svg";
+        break;
+      case Technology.Terminal:
+        this.iconUrl = "assets/tech-icons/terminal.svg";
+        break;
+      case Technology.Windows:
+        this.iconUrl = "assets/tech-icons/windows.svg";
+        break;
+      case Technology.Heroku:
+        this.iconUrl = "assets/tech-icons/heroku.svg";
+        break;
+      case Technology.Vercel:
+        this.iconUrl = "assets/tech-icons/vercel.svg";
+        break;
+      case Technology.AWS:
+        this.iconUrl = "assets/tech-icons/aws.svg";
+        break;
+      case Technology.Highcharts:
+        this.iconUrl = "assets/tech-icons/highcharts.svg";
+        break;
+      case Technology.Threejs:
+        this.iconUrl = "assets/tech-icons/threejs.svg";
+        break;
     }
-    console.log(this.iconUrl);
   }
 }

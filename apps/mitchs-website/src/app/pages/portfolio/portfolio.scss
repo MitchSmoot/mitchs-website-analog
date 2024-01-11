@@ -2,6 +2,7 @@
 .portfolio-item {
   border-radius: .5rem;
   border: 1px solid black;
+  padding-bottom: 0.5rem;
   &:hover {
     background-color: var(--clr-bg-secondary);
   }

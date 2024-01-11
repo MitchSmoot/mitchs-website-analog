@@ -50,6 +50,8 @@ export enum Technology {
 // Key Libraries
   RxJs = 401,
   NgRx = 402,
+  Highcharts = 403,
+  Threejs = 404,
 
 
 
@@ -62,7 +64,6 @@ export enum Technology {
   ArchLinux,
   Ubuntu,
   Windows,
-  MacOS,
 
 
   Heroku,
@@ -92,7 +93,8 @@ export class PortfolioService {
         Technology.Analog,
         Technology.Vite,
         Technology.Angular17Plus,
-        Technology.PostgreSQL
+        Technology.PostgreSQL,
+        Technology.Threejs,
       ]
     },
     {
@@ -109,6 +111,43 @@ export class PortfolioService {
       ]
     },
     {
+      title: "nvim-config",
+      subtitle: "My Neovim Configuration",
+      technologies: [
+        Technology.Neovim,
+        Technology.Lua,
+      ]
+    },
+    {
+      title: "Telenotes 2.0",
+      subtitle: "Improved Telenotes Rebuilt on NgRx",
+      technologies: [
+        Technology.TypeScript,
+        Technology.HTML,
+        Technology.SCSS,
+        Technology.Nodejs,
+        Technology.Angular,
+        Technology.NgRx,
+        Technology.RxJs,
+      ]
+    },
+    {
+      title: "Smootimer (Javascript prototype)",
+      subtitle: "Smootimer, rewritten in JavaScript",
+      technologies: [
+        Technology.TypeScript,
+        Technology.HTML,
+        Technology.SCSS,
+        Technology.Nodejs,
+        Technology.Angular,
+        Technology.NgRx,
+        Technology.RxJs,
+        Technology.Firebase,
+        Technology.Firestore,
+        Technology.Highcharts,
+      ]
+    },
+    {
       title: "Telenotes",
       subtitle: "Original Telenotes App",
       technologies: [
@@ -117,8 +156,19 @@ export class PortfolioService {
         Technology.SCSS,
         Technology.Nodejs,
         Technology.Angular,
-        Technology.RxJs,
-        Technology.NgRx
+      ]
+    },
+    {
+      title: "Smootimer (Original prototype)",
+      subtitle: "Competitive puzzle timer app. My Capstone Project",
+      technologies: [
+        Technology.Ruby,
+        Technology.Rails,
+        Technology.HTML,
+        Technology.SCSS,
+        Technology.PostgreSQL,
+        Technology.Heroku,
+        Technology.Highcharts,
       ]
     },
     {
@@ -131,6 +181,21 @@ export class PortfolioService {
         Technology.SCSS,
         Technology.JavaScript,
         Technology.CoffeeScript,
+        Technology.PostgreSQL,
+        Technology.Heroku
+      ]
+    },
+    {
+      title: "Overtime App",
+      subtitle: "A simple Overtime tracker",
+      technologies: [
+        Technology.Ruby,
+        Technology.Rails,
+        Technology.HTML,
+        Technology.CSS,
+        Technology.JavaScript,
+        Technology.CoffeeScript,
+        Technology.PostgreSQL
       ]
     },
     {
@@ -138,7 +203,8 @@ export class PortfolioService {
       subtitle: "A Penguin Simulator",
       ghUrl: "https://github.com/MitchSmoot/penguin-sim",
       technologies: [
-        Technology.Ruby
+        Technology.Ruby,
+        Technology.Terminal
       ]
     },
     {
@@ -162,12 +228,14 @@ export class PortfolioService {
         Technology.Analog,
         Technology.Vite,
         Technology.Angular,
+        Technology.Angular17Plus,
         Technology.PostgreSQL,
-        Technology.RxJs,
-        Technology.NgRx,
         Technology.Firebase,
         Technology.Firestore,
-        Technology.Angular17Plus,
+        Technology.RxJs,
+        Technology.NgRx,
+        Technology.Highcharts,
+        Technology.Threejs,
 
 
         Technology.Git,
@@ -179,7 +247,6 @@ export class PortfolioService {
         Technology.ArchLinux,
         Technology.Ubuntu,
         Technology.Windows,
-        Technology.MacOS,
         Technology.Heroku,
         Technology.Vercel,
         Technology.AWS,
