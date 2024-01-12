@@ -52,6 +52,7 @@ export enum Technology {
   NgRx = 402,
   Highcharts = 403,
   Threejs = 404,
+  Supabase = 405,
 
 
 
@@ -94,6 +95,7 @@ export class PortfolioService {
         Technology.Vite,
         Technology.Angular17Plus,
         Technology.PostgreSQL,
+        Technology.Supabase,
         Technology.Threejs,
       ]
     },
@@ -236,7 +238,7 @@ export class PortfolioService {
         Technology.NgRx,
         Technology.Highcharts,
         Technology.Threejs,
-
+        Technology.Supabase,
 
         Technology.Git,
         Technology.GitHub,

@@ -128,6 +128,9 @@ export class TechIconComponent implements OnInit {
       case Technology.Threejs:
         this.iconUrl = "assets/tech-icons/threejs.svg";
         break;
+      case Technology.Supabase:
+        this.iconUrl = "assets/tech-icons/supabase.svg";
+        break;
     }
   }
 }
