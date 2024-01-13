@@ -1,5 +1,5 @@
 <div class="portfolio-item">
-  <h3>
+  <h3 class="portfolio-item-title">
     @if (item.url) {
       <a href="{{ item.url }}">{{ item.title }}</a>
     } @else if (item.ghUrl) {
@@ -8,7 +8,7 @@
       {{ item.title }}
     }
   </h3>
-  <h4>{{ item.subtitle }}</h4>
+  <h4 class="portfolio-item-subtitle">{{ item.subtitle }}</h4>
   <div class="techs">
     @for (tech of item.technologies; track tech) {
       <mitchs-tech-icon [tech]="tech"/>  

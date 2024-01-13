@@ -5,13 +5,22 @@
   &:hover {
     background-color: var(--clr-bg-secondary);
   }
+  &-title {
+    justify-content: start;
+    align-content: start;
+  }
+  &-subtitle {
+    justify-content: start;
+    align-content: start;
+
+  }
 }
 
 .techs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
