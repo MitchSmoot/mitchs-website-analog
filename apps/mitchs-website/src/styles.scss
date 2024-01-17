@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   display: flex;
   justify-content: center;
+  text-wrap: balance;
 }
 
 h1 {
@@ -171,6 +172,7 @@ p {
   font-size: var(--fs-text);
   padding: 0.5rem 0.2rem;
   letter-spacing: 1px;
+  text-wrap: pretty;
 }
 
 th {
