@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { NgtRxStore } from "angular-three";
 
 export interface PortfolioItem {
   title: string;
@@ -14,7 +13,7 @@ export interface PortfolioItem {
 }
 
 export enum Technology {
-  
+
 // Proper Languages
   Ruby = 1,
   JavaScript = 2,
@@ -35,7 +34,7 @@ export enum Technology {
   Bun = 103,
   SpringBoot = 104,
   Analog = 107,
-  
+
 // Microservice Frameworks
   Vite = 201,
   Nitro,
@@ -70,7 +69,7 @@ export enum Technology {
   Heroku,
   Vercel,
   AWS,
-  
+
 
 
 

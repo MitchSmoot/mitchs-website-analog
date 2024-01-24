@@ -1,15 +1,33 @@
 <section class="flex-container">
   <article>
     <h1>Mitch's Portfolio</h1>
+    <h4>
+      "You name it, I can build it"
+    <p>
+      Portfolio introductory paragraph here
+    </p>
     <h3>Available for Hire</h3>
+  </article>
+</section>
+<section>
+  <h2>Prior Experience</h2>
+  <article>
+    <div>
+      <h3>Tech Committee chairman: Timpanogos Grotto</h3>
+      <p>The Timpanogos Grotto is a chapter of the national Speleological Society, where I am managing all tech-related asects of the organization. Current focuses include leading a team in the development of the organization's new website. Additionally, we are developign methodologies for handheld radio usage in backcountry cave location efforts as well as vertical caving communication. Further operations include the development of custom devices for cave research, which may be built around an Arduino or Raspberry Pi microcontroller using embedded software I desined.</p>
+    </div>
+    <div>
+      <h3>Software Engineer: Telenotes</h3>
+      <p>Telenotes Description Here</p>
+    </div>
   </article>
 </section>
 <section>
   <article>
     @for (portfolioItem of portfolioItems; track portfolioItem.title) {
-    
+
       <mitchs-portfolio-item [item]="portfolioItem" />
-    
+
     }
   </article>
 </section>
@@ -40,7 +58,7 @@
       <li>ThreeJS</li>
       <li>HTML/SCSS</li>
       <li>Typescript</li>
-      <li>Git</li> 
+      <li>Git</li>
       <li>Supabase</li>
       <li>Nx</li>
     </ul>
