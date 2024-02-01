@@ -2,12 +2,14 @@ import { Component } from "@angular/core";
 import { HighchartsChartModule } from "highcharts-angular";
 import * as Highcharts from "highcharts";
 import HC_more from "highcharts/highcharts-more";
+import { TechIconComponent } from "./tech-icon.component";
+import { Technology } from "./portfolio.service";
 HC_more(Highcharts);
 
 @Component({
   selector: "mitchs-tech-chart",
   standalone: true,
-  imports: [HighchartsChartModule],
+  imports: [HighchartsChartModule, TechIconComponent],
   template: `
     <highcharts-chart
       [Highcharts]="Highcharts"
@@ -30,51 +32,53 @@ export default class TechChartComponent {
     },
     tooltip: {
       useHTML: true,
-      pointFormat: "<b>{point.name}:</b> {point.value}"
+      pointFormat: "<b>{point.name}</b>"
     },
     plotOptions: {
       packedbubble: {
-          minSize: '10%',
-          maxSize: '80%',
-          zMin: 0,
-          zMax: 1000 ,
-          layoutAlgorithm: {
-              gravitationalConstant: 0.05,
-              splitSeries: true,
-              seriesInteraction: false,
-              dragBetweenSeries: true,
-              parentNodeLimit: true
+        minSize: '10%',
+        maxSize: '80%',
+        zMin: 10,
+        zMax: 1000 ,
+        layoutAlgorithm: {
+          gravitationalConstant: 0.05,
+          splitSeries: true,
+          seriesInteraction: false,
+          dragBetweenSeries: true,
+          parentNodeLimit: true
+        },
+        dataLabels: {
+          enabled: true,
+          format: `
+          <span>{point.name}</span>
+          `,
+          filter: {
+            property: 'y',
+            operator: '>',
+            value: 49
           },
-          dataLabels: {
-              enabled: true,
-              format: '<p>{point.name}</p>',
-              filter: {
-                  property: 'y',
-                  operator: '>',
-                  value: 1
-              },
-              style: {
-                  color: 'black',
-                  textOutline: 'none',
-                  fontWeight: 'normal',
-                  fontSize: '16px'
-              }
+          style: {
+            color: 'black',
+            textOutline: 'none',
+            fontWeight: 'bold',
+            fontSize: '16px'
           }
+        }
       }
     },
     series: [{
       name: 'Programming Languages',
       data: [{
         name: 'Javascript',
-        value: 700
+        value: 700,
       },
       {
         name: 'Typescript',
-        value: 700
+        value: 700,
       },
       {
         name: 'HTML',
-        value: 500
+        value: 500,
       },
       {
         name: 'CSS',
@@ -82,7 +86,7 @@ export default class TechChartComponent {
       },
       {
         name: 'Sass',
-        value: 400
+        value: 300
       },
       {
         name: 'Ruby',
@@ -94,7 +98,7 @@ export default class TechChartComponent {
       },
       {
         name: 'Coffeescript',
-        value: 10
+        value: 15
       },
       {
         name: 'Java',
