@@ -47,15 +47,17 @@
 }
 
 .dark-toggle {
+  display: block;
   height: 2rem;
   width: 2rem;
   border: 2px solid red;
   border-radius: .5rem;
   background-color: greenyellow;
   color: black;
+  padding: 0;
   img {
     margin: auto;
-    width: 1.5rem;
-    height: 1.5rem;    
+    width: 1.25rem;
+    height: 1.25rem;    
   }
 }
