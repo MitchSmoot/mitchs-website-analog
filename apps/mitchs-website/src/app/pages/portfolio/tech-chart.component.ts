@@ -35,7 +35,7 @@ export default class TechChartComponent {
     plotOptions: {
       packedbubble: {
           minSize: '10%',
-          maxSize: '50%',
+          maxSize: '80%',
           zMin: 0,
           zMax: 1000 ,
           layoutAlgorithm: {
@@ -63,26 +63,26 @@ export default class TechChartComponent {
       }
     },
     series: [{
-      name: 'Languages',
+      name: 'Programming Languages',
       data: [{
         name: 'Javascript',
-        value: 1000
+        value: 700
       },
       {
         name: 'Typescript',
-        value: 1000
+        value: 700
       },
       {
         name: 'HTML',
-        value: 1000
+        value: 500
       },
       {
         name: 'CSS',
-        value: 900
+        value: 700
       },
       {
         name: 'Sass',
-        value: 800
+        value: 400
       },
       {
         name: 'Ruby',
@@ -90,15 +90,19 @@ export default class TechChartComponent {
       },
       {
         name: 'Zig',
-        value: 20
+        value: 100
       },
       {
         name: 'Coffeescript',
         value: 10
       },
       {
+        name: 'Java',
+        value: 50
+      },
+      {
         name: 'Lua',
-        value: 200
+        value: 160
       }]
     },
     {
@@ -109,7 +113,7 @@ export default class TechChartComponent {
       },
       {
         name: 'Analog',
-        value: 800
+        value: 700
       },
       {
         name: 'Rails',
@@ -117,7 +121,7 @@ export default class TechChartComponent {
       },
       {
         name: 'Vite',
-        value: 400
+        value: 300
       },
       {
         name: 'Spring',
@@ -127,12 +131,12 @@ export default class TechChartComponent {
     {
       name: 'Database',
       data: [{
-        name: 'Postgres',
-        value: 500
+        name: 'PostgreSql',
+        value: 300
       },
       {
         name: 'Supabase',
-        value: 200
+        value: 160
       },
       {
         name: 'Firebase',
@@ -151,58 +155,54 @@ export default class TechChartComponent {
       },
       {
         name: 'RxJs',
-        value: 100
+        value: 200
       },
       {
         name: 'NgRx',
-        value: 100
+        value: 200
       },
       {
         name: 'Git',
-        value: 500
+        value: 300
       },
       {
         name: 'Three.js',
-        value: 100
+        value: 200
       },
       {
-        name: 'Ruby',
-        value: 100
+        name: 'Bun',
+        value: 50
       },
       {
-        name: 'Lua',
-        value: 100
+        name: 'Highcharts',
+        value: 200
       }]
     },
     {
       name: 'Other',
       data: [{
         name: 'Vim/Neovim',
-        value: 200
+        value: 300
       },
       {
-        name: '',
-        value: 100
+        name: 'Arch Linux',
+        value: 160
       },
       {
-        name: 'NgRx',
-        value: 100
+        name: 'Linux',
+        value: 160
       },
       {
-        name: 'Git',
-        value: 500
+        name: 'Terminal',
+        value: 240
       },
       {
-        name: 'Three.js',
-        value: 100
+        name: 'Vercel',
+        value: 50
       },
       {
-        name: 'Ruby',
-        value: 100
-      },
-      {
-        name: 'Lua',
-        value: 100
+        name: 'Heroku',
+        value: 50
       }]
     }, 
   ]
