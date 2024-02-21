@@ -13,23 +13,37 @@
 <section>
   <h2>Prior Experience</h2>
   <article>
-    <div>
+    <div class="job-container">
       <h3>Tech Committee Chairman: Timpanogos Grotto</h3>
       <p>The Timpanogos Grotto is a chapter of the national Speleological Society, where I am managing all tech-related aspects of the organization. Current focuses include leading a team in the development of the organization's new website. Additionally, we are developing methodologies for handheld radio usage in backcountry cave location efforts as well as vertical caving communication. Further operations include the development of custom devices for cave research, which may be built around an Arduino or Raspberry Pi microcontroller using embedded software I designed.</p>
+      <div class="portfolio-item-container">
+        @for (portfolioItem of portfolioItemsTimpGrotto; track portfolioItem.title) {
+          <mitchs-portfolio-item [item]="portfolioItem"/>
+        }
+      </div>
     </div>
-    <div>
+    <div class="job-container">
       <h3>Software Engineer: Telenotes</h3>
       <p>Telenotes Description Here</p>
+      <div class="portfolio-item-container">
+        @for (portfolioItem of portfolioItemsTelenotes; track portfolioItem.title) {
+          <mitchs-portfolio-item [item]="portfolioItem"/>
+        }
+      </div>
+    </div>
+    <div class="job-container">
+      <h3>Freelance Work</h3>
     </div>
   </article>
 </section>
 <section>
   <article>
-    @for (portfolioItem of portfolioItems; track portfolioItem.title) {
+    <div class="portfolio-item-container">
+      @for (portfolioItem of portfolioItems; track portfolioItem.title) {
+        <mitchs-portfolio-item [item]="portfolioItem" />
+      }
+    </div>
 
-      <mitchs-portfolio-item [item]="portfolioItem" />
-
-    }
   </article>
 </section>
 

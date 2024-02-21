@@ -14,4 +14,6 @@ import TechChartComponent from './portfolio/tech-chart.component';
 })
 export default class PortfolioPageComponent {
   portfolioItems = inject(PortfolioService).portfolioItems;
+  portfolioItemsTelenotes = inject(PortfolioService).portfolioItemsTelenotes;
+  portfolioItemsTimpGrotto = inject(PortfolioService).portfolioItemsTimpGrotto;
 }

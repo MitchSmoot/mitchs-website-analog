@@ -1,5 +1,6 @@
 <div class="portfolio-item">
-  <h3 class="portfolio-item-title">
+  <div class="portfolio-item-content">
+    <h3 class="portfolio-item-title">
     @if (item.url) {
       <a href="{{ item.url }}">{{ item.title }}</a>
     } @else if (item.ghUrl) {
@@ -7,11 +8,18 @@
     } @else {
       {{ item.title }}
     }
-  </h3>
-  <h4 class="portfolio-item-subtitle">{{ item.subtitle }}</h4>
-  <div class="techs">
+    </h3>
+    @if (item.subtitle) {
+      <h4 class="portfolio-item-subtitle">{{ item.subtitle }}</h4>
+    }
+    @if (item.description) {
+      <p>{{ item.description }}</p>
+    }
+  </div>
+
+  <div class="portfolio-item-techs">
     @for (tech of item.technologies; track tech) {
-      <mitchs-tech-icon [tech]="tech"/>  
+      <mitchs-tech-icon [tech]="tech"/>
     }
   </div>
 

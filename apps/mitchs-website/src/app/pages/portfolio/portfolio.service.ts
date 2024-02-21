@@ -83,6 +83,47 @@ export enum Technology {
   providedIn: 'root'
 })
 export class PortfolioService {
+  public portfolioItemsTimpGrotto: PortfolioItem[] = [
+    {
+      title: "timpgrotto.org",
+      subtitle: "The Timpanogos Grotto Website",
+      url: "https://timpgrotto.org",
+      technologies: [
+        Technology.TypeScript,
+        Technology.HTML,
+        Technology.SCSS,
+        Technology.Nodejs,
+        Technology.Angular17Plus,
+        Technology.PostgreSQL
+      ]
+    },
+  ]
+  public portfolioItemsTelenotes: PortfolioItem[] = [
+    {
+      title: "Telenotes 2.0",
+      subtitle: "Improved Telenotes Rebuilt on NgRx",
+      technologies: [
+        Technology.TypeScript,
+        Technology.HTML,
+        Technology.SCSS,
+        Technology.Nodejs,
+        Technology.Angular,
+        Technology.NgRx,
+        Technology.RxJs,
+      ]
+    },
+    {
+      title: "Telenotes",
+      subtitle: "Original Telenotes App",
+      technologies: [
+        Technology.TypeScript,
+        Technology.HTML,
+        Technology.SCSS,
+        Technology.Nodejs,
+        Technology.Angular,
+      ]
+    },
+  ]
   public portfolioItems: PortfolioItem[] = [
     {
       title: "This Website",
@@ -123,6 +164,17 @@ export class PortfolioService {
         Technology.Nodejs,
         Technology.Angular17Plus,
         Technology.PostgreSQL
+      ]
+    },
+    {
+      title: "django-polls",
+      subtitle: "A simple polling website",
+      ghurl: "http://github.com/MitchSmoot/django-polls",
+      technologies: [
+        Technology.Python,
+        Technology.Django,
+        Technology.HTML,
+        Technology.CSS
       ]
     },
     {

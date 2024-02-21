@@ -1,7 +1,16 @@
+.job-container {
+  background-color: #222;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 
 .portfolio-item {
+  display: flex;
+  gap: 1rem;
   border-radius: .5rem;
   padding: 0.5rem;
+  background-color: #444;
+  min-height: 272px;
   &:hover {
     background-color: var(--clr-bg-secondary);
   }
@@ -12,19 +21,31 @@
   &-subtitle {
     justify-content: start;
     align-content: start;
-
+  }
+  &-content {
+    border-right: 1px solid #111;
+    padding-right: .5rem;
+  }
+  &-techs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    gap: 1rem;
+    margin-top: 1rem;
+    max-width: 176px;
   }
 }
 
-.techs {
+.portfolio-item-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
-  align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
 }
+
+
 
 .tech-icon {
   width: 48px;
