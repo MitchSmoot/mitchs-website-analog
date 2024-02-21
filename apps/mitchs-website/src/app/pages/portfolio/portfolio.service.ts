@@ -22,6 +22,7 @@ export enum Technology {
   Lua = 5,
   Zig = 6,
   CoffeeScript = 7,
+  Python = 8,
 
 // Template Languages
   HTML = 51,
@@ -34,12 +35,14 @@ export enum Technology {
   Bun = 103,
   SpringBoot = 104,
   Analog = 107,
+  Django = 108,
 
 // Microservice Frameworks
   Vite = 201,
   Nitro,
   Angular = 203,
   Angular17Plus = 204,
+  Astro = 205,
 
 // Databases
   PostgreSQL = 301,
@@ -96,6 +99,17 @@ export class PortfolioService {
         Technology.PostgreSQL,
         Technology.Supabase,
         Technology.Threejs,
+      ]
+    },
+    {
+      title: "estatelandscaping.org",
+      subtitle: "Freelance Project",
+      url: "http://estatelandscaping.org",
+      technologies: [
+        Technology.Astro,
+        Technology.HTML,
+        Technology.CSS,
+        Technology.Vercel
       ]
     },
     {

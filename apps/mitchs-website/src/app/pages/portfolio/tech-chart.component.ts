@@ -3,7 +3,6 @@ import { HighchartsChartModule } from "highcharts-angular";
 import * as Highcharts from "highcharts";
 import HC_more from "highcharts/highcharts-more";
 import { TechIconComponent } from "./tech-icon.component";
-import { Technology } from "./portfolio.service";
 HC_more(Highcharts);
 
 @Component({
@@ -105,6 +104,10 @@ export default class TechChartComponent {
         value: 50
       },
       {
+        name: 'Python',
+        value: 380
+      },
+      {
         name: 'Lua',
         value: 160
       }]
@@ -126,6 +129,14 @@ export default class TechChartComponent {
       {
         name: 'Vite',
         value: 300
+      },
+      {
+        name: 'Astro',
+        value: 350
+      },
+      {
+        name: 'Django',
+        value: 180
       },
       {
         name: 'Spring',
@@ -208,7 +219,7 @@ export default class TechChartComponent {
         name: 'Heroku',
         value: 50
       }]
-    }, 
+    },
   ]
 
   };

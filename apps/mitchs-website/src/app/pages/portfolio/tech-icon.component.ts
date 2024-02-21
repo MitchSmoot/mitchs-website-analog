@@ -38,6 +38,9 @@ export class TechIconComponent implements OnInit {
       case Technology.CoffeeScript:
         this.iconUrl = "assets/tech-icons/coffeescript.svg";
         break;
+      case Technology.Python:
+        this.iconUrl = "assets/tech-icons/python.svg";
+        break;
       case Technology.HTML:
         this.iconUrl = "assets/tech-icons/html.svg";
         break;
@@ -62,6 +65,9 @@ export class TechIconComponent implements OnInit {
       case Technology.Analog:
         this.iconUrl = "assets/tech-icons/analog.svg";
         break;
+      case Technology.Django:
+        this.iconUrl = "assets/tech-icons/django.svg";
+        break;
       case Technology.Vite:
         this.iconUrl = "assets/tech-icons/vite.svg";
         break;
@@ -85,6 +91,9 @@ export class TechIconComponent implements OnInit {
         break;
       case Technology.Angular17Plus:
         this.iconUrl = "assets/tech-icons/angular17plus.png";
+        break;
+      case Technology.Astro:
+        this.iconUrl = "assets/tech-icons/astro.svg";
         break;
       case Technology.Vim:
         this.iconUrl = "assets/tech-icons/vim.svg";
