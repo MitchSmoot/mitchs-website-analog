@@ -10,6 +10,7 @@ export interface PortfolioItem {
   company?: string;
   startDate?: Date;
   endDate?: Date;
+  role?: string;
 }
 
 export enum Technology {
@@ -88,6 +89,8 @@ export class PortfolioService {
       title: "timpgrotto.org",
       subtitle: "The Timpanogos Grotto Website",
       url: "https://timpgrotto.org",
+      description: "The Timpanogos Grotto website is a website for the Timpanogos Grotto, a local chapter of the National Speleological Society. The website is built with Angular 17+ and uses a PostgreSQL database.",
+      role: "Project Lead",
       technologies: [
         Technology.TypeScript,
         Technology.HTML,
