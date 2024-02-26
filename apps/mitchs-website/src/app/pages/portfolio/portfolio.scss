@@ -7,16 +7,15 @@
 .portfolio-item {
   display: flex;
   gap: 1rem;
-  border-radius: .5rem;
-  padding: 0.5rem;
-  background-color: #444;
   min-height: 272px;
   &:hover {
     background-color: var(--clr-bg-secondary);
   }
   &-title {
-    justify-content: start;
+    justify-content: center;
     align-content: start;
+    background-color: #333;
+    border-top-left-radius: .5rem;
   }
   &-subtitle {
     justify-content: start;
@@ -24,9 +23,14 @@
   }
   &-content {
     border-right: 1px solid #111;
+    background-color: #444;
+    padding: 0.5rem;
+    border-bottom-left-radius: .5rem;
     padding-right: .5rem;
+    max-width: 35rem;
   }
   &-techs {
+    background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
