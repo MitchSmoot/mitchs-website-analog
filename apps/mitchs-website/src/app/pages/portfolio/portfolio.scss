@@ -8,6 +8,7 @@
   display: flex;
   gap: 1rem;
   min-height: 272px;
+  border: 1px solid red;
   &:hover {
     background-color: var(--clr-bg-secondary);
   }
