@@ -2,11 +2,12 @@ import { ApiService } from './../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ThreeCanvasComponent } from '../shared/three/threejs.component';
 
 @Component({
   selector: 'mitchs-home',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ThreeCanvasComponent],
   templateUrl: './(home)/home.component.html',
   styleUrls: ['./(home)/home.component.scss'],
 })

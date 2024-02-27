@@ -1,7 +1,14 @@
-#entry-section {
+#entry-section-old {
   background-image: url(assets/img/banner1.jpg);
   background-size: cover;
   background-position-y: 30%;
+  padding: 2rem 0;
+  margin: 0;
+  max-height: auto;
+  min-height: 24rem;
+}
+
+#entry-section {
   padding: 2rem 0;
   margin: 0;
   max-height: auto;
