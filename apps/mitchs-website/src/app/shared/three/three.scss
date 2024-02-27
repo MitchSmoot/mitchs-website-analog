@@ -1,10 +1,4 @@
 .canvas {
-  height: 50rem;
-  width: auto;
-}
-
-.bg {
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: var(--clr-bg-primary);
+  z-index: 0;
 }

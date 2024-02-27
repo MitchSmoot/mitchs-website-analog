@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as THREE from 'three';
-import { g } from 'vitest/dist/suite-UrZdHRff';
 
 
 
@@ -28,7 +27,7 @@ export class ThreeCanvasComponent implements OnInit {
     camera.lookAt( scene.position );
 
     // renderer
-    const renderer = new THREE.WebGLRenderer();
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, });
     renderer.setSize( window.innerWidth, window.innerHeight );
 
     const geometryCore = new THREE.BoxGeometry( 2.95, 2.95, 2.95 );
@@ -40,9 +39,9 @@ export class ThreeCanvasComponent implements OnInit {
     const materialGreen = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
     const materialRed = new THREE.MeshBasicMaterial( { color: 0xff0000 } );
     const materialBlue = new THREE.MeshBasicMaterial( { color: 0x0000ff } );
-    const materialYellow = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
+    const materialYellow = new THREE.MeshBasicMaterial( { color: 0xddcc00 } );
+    const materialOrange = new THREE.MeshBasicMaterial( { color: 0xff7700 } );
     const materialWhite = new THREE.MeshBasicMaterial( { color: 0xffffff } );
-    const materialOrange = new THREE.MeshBasicMaterial( { color: 0xffa500 } );
 
     // Core
     const core = new THREE.Mesh( geometryCore, materialGrey );
@@ -294,11 +293,59 @@ export class ThreeCanvasComponent implements OnInit {
     yellowDownRight.position.y = -1;
     scene.add( yellowDownRight );
 
+    // White Face
+    const whiteCenter = new THREE.Mesh( geometryZ, materialWhite );
+    whiteCenter.position.z = -1.5;
+    scene.add( whiteCenter );
+
+    const whiteUp = new THREE.Mesh( geometryZ, materialWhite );
+    whiteUp.position.z = -1.5;
+    whiteUp.position.y = 1;
+    scene.add( whiteUp );
+
+    const whiteDown = new THREE.Mesh( geometryZ, materialWhite );
+    whiteDown.position.z = -1.5;
+    whiteDown.position.y = -1;
+    scene.add( whiteDown );
+
+    const whiteLeft = new THREE.Mesh( geometryZ, materialWhite );
+    whiteLeft.position.z = -1.5;
+    whiteLeft.position.x = 1;
+    scene.add( whiteLeft );
+
+    const whiteRight = new THREE.Mesh( geometryZ, materialWhite );
+    whiteRight.position.z = -1.5;
+    whiteRight.position.x = -1;
+    scene.add( whiteRight );
+
+    const whiteUpLeft = new THREE.Mesh( geometryZ, materialWhite );
+    whiteUpLeft.position.z = -1.5;
+    whiteUpLeft.position.x = 1;
+    whiteUpLeft.position.y = 1;
+    scene.add( whiteUpLeft );
+
+    const whiteUpRight = new THREE.Mesh( geometryZ, materialWhite );
+    whiteUpRight.position.z = -1.5;
+    whiteUpRight.position.x = -1;
+    whiteUpRight.position.y = 1;
+    scene.add( whiteUpRight );
+
+    const whiteDownLeft = new THREE.Mesh( geometryZ, materialWhite );
+    whiteDownLeft.position.z = -1.5;
+    whiteDownLeft.position.x = 1;
+    whiteDownLeft.position.y = -1;
+    scene.add( whiteDownLeft );
+
+    const whiteDownRight = new THREE.Mesh( geometryZ, materialWhite );
+    whiteDownRight.position.z = -1.5;
+    whiteDownRight.position.x = -1;
+    whiteDownRight.position.y = -1;
+    scene.add( whiteDownRight );
 
 
-
+    // Set camera position
+    
     camera.position.z = 8;
-
 
     function animate() {
       requestAnimationFrame( animate );
