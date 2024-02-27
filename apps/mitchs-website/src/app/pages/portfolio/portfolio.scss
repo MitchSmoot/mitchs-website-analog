@@ -6,7 +6,6 @@
 
 .portfolio-item {
   display: flex;
-  gap: 1rem;
   min-height: 272px;
   border: 1px solid red;
   &:hover {
@@ -38,8 +37,10 @@
     justify-content: start;
     align-content: start;
     gap: 1rem;
-    margin-top: 1rem;
-    max-width: 176px;
+    padding: 1rem;
+    max-width: 208px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 }
 
