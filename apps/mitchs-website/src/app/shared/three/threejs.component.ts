@@ -344,8 +344,8 @@ export class ThreeCanvasComponent implements OnInit {
 
 
     // Set camera position
-    
-    camera.position.z = 8;
+
+    camera.position.z = 7;
 
     function animate() {
       requestAnimationFrame( animate );
