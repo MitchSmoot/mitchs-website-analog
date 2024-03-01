@@ -157,22 +157,9 @@ export class PortfolioService {
       ]
     },
     {
-      title: "timpgrotto.org",
-      subtitle: "The Timpanogos Grotto Website",
-      url: "https://timpgrotto.org",
-      technologies: [
-        Technology.TypeScript,
-        Technology.HTML,
-        Technology.SCSS,
-        Technology.Nodejs,
-        Technology.Angular17Plus,
-        Technology.PostgreSQL
-      ]
-    },
-    {
       title: "django-polls",
       subtitle: "A simple polling website",
-      ghurl: "http://github.com/MitchSmoot/django-polls",
+      ghUrl: "http://github.com/MitchSmoot/django-polls",
       technologies: [
         Technology.Python,
         Technology.Django,
@@ -189,19 +176,6 @@ export class PortfolioService {
       ]
     },
     {
-      title: "Telenotes 2.0",
-      subtitle: "Improved Telenotes Rebuilt on NgRx",
-      technologies: [
-        Technology.TypeScript,
-        Technology.HTML,
-        Technology.SCSS,
-        Technology.Nodejs,
-        Technology.Angular,
-        Technology.NgRx,
-        Technology.RxJs,
-      ]
-    },
-    {
       title: "Smootimer (Javascript prototype)",
       subtitle: "Smootimer, rewritten in JavaScript",
       technologies: [
@@ -215,17 +189,6 @@ export class PortfolioService {
         Technology.Firebase,
         Technology.Firestore,
         Technology.Highcharts,
-      ]
-    },
-    {
-      title: "Telenotes",
-      subtitle: "Original Telenotes App",
-      technologies: [
-        Technology.TypeScript,
-        Technology.HTML,
-        Technology.SCSS,
-        Technology.Nodejs,
-        Technology.Angular,
       ]
     },
     {
@@ -275,51 +238,6 @@ export class PortfolioService {
       technologies: [
         Technology.Ruby,
         Technology.Terminal
-      ]
-    },
-    {
-      title: "Icon Test",
-      subtitle: "A Test of Icons",
-      technologies: [
-        Technology.Ruby,
-        Technology.JavaScript,
-        Technology.TypeScript,
-        Technology.Java,
-        Technology.Lua,
-        Technology.Zig,
-        Technology.CoffeeScript,
-        Technology.HTML,
-        Technology.CSS,
-        Technology.SCSS,
-        Technology.Rails,
-        Technology.Nodejs,
-        Technology.Bun,
-        Technology.SpringBoot,
-        Technology.Analog,
-        Technology.Vite,
-        Technology.Angular,
-        Technology.Angular17Plus,
-        Technology.PostgreSQL,
-        Technology.Firebase,
-        Technology.Firestore,
-        Technology.RxJs,
-        Technology.NgRx,
-        Technology.Highcharts,
-        Technology.Threejs,
-        Technology.Supabase,
-
-        Technology.Git,
-        Technology.GitHub,
-        Technology.Terminal,
-        Technology.Vim,
-        Technology.Neovim,
-        Technology.Linux,
-        Technology.ArchLinux,
-        Technology.Ubuntu,
-        Technology.Windows,
-        Technology.Heroku,
-        Technology.Vercel,
-        Technology.AWS,
       ]
     }
   ]
