@@ -105,6 +105,7 @@ export class PortfolioService {
     {
       title: "Telenotes 2.0",
       subtitle: "Improved Telenotes Rebuilt on NgRx",
+      description: "We rebuilt the telenotes app from scratch using improved architecture and best practices. I built multiple features from start to finish, all of which utilized NgRx patterns and state management.",
       technologies: [
         Technology.TypeScript,
         Technology.HTML,
@@ -118,6 +119,7 @@ export class PortfolioService {
     {
       title: "Telenotes",
       subtitle: "Original Telenotes App",
+      description: "Telenotes is a CRM application that features a speech to data service aimed at minimizing the amount of time sales reps have to spend on data entry, so they can focus more on sales. I was in a front-end role, building out several angular components, and helping out with rapid bugfixing and hotfixes.",
       technologies: [
         Technology.TypeScript,
         Technology.HTML,
