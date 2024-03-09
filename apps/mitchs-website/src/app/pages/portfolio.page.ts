@@ -16,4 +16,5 @@ export default class PortfolioPageComponent {
   portfolioItems = inject(PortfolioService).portfolioItems;
   portfolioItemsTelenotes = inject(PortfolioService).portfolioItemsTelenotes;
   portfolioItemsTimpGrotto = inject(PortfolioService).portfolioItemsTimpGrotto;
+  portfolioItemsFeatured = inject(PortfolioService).portfolioItemsFeatured;
 }

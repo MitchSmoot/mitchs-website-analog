@@ -129,11 +129,12 @@ export class PortfolioService {
       ]
     },
   ]
-  public portfolioItems: PortfolioItem[] = [
+  public portfolioItemsFeatured: PortfolioItem[] = [
     {
       title: "This Website",
       subtitle: "My New Personal Website",
       ghUrl: "https://github.com/MitchSmoot/mitchs-website-analog",
+      description: "My new website, created using the AnalogJS meta-framework. Contains multiple interactive elements based on many of my hobbies. Take a look around!",
       technologies: [
         Technology.TypeScript,
         Technology.HTML,
@@ -151,6 +152,7 @@ export class PortfolioService {
       title: "estatelandscaping.org",
       subtitle: "Freelance Project",
       url: "http://estatelandscaping.org",
+      description: "A freelance project for a landscaping company. I chose the Astro framework for this static website.",
       technologies: [
         Technology.Astro,
         Technology.HTML,
@@ -158,6 +160,8 @@ export class PortfolioService {
         Technology.Vercel
       ]
     },
+  ]
+  public portfolioItems: PortfolioItem[] = [
     {
       title: "django-polls",
       subtitle: "A simple polling website",

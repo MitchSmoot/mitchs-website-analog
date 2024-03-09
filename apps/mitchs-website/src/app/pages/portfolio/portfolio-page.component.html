@@ -31,7 +31,16 @@
         }
       </div>
     </div>
-    
+    <div class="job-container">
+      <h3>Featured Projects</h3>
+      <p>Personal and freelance projects that are deployed</p>
+      <div class="portfolio-item-container">
+        @for (portfolioItem of portfolioItemsFeatured; track portfolioItem.title) {
+          <mitchs-portfolio-item [item]="portfolioItem"/>
+        }
+      </div>
+    </div>
+
   </article>
 </section>
 <section>
