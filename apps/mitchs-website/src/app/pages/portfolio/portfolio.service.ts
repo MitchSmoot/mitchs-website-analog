@@ -166,6 +166,7 @@ export class PortfolioService {
       title: "django-polls",
       subtitle: "A simple polling website",
       ghUrl: "http://github.com/MitchSmoot/django-polls",
+      description: "This is a pollig website I created to get some experience with Python and the Django framework.",
       technologies: [
         Technology.Python,
         Technology.Django,
@@ -176,6 +177,7 @@ export class PortfolioService {
     {
       title: "nvim-config",
       subtitle: "My Neovim Configuration",
+      description: "These are my config files for Neovim, written in Lua. Includes plugins to enable file searching, LSP installation, syntax highlighting, and other features to bring the editor mroe in line with a modern IDE",
       technologies: [
         Technology.Neovim,
         Technology.Lua,
@@ -184,6 +186,7 @@ export class PortfolioService {
     {
       title: "Smootimer (Javascript prototype)",
       subtitle: "Smootimer, rewritten in JavaScript",
+      description: "This is a rewrite of my original Smootimer capstone project. This time, with a more relevant tech stack. This was also my first project utilizing Google Firebase and Firestore as the database."
       technologies: [
         Technology.TypeScript,
         Technology.HTML,
@@ -241,6 +244,7 @@ export class PortfolioService {
       title: "PenguinSim",
       subtitle: "A Penguin Simulator",
       ghUrl: "https://github.com/MitchSmoot/penguin-sim",
+      description: "Written in raw Ruby code and runs in the terminal. An interactive story where the user can create, name, and raise a pet penguin. The program tracks the penguin's vitals and happiness over time as the user makes decisions on how to take care of it.",
       technologies: [
         Technology.Ruby,
         Technology.Terminal
