@@ -186,7 +186,7 @@ export class PortfolioService {
     {
       title: "Smootimer (Javascript prototype)",
       subtitle: "Smootimer, rewritten in JavaScript",
-      description: "This is a rewrite of my original Smootimer capstone project. This time, with a more relevant tech stack. This was also my first project utilizing Google Firebase and Firestore as the database."
+      description: "This is a rewrite of my original Smootimer capstone project. This time, with a more relevant tech stack. This was also my first project utilizing Google Firebase and Firestore as the database.",
       technologies: [
         Technology.TypeScript,
         Technology.HTML,
@@ -203,6 +203,7 @@ export class PortfolioService {
     {
       title: "Smootimer (Original prototype)",
       subtitle: "Competitive puzzle timer app. My Capstone Project",
+      description: "A website for the speedcubing community. Members would time themselves solving puzzles such as the Rubik's cube, storing their times in a database. The app would show their times plotted on a chart, where they can view their improvement over time for each puzzle.",
       technologies: [
         Technology.Ruby,
         Technology.Rails,
@@ -216,6 +217,7 @@ export class PortfolioService {
     {
       title: "mitchsmoot.com (Original)",
       subtitle: "My Original Personal Website",
+      description: "My first major rails project. The original mitchsmoot.com.",
       technologies: [
         Technology.Ruby,
         Technology.Rails,
@@ -230,6 +232,7 @@ export class PortfolioService {
     {
       title: "Overtime App",
       subtitle: "A simple Overtime tracker",
+      description: "An early project I built as art of a Ruby on Rails course.",
       technologies: [
         Technology.Ruby,
         Technology.Rails,
