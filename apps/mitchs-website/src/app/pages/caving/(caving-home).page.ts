@@ -14,9 +14,8 @@ import GalleryService from './gallery/gallery.service';
     <h3>Exploring the Unknown, Protecting the Known</h3>
     <article>
       <p>
-        Welcome to my personal caving site! I am a caver based in the Western US, and I love exploring caves and learning about the underground world. I am also passionate about protecting caves and their unique environments.
+        Welcome to my personal caving site! I am a caver based in the Western US, and I love exploring caves and learning about the underground world. I am also passionate about protecting caves and their unique environments. I have been caving since 2022, as a member of the National Speleological Society. To learn more or join yourself, visit <a href="http://www.caves.org">Caves.org.</a>
       </p>
-  
     </article>
   </section>
 
