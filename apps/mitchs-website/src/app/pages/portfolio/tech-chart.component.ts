@@ -13,8 +13,9 @@ HC_more(Highcharts);
     <highcharts-chart
       [Highcharts]="Highcharts"
       [options]="chartOptions"
-      style="width: 100%; height: 1000px; display: block;"
+      style="width: 100%; height: 100%; display: block;"
     ></highcharts-chart>
+    
   `,
   styleUrls: ["./portfolio.scss"],
 })
@@ -24,6 +25,12 @@ export default class TechChartComponent {
     chart: {
       type: "packedbubble",
       height: "100%",
+    },
+    legend: {
+      bubbleLegend: {
+        enabled: true,
+      }
+
     },
     title: {
       text: 'Tech Experience',
