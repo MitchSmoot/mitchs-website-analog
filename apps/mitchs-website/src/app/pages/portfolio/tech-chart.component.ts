@@ -24,16 +24,16 @@ export default class TechChartComponent {
   chartOptions: Highcharts.Options = {
     chart: {
       type: "packedbubble",
-      height: "100%",
+      height: "60%",
     },
     legend: {
-      bubbleLegend: {
-        enabled: true,
-      }
-
+      align: "right",
+      verticalAlign: "top",
+      floating: true,
+      layout: "vertical",
     },
     title: {
-      text: 'Tech Experience',
+      text: "Mitch's Tech Experience",
       align: 'center'
     },
     tooltip: {
@@ -151,7 +151,7 @@ export default class TechChartComponent {
       }]
     },
     {
-      name: 'Database',
+      name: 'Databases',
       data: [{
         name: 'PostgreSql',
         value: 300
