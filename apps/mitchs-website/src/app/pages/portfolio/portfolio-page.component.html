@@ -4,18 +4,27 @@
     <h1>Mitch's Portfolio</h1>
     <h4>"You name it, I can build it"</h4>
     <p>
-      Portfolio introductory paragraph here
+      Pragmatic problem solver experienced in Angular development, who entered the programming field from a
+       background of 7 years of competitive puzzle solving. Mentally trained to find perfect solutions in the minum
+       possible amount of time, resultimg in a highle productive programmer that can get a lot done in little time.
+       Committed to never compromizing on code quality or best practives. Exceptional bug fixer. Loves a good challenge.
     </p>
-    <h3>Available for Hire</h3>
+    <h3>I am Currently Available for Hire</h3>
   </article>
 </section>
-<section><article><mitchs-tech-chart /></article></section>
+<section>
+  <article>
+    <p>This is a breakdown of my tech experience broken down into categories. Larger bubbles indicate techs I have spent a larger share of my time with.</p>
+    <mitchs-tech-chart />
+  </article>
+</section>
 <section>
   <h2>Prior Experience</h2>
-  <article>
     <div class="job-container">
-      <h3>Tech Committee Chairman: Timpanogos Grotto</h3>
-      <p>The Timpanogos Grotto is a chapter of the national Speleological Society, where I am managing all tech-related aspects of the organization. Current focuses include leading a team in the development of the organization's new website. Additionally, we are developing methodologies for handheld radio usage in backcountry cave location efforts as well as vertical caving communication. Further operations include the development of custom devices for cave research, which may be built around an Arduino or Raspberry Pi microcontroller using embedded software I designed.</p>
+      <article>
+        <h3>Tech Committee Chairman: Timpanogos Grotto</h3>
+        <p>The Timpanogos Grotto is a chapter of the national Speleological Society, where I am managing all tech-related aspects of the organization. Current focuses include leading a team in the development of the organization's new website. Additionally, we are developing methodologies for handheld radio usage in backcountry cave location efforts as well as vertical caving communication. Further operations include the development of custom devices for cave research, which may be built around an Arduino or Raspberry Pi microcontroller using embedded software I designed.</p>
+      </article>
       <div class="portfolio-item-container">
         @for (portfolioItem of portfolioItemsTimpGrotto; track portfolioItem.title) {
           <mitchs-portfolio-item [item]="portfolioItem"/>
@@ -41,10 +50,8 @@
       </div>
     </div>
 
-  </article>
 </section>
 <section>
-  <article>
     <h2>Other Projects</h2>
     <div class="portfolio-item-container">
       @for (portfolioItem of portfolioItems; track portfolioItem.title) {
@@ -52,7 +59,6 @@
       }
     </div>
 
-  </article>
 </section>
 
 
