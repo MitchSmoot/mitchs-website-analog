@@ -1,17 +1,10 @@
-#entry-section-old {
-  background-image: url(assets/img/banner1.jpg);
-  background-size: cover;
-  background-position-y: 30%;
-  padding: 2rem 0;
-  margin: 0;
-  max-height: auto;
-  min-height: 24rem;
-}
-
-#entry-section {
+.full-section {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-text {
@@ -33,6 +26,20 @@
   }
 }
 
+.mitch {
+  background-color: var(--clr-bg-secondary);
+  z-index: -1;
+
+  &-content {
+    z-index: 1;
+    &-text {
+      font-size: 2rem;
+    
+    }
+  }
+
+}
+
 section {
   padding: 2rem 2rem;
 }
@@ -52,7 +59,7 @@ section {
       var(--clr-bg-accent)
     );
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0;
   transform: skewY(var(--skew));
 }
@@ -86,6 +93,11 @@ section {
   .slide-reverse {
     animation: slideReverse 60s linear infinite;
   }
+}
+
+#cubing-container {
+  display: flex;
+  flex-direction: row;
 }
 
 button {

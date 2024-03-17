@@ -76,7 +76,7 @@ export default class TechChartComponent {
             color: 'black',
             textOutline: 'none',
             fontWeight: 'bold',
-            fontSize: '16px'
+            fontSize: '14px'
           }
         }
       }
