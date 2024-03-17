@@ -27,3 +27,18 @@ h2 {
 .img-container {
   width: 24%;
 }
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#tg-logo {
+  max-height: 120px;
+}
+
+#nss-logo {
+  max-height: 120px;
+}

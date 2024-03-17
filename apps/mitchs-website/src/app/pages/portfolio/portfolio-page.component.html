@@ -52,13 +52,14 @@
 
 </section>
 <section>
+  <div class="job-container">
     <h2>Other Projects</h2>
     <div class="portfolio-item-container">
       @for (portfolioItem of portfolioItems; track portfolioItem.title) {
         <mitchs-portfolio-item [item]="portfolioItem" />
       }
     </div>
-
+  </div>
 </section>
 
 

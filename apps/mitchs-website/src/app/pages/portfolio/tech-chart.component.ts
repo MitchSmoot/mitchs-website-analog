@@ -25,16 +25,25 @@ export default class TechChartComponent {
     chart: {
       type: "packedbubble",
       height: "60%",
+      backgroundColor: "transparent",
     },
     legend: {
       align: "right",
       verticalAlign: "top",
       floating: true,
       layout: "vertical",
+      backgroundColor: "var(--clr-bg-secondary)",
+      borderRadius: 5,
+      itemStyle: {
+        color: "var(--clr-text-primary)",
+      },
     },
     title: {
       text: "Mitch's Tech Experience",
-      align: 'center'
+      align: 'center',
+      style: {
+        color: "var(--clr-text-primary)",
+      }
     },
     tooltip: {
       useHTML: true,
