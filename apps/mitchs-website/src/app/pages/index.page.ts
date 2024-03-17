@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ThreeCanvasComponent } from '../shared/three/threejs.component';
+import CubingChartComponent from './(home)/cubing-chart.component';
 
 @Component({
   selector: 'mitchs-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, ThreeCanvasComponent],
+  imports: [CommonModule, RouterModule, ThreeCanvasComponent, CubingChartComponent],
   templateUrl: './(home)/home.component.html',
   styleUrls: ['./(home)/home.component.scss'],
 })
