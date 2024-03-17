@@ -14,6 +14,7 @@ import { ThreeCanvasComponent } from '../shared/three/threejs.component';
 export default class HomePageComponent implements OnInit{
   constructor(private apiService: ApiService) {}
 
+  currentYear = new Date().getFullYear();
   ngOnInit() {
     // this.getHello();
   }

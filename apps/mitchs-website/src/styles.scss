@@ -221,6 +221,16 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
 
 /* --------------- */
 /*   Animations    */
