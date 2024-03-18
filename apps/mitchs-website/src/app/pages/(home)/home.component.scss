@@ -26,20 +26,6 @@
   }
 }
 
-.mitch {
-  background-color: var(--clr-bg-secondary);
-  z-index: -1;
-
-  &-content {
-    z-index: 1;
-    &-text {
-      font-size: 2rem;
-    
-    }
-  }
-
-}
-
 section {
   padding: 2rem 2rem;
 }
@@ -59,7 +45,7 @@ section {
       var(--clr-bg-accent)
     );
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   inset: 0;
   transform: skewY(var(--skew));
 }
@@ -95,10 +81,28 @@ section {
   }
 }
 
-#cubing-container {
+.mitch {
+  z-index: -1;
+
+  &-content {
+    z-index: 1;
+    &-text {
+      font-size: 1.6rem;
+    
+    }
+  }
+
+}
+
+.cubing-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cubing-text {
+  width: 50%;
+  font-size: 1.6rem;
 }
 
 button {
