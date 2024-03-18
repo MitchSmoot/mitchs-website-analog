@@ -32,7 +32,7 @@ export default class CubingChartComponent {
       }
     },
     xAxis: {
-      categories: ["2x2", "3x3", "4x4", "Clock", "Megaminx"],
+      categories: ["2x2 Cube", "Skewb", "Pyraminx", "3x3 Cube", "Clock", "4x4 Cube", "Megaminx"],
       title: {
         text: "Puzzle"
       },
@@ -58,10 +58,10 @@ export default class CubingChartComponent {
     },
     series: [{
       name: "Best Average",
-      data: [6.76, 22.35, 99.37, 27.00, 101.21]
+      data: [6.76, 10.94, 16.11, 22.35, 27.00, 99.37, 101.21]
     }, {
-      name: "Best Single",
-      data: [3.59, 15.46, 84.66, 16.47, 98.51]
+      name: "Best Single", 
+      data: [3.59, 6.20, 11.11, 15.46, 16.47, 84.66, 98.51]
     }]
 
   };
