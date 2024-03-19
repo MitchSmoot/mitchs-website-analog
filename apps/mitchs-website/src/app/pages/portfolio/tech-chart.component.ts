@@ -53,7 +53,7 @@ export default class TechChartComponent {
       packedbubble: {
         minSize: '10%',
         maxSize: '80%',
-        zmin: 10,
+        zMin: 10,
         zMax: 1000,
         layoutAlgorithm: {
           gravitationalConstant: 0.05,

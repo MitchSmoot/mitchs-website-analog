@@ -9,7 +9,7 @@ import { galleryImage } from "../../pages/caving/gallery/gallery.service";
   templateUrl: "./media-scroller.component.html",
   styleUrls: ["./media-scroller.component.scss"],
 })
-export class MediaScrollerComponent {
+export default class MediaScrollerComponent {
 
   @Input() media: galleryImage[] = [];
 
