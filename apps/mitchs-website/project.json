@@ -2,6 +2,7 @@
   "name": "mitchs-website",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
+  "type": "module",
   "sourceRoot": "apps/mitchs-website/src",
   "targets": {
     "build": {

@@ -8,7 +8,6 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 export default defineConfig(({ mode }) => {
   return {
     publicDir: 'src/public',
-
     build: {
       target: ['es2020'],
     },
@@ -30,6 +29,11 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       'import.meta.vitest': mode !== 'production',
+    },
+    server: {
+      fs: {
+        allow: ['.'],
+      },
     },
   };
 });
