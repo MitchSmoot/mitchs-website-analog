@@ -53,8 +53,8 @@ export default class TechChartComponent {
       packedbubble: {
         minSize: '10%',
         maxSize: '80%',
-        zMin: 10,
-        zMax: 1000 ,
+        zmin: 10,
+        zMax: 1000,
         layoutAlgorithm: {
           gravitationalConstant: 0.05,
           splitSeries: true,
@@ -82,6 +82,7 @@ export default class TechChartComponent {
       }
     },
     series: [{
+      type: 'packedbubble',
       name: 'Programming Languages',
       data: [{
         name: 'Javascript',
@@ -129,6 +130,7 @@ export default class TechChartComponent {
       }]
     },
     {
+      type: 'packedbubble',
       name: 'Frameworks',
       data: [{
         name: 'Angular',
@@ -160,6 +162,7 @@ export default class TechChartComponent {
       }]
     },
     {
+      type: 'packedbubble',
       name: 'Databases',
       data: [{
         name: 'PostgreSql',
@@ -179,6 +182,7 @@ export default class TechChartComponent {
       }]
     },
     {
+      type: 'packedbubble',
       name: 'Technologies',
       data: [{
         name: 'Node.js',
@@ -210,6 +214,7 @@ export default class TechChartComponent {
       }]
     },
     {
+      type: 'packedbubble',
       name: 'Other',
       data: [{
         name: 'Vim/Neovim',
