@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, Input } from "@angular/core";
+import { Component, input } from "@angular/core";
 import { galleryImage } from "../../pages/caving/gallery/gallery.service";
 
 @Component({
@@ -10,7 +10,6 @@ import { galleryImage } from "../../pages/caving/gallery/gallery.service";
   styleUrls: ["./media-scroller.component.scss"],
 })
 export default class MediaScrollerComponent {
-
-  @Input() media: galleryImage[] = [];
+  media = input<galleryImage[]>();
 
 }

@@ -1,29 +1,29 @@
 <div class="portfolio-item">
   <div class="portfolio-item-content">
     <h3 class="portfolio-item-title">
-    @if (item?.url) {
-      <a href="{{ item?.url }}">{{ item?.title }}</a>
-    } @else if (item?.ghUrl) {
-      <a href="{{ item?.ghUrl }}">{{ item?.title }}</a>
+    @if (item()?.url) {
+      <a href="{{ item()?.url }}">{{ item()?.title }}</a>
+    } @else if (item()?.ghUrl) {
+      <a href="{{ item()?.ghUrl }}">{{ item()?.title }}</a>
     } @else {
-      {{ item?.title }}
+      {{ item()?.title }}
     }
     </h3>
     <div class="portfolio-item-text-box">
-      @if (item?.subtitle) {
-        <h4 class="portfolio-item-subtitle">{{ item?.subtitle }}</h4>
+      @if (item()?.subtitle) {
+        <h4 class="portfolio-item-subtitle">{{ item()?.subtitle }}</h4>
       }
-      @if (item?.role) {
-        <p>Role: {{ item?.role }}</p>
+      @if (item()?.role) {
+        <p>Role: {{ item()?.role }}</p>
       }
-      @if (item?.description) {
-        <p>{{ item?.description }}</p>
+      @if (item()?.description) {
+        <p>{{ item()?.description }}</p>
       }
     </div>
   </div>
 
   <div class="portfolio-item-techs">
-    @for (tech of item?.technologies; track tech) {
+    @for (tech of item()?.technologies; track tech) {
       <mitchs-tech-icon [tech]="tech"/>
     }
   </div>

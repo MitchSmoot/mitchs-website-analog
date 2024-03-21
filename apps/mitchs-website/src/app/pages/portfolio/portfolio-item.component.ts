@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { PortfolioItem } from './portfolio.service';
 import { TechIconComponent } from './tech-icon.component';
 
@@ -10,5 +10,5 @@ import { TechIconComponent } from './tech-icon.component';
   styleUrls: ['./portfolio.scss'],
 })
 export default class PortfolioItemComponent {
-  @Input() item: PortfolioItem | undefined = undefined;
+  item = input<PortfolioItem>();
 }
