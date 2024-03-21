@@ -15,7 +15,7 @@
     <a HideInProd routerLink="/radio" routerLinkActive="active">Radio</a>
   </div>
   <div class="nav-links links-right">
-    <a routerLink="/login" routerLinkActive="active">Sign In</a>
+    <a HideInProd routerLink="/login" routerLinkActive="active">Sign In</a>
     <button class="dark-toggle" (click)="darkModeToggle()">
       @if (!this.isDarkModeActive()) {
         <img src="assets/svg/dark-mode.svg" />
