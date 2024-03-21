@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import GalleryService from "../gallery.service";
+import GalleryService from "./gallery.service";
 import { NgOptimizedImage } from '@angular/common'
 
 @Component({

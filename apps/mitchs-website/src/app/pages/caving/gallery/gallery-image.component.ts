@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import GalleryService, { galleryImage } from "../gallery.service";
+import GalleryService, { galleryImage } from "./gallery.service";
 import { NgOptimizedImage } from '@angular/common'
 
 

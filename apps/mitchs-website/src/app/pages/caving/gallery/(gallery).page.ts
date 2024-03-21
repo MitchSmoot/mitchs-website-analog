@@ -1,21 +1,20 @@
-import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 import GalleryService, { galleryImage } from "./gallery.service";
-import GalleryImageComponent from "./gallery-image/gallery-image.component";
-import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.component";
+import GalleryImageComponent from "./gallery-image.component";
+import GalleryImageDetailComponent from "./gallery-image-detail.component";
 
 @Component({
   selector: 'cave-gallery-page',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, GalleryImageComponent, GalleryImageDetailComponent],
+  imports: [RouterOutlet, GalleryImageComponent, GalleryImageDetailComponent],
   template: `
     <div id="gallery-container">
       @if (this.focusedImage()) {
         <mitchs-gallery-image-detail/>
       }
       <div class="flex-container">
-        @for (image of images; track image.title) {
+        @for (image of images; track image) {
           <mitchs-gallery-image [image]="image"/>
         }
       </div>
@@ -25,7 +24,7 @@ import GalleryImageDetailComponent from "./gallery-image/gallery-image-detail.co
 
 })
 export default class CaveGalleryPageComponent {
-constructor(private galleryService: GalleryService) {}
+galleryService = inject(GalleryService)
 images: galleryImage[] = this.galleryService.get();
 focusedImage = this.galleryService.focusedImage;
 }

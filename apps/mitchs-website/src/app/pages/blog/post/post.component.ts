@@ -1,4 +1,4 @@
-import { HideinProdDirective } from './../../../shared/hide-in-prod.directive';
+import { HideinProdDirective } from '../../../shared/hide-in-prod.directive';
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PostService } from '../../../services/blog/post.service';

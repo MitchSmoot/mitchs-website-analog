@@ -1,0 +1,11 @@
+<script lang="ts">
+  defineMetadata({
+    selector: 'test',
+  });
+</script>
+
+<template>
+  <h1>
+    Test Works!
+  </h1>
+</template>
