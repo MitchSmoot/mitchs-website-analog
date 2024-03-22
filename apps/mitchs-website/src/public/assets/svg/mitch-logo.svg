@@ -36,18 +36,9 @@
   <g
      inkscape:label="layer-bg"
      inkscape:groupmode="layer"
+     fill="#595"
      id="layer1">
     <rect
-       style="display:none;fill:#333333;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
-       id="rect1277"
-       width="141.42136"
-       height="141.42136"
-       x="141.42136"
-       y="-141.42136"
-       transform="rotate(45)"
-       inkscape:label="rectM" />
-    <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-15"
        width="42.426411"
        height="42.426411"
@@ -58,7 +49,6 @@
        transform="rotate(45)"
        inkscape:label="rect9" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-37"
        width="42.426411"
        height="42.426411"
@@ -69,7 +59,6 @@
        transform="rotate(45)"
        inkscape:label="rect8" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-41"
        width="42.426411"
        height="42.426411"
@@ -80,7 +69,6 @@
        transform="rotate(45)"
        inkscape:label="rect7" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-56"
        width="42.426411"
        height="42.426411"
@@ -91,7 +79,6 @@
        transform="rotate(45)"
        inkscape:label="rect6" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-1"
        width="42.426411"
        height="42.426411"
@@ -102,7 +89,6 @@
        transform="rotate(45)"
        inkscape:label="rect5" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-3"
        width="42.426411"
        height="42.426411"
@@ -113,7 +99,6 @@
        inkscape:label="rect4"
        transform="rotate(45)" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-5"
        width="42.426411"
        height="42.426411"
@@ -124,7 +109,6 @@
        transform="rotate(45)"
        inkscape:label="rect3" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333-4"
        width="42.426411"
        height="42.426411"
@@ -135,7 +119,6 @@
        transform="rotate(45)"
        inkscape:label="rect2" />
     <rect
-       style="fill:#666666;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        id="rect1333"
        width="42.426411"
        height="42.426411"
@@ -150,6 +133,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer-Text"
+     fill="#ddd"
      style="display:inline">
     <path
        d="M 350.65639,71.811024 H 276.463 l -19.50614,20.707107 9.05959,-34.691359 h 115.43763 l 18.69814,-20.034692 -9.11473,34.018944 h -24.33701 l -24.44586,91.230466 h -16.04266 z"
@@ -186,7 +170,7 @@
        inkscape:label="dash" />
     <text
        xml:space="preserve"
-       style="display:inline;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3333px;font-family:Kanit;-inkscape-font-specification:'Kanit Bold';fill:#000000;stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
+       style="display:inline;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3333px;font-family:Kanit;-inkscape-font-specification:'Kanit Bold';stroke:#5fb73b;stroke-width:0;stroke-opacity:0.6"
        x="34.041397"
        y="92.630981"
        id="text1614"
