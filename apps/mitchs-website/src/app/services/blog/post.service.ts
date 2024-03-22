@@ -30,7 +30,6 @@ export class PostService {
       if (response.error) {
         throw response.error
       } else {
-      console.log(response)
       this.#posts.set(response.data)
       this.#isLoading.set(false)
       }

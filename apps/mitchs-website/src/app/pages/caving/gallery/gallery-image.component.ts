@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, inject } from "@angular/core";
 import GalleryService, { galleryImage } from "./gallery.service";
 import { NgOptimizedImage } from '@angular/common'
 
@@ -18,8 +18,7 @@ import { NgOptimizedImage } from '@angular/common'
 })
 export default class GalleryImageComponent {
   @Input() image: galleryImage = {} as galleryImage;
-  constructor(private galleryService: GalleryService) {}
-
+  galleryService = inject(GalleryService)
   onImageClick() {
     this.galleryService.focusedImage.set(this.image);
   }
