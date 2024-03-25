@@ -1,0 +1,63 @@
+{
+  "name": "mitchs-website",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "./mitchs-website/src",
+  "targets": {
+    "build": {
+      "executor": "@analogjs/platform:vite",
+      "outputs": [
+        "{options.outputPath}",
+        "{workspaceRoot}/dist/mitchs-website/.nitro",
+        "{workspaceRoot}/dist/mitchs-website/ssr",
+        "{workspaceRoot}/dist/mitchs-website/analog"
+      ],
+      "options": {
+        "main": "mitchs-website/src/main.ts",
+        "configFile": "mitchs-website/vite.config.ts",
+        "outputPath": "dist/mitchs-website/client",
+        "tsConfig": "mitchs-website/tsconfig.app.json"
+      },
+      "defaultConfiguration": "production",
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "sourcemap": false,
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@analogjs/platform:vite-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mitchs-website:build",
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mitchs-website:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "mitchs-website:build:production"
+        }
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "mitchs-website:build"
+      }
+    },
+    "test": {
+      "executor": "@analogjs/platform:vitest",
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
+    }
+  },
+  "tags": []
+}
