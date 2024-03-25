@@ -23,6 +23,7 @@ export default class CubingChartComponent {
   chartOptions: Highcharts.Options = {
     chart: {
       type: "bar",
+      borderRadius: 16
     },
     title: {
       text: "Cube Solve Times",
