@@ -53,8 +53,7 @@ export default class TechChartComponent {
       packedbubble: {
         minSize: '10%',
         maxSize: '80%',
-        zMin: 10,
-        zMax: 1000,
+
         layoutAlgorithm: {
           gravitationalConstant: 0.05,
           splitSeries: true,
@@ -76,7 +75,7 @@ export default class TechChartComponent {
             color: 'black',
             textOutline: 'none',
             fontWeight: 'bold',
-            fontSize: '14px'
+            fontSize: '13px'
           }
         }
       }
