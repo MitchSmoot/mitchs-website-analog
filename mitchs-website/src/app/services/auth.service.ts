@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { SupabaseService } from '../supabase/supabase.service';
+import { SupabaseService } from './supabase.service';
 import { User } from '@supabase/supabase-js';
 
 @Injectable({
