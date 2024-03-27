@@ -31,9 +31,9 @@
     "mermaid": "^10.2.4",
     "prismjs": "^1.29.0",
     "rxjs": "~7.5.6",
+    "superjson": "^2.2.1",
     "three": "^0.159.0",
     "three-stdlib": "^2.28.7",
-    "superjson": "^2.2.1",
     "tslib": "^2.4.0",
     "zod": "^3.21.4",
     "zone.js": "~0.14.0"
@@ -48,6 +48,7 @@
     "@nx/eslint": "^18.0.0",
     "@nx/vite": "^18.0.0",
     "@nx/workspace": "18.1.2",
+    "@types/three": "^0.162.0",
     "drizzle-kit": "^0.20.6",
     "eslint": "8.48.0",
     "eslint-config-prettier": "^9.0.0",
