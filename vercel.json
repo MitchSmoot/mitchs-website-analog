@@ -1,4 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "nx build mitchs-website"
+  "buildCommand": "nx build mitchs-website",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
