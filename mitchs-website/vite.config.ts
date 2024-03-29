@@ -24,12 +24,7 @@ export default defineConfig(({ mode }) => {
       analog({
         ssr: false,
         nitro: {
-          preset: 'vercel',
-          routeRules: {
-            '/': {
-              prerender: false,
-            }
-          }
+          preset: 'vercel'
         }
       }),
       nxViteTsPaths(),
