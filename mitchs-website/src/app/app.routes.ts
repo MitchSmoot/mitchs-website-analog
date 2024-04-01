@@ -5,10 +5,15 @@ import PortfolioPageComponent from "./pages/portfolio.page";
 import BlogPageComponent from "./pages/blog.page";
 import RadioPageComponent from "./pages/radio.page";
 import PageNotFoundComponent from "./pages/[...page-note-found].page";
+import CaveGalleryPageComponent from "./pages/caving/gallery/(gallery).page";
+import CavingHomePageComponent from "./pages/caving/(caving-home).page";
 
 export const appRoutes: Route[] = [
   { path: '', component: HomePageComponent },
-  { path: 'caving', component: CavingPageComponent },
+  { path: 'caving', component: CavingPageComponent, children: [
+    { path: '', component: CavingHomePageComponent },
+    { path: 'gallery', component: CaveGalleryPageComponent }
+  ]},
   { path: 'portfolio', component: PortfolioPageComponent },
   { path: 'blog', component: BlogPageComponent},
   { path: 'radio', component: RadioPageComponent },
