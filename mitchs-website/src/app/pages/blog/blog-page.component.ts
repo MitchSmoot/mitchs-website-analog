@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PostFormComponent } from './blog/post/post-form/post-form.component';
-import { PostService } from '../services/post.service';
-import { PostComponent } from './blog/post/post.component';
+import { PostFormComponent } from './post/post-form/post-form.component';
+import { PostService } from '../../services/post.service';
+import { PostComponent } from './post/post.component';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'mitchs-website-analog-blog-page',
   standalone: true,
   imports: [CommonModule, PostFormComponent, PostComponent, RouterOutlet],
-  templateUrl: './blog/blog-page.component.html',
-  styleUrls: ['./blog/blog-styles.scss']})
+  templateUrl: 'blog-page.component.html',
+  styleUrls: ['blog-styles.scss']})
 export default class BlogPageComponent implements OnInit {
 
   constructor(private postService: PostService) {}
