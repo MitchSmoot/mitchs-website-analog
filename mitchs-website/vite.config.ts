@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
     root: __dirname,
     publicDir: 'src/public',
     build: {
-      outDir: '../dist/mitchs-website/client',
+      outDir: './dist/mitchs-website/client',
       reportCompressedSize: true,
       commonjsOptions: { transformMixedEsModules: true },      
       target: ['es2020'],
