@@ -1,18 +1,18 @@
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ThreeCanvasComponent } from '../shared/three/threejs.component';
-import CubingChartComponent from './(home)/cubing-chart.component';
+import { ThreeCanvasComponent } from '../../shared/three/threejs.component';
+import CubingChartComponent from './cubing-chart.component';
 
 @Component({
   selector: 'mitchs-home',
   standalone: true,
   imports: [CommonModule, RouterModule, ThreeCanvasComponent, CubingChartComponent],
-  templateUrl: './(home)/home.component.html',
-  styleUrls: ['./(home)/home.component.scss'],
+  templateUrl: 'home.component.html',
+  styleUrls: ['home.component.scss'],
 })
-export default class HomePageComponent implements OnInit{
+export default class HomeComponent implements OnInit{
   constructor(private apiService: ApiService) {}
 
   currentYear = new Date().getFullYear();

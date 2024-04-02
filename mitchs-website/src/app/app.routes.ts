@@ -1,5 +1,5 @@
 import { Route } from "@angular/router";
-import HomePageComponent from "./pages/index.page";
+import HomeComponent from "./pages/home/home.component";
 import CavingPageComponent from "./pages/caving.page";
 import PortfolioPageComponent from "./pages/portfolio.page";
 import BlogPageComponent from "./pages/blog.page";
@@ -9,7 +9,7 @@ import CaveGalleryPageComponent from "./pages/caving/gallery/(gallery).page";
 import CavingHomePageComponent from "./pages/caving/(caving-home).page";
 
 export const appRoutes: Route[] = [
-  { path: '', component: HomePageComponent },
+  { path: '', component: HomeComponent },
   { path: 'caving', component: CavingPageComponent, children: [
     { path: '', component: CavingHomePageComponent },
     { path: 'gallery', component: CaveGalleryPageComponent }
