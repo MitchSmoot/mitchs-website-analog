@@ -8,7 +8,7 @@ import GalleryService from './gallery/gallery.service';
 @Component({
     selector: 'mitchs-caving-homepage',
     standalone: true,
-    templateUrl: './(caving-home).component.html',
+    templateUrl: './caving-home.component.html',
     imports: [CommonModule, RouterModule, MediaScrollerComponent],
     styleUrls: ['./caving.scss']
 })

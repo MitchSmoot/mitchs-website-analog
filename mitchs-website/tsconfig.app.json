@@ -10,7 +10,6 @@
   "include": [
     "src/**/*.d.ts",
     "src/app/routes/**/*.ts",
-    "src/app/pages/**/*.page.ts"
-, "src/app/pages/home/home.component.ts"  ],
+    "src/app/pages/**/*.page.ts"],
   "exclude": ["**/*.test.ts", "**/*.spec.ts"]
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HideinProdDirective } from '../shared/hide-in-prod.directive';
+import { HideinProdDirective } from '../../shared/hide-in-prod.directive';
 
 @Component({
   selector: 'mitchs-caving-page',
@@ -17,6 +17,6 @@ import { HideinProdDirective } from '../shared/hide-in-prod.directive';
 
   <router-outlet></router-outlet>
   `,
-  styleUrls: ['./caving/caving.scss'],
+  styleUrls: ['caving.scss'],
 })
-export default class CavingPageComponent {}
+export default class CavingComponent {}
