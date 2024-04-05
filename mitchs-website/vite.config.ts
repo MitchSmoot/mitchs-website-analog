@@ -10,8 +10,11 @@ export default defineConfig(({ mode }) => {
   return {
     root: __dirname,
     publicDir: 'src/public',
+    ssr: {
+      noExternal: ['@analogjs/trpc','@trpc/server','three'],
+    },
     build: {
-      outDir: '../dist/mitchs-website/client',
+      outDir: '../dist/./mitchs-website/client',
       reportCompressedSize: true,
       commonjsOptions: { transformMixedEsModules: true },      
       target: ['es2020'],
@@ -28,7 +31,12 @@ export default defineConfig(({ mode }) => {
     },    
     plugins: [
       analog({
-        ssr: false,
+        static: true,
+        prerender: {
+          routes: [
+            '/'
+          ],
+        },
         nitro: {
           preset: 'vercel'
         }
