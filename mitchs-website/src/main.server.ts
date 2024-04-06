@@ -14,9 +14,11 @@ if (import.meta.env.PROD) {
 const bootstrap = () => bootstrapApplication(AppComponent);
 
 export default async function render(url: string, document: string) {
-  const html = await renderApplication(bootstrap, {
-    document,
-    url,
-  });
-  return html;
+  // use client-side rendering only
+  return document;
+  // const html = await renderApplication(bootstrap, {
+  //   document,
+  //   url,
+  // });
+  // return html;
 }
