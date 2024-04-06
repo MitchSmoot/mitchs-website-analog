@@ -10,9 +10,6 @@ export default defineConfig(({ mode }) => {
   return {
     root: __dirname,
     publicDir: 'src/public',
-    ssr: {
-      noExternal: ['@analogjs/trpc','@trpc/server','three'],
-    },
     build: {
       outDir: '../dist/./mitchs-website/client',
       reportCompressedSize: true,
