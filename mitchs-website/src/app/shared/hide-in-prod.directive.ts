@@ -1,6 +1,6 @@
 import { Directive, ElementRef, Renderer2, OnInit } from '@angular/core';
 
-const isProd = import.meta.env.VITE_MODE === "Prod";
+const isProd = import.meta.env.VITE_VERCEL_ENV === "production";
 
 @Directive({ selector: '[HideInProd]', standalone: true })
 export class HideinProdDirective implements OnInit {

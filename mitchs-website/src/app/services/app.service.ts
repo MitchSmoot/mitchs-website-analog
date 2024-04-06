@@ -10,7 +10,7 @@ export class AppService {
   private document = inject(DOCUMENT);
 
   public darkMode = signal<boolean>(JSON.parse(localStorage.getItem('darkMode') ?? 'true'));
-  public environment = signal<string>(import.meta.env['VITE_MODE']);
+  public environment = signal<string>(import.meta.env['VITE_VERCEL_ENV']);
   
   updateDarkClassInHTML = effect(() => {
     this.darkMode() ?

@@ -16,7 +16,7 @@ export default class BlogPageComponent implements OnInit {
   constructor(private postService: PostService) {}
   postsLoading = this.postService.isLoading
   posts = this.postService.posts
-  devModeIsActive: boolean = (import.meta.env.VITE_MODE == "Dev")
+  devModeIsActive: boolean = (import.meta.env.VITE_VERCEL_ENV == "development")
   showPostForm = false;
 
   ngOnInit() {
