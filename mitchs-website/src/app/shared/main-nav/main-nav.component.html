@@ -1,14 +1,11 @@
 <header id="main-nav">
-  <div class="nav-left">
+  <div class="nav-links links-center">
     <div routerLink="" routerLinkActive="active">
-      <img src="assets/svg/mitch-logo.svg" class="mitch-logo">
+      <img src="assets/svg/mitch-logo-text-only.svg" class="mitch-logo">
       @if (!(this.environment() === "production")) {
         <P>{{this.environment()}}</P>
       }
     </div>
-  </div>
-  <div class="nav-links links-center">
-    <a routerLink="" routerLinkActive="active">Mitch Smoot</a>
     <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
     <a routerLink="/blog" routerLinkActive="active">Blog</a>
     <a routerLink="/caving" routerLinkActive="active">Caving</a>
