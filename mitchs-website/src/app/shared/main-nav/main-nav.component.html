@@ -2,10 +2,10 @@
   <div class="nav-left">
     <div routerLink="" routerLinkActive="active">
       <img src="assets/svg/mitch-logo.svg" class="mitch-logo">
+      @if (!(this.environment() === "production")) {
+        <P>{{this.environment()}}</P>
+      }
     </div>
-    @if (!(this.environment() === "Prod")) {
-      <P>{{this.environment()}}</P>
-    }
   </div>
   <div class="nav-links links-center">
     <a routerLink="" routerLinkActive="active">Mitch Smoot</a>
