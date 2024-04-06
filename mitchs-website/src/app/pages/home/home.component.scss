@@ -104,6 +104,9 @@ section {
   width: 50%;
   font-size: 1.6rem;
 }
+.cubing-chart {
+  width: 50%;
+}
 
 button {
   background-color: greenyellow;
@@ -174,3 +177,18 @@ button {
   margin-top: 93.75vh;
 }
 
+@media (max-width: 899px) {
+  .cubing-container {
+    flex-direction: column;
+  }
+  .cubing-text {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .cubing-chart {
+    width: 100%;
+  }
+  .mitch-content-text {
+    font-size: 1.4rem;
+  }
+}
