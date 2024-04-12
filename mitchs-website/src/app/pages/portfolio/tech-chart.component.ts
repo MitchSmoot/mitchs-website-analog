@@ -28,8 +28,8 @@ export default class TechChartComponent {
       backgroundColor: "transparent",
     },
     legend: {
-      align: "right",
-      verticalAlign: "top",
+      align: "left",
+      verticalAlign: "bottom",
       floating: true,
       layout: "vertical",
       backgroundColor: "var(--clr-bg-secondary)",

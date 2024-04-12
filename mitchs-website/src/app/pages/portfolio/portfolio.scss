@@ -67,3 +67,15 @@
   }
 }
 
+@media (max-width: 599px) {
+  .job-container {
+    margin-inline: 0;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+    &-techs {
+      width: inherit;
+    }
+  }
+}
