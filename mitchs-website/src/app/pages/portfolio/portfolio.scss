@@ -42,7 +42,7 @@
     align-content: start;
     gap: 1rem;
     padding: .5rem;
-    width: 200px;
+    max-width: 200px;
     border-top: .5rem solid #444;
     border-right: .5rem solid #444;
     border-bottom: .5rem solid #444;
@@ -82,7 +82,7 @@
       border-top-right-radius: 1rem;
     }
     &-techs {
-      width: 100%;
+      max-width: 100%;
       border-left: .5rem solid #444;
       border-bottom-left-radius: 1rem;
       border-top-right-radius: 0;
