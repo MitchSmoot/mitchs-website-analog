@@ -55,7 +55,8 @@ section {
   position: absolute;
   height: 100vh;
   z-index: -3;
-  overflow: hidden;
+  overflow-x: hidden;
+  overscroll-behavior-inline: contain;
   white-space: nowrap;
   margin: 0rem;
   display: flex;

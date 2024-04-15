@@ -37,3 +37,12 @@ h2 {
 #nss-logo {
   max-height: 120px;
 }
+
+@media (max-width: 620px) {
+  #tg-logo {
+    width: 40%;
+  }
+  #nss-logo {
+    width: 40%;
+  }
+}
