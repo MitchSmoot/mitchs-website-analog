@@ -6,9 +6,9 @@ import { RouterModule } from '@angular/router';
 @Component({
     selector: 'mitchs-freelance-page',
     standalone: true,
-    templateUrl: './caving-home.component.html',
+    templateUrl: './freelance.component.html',
     imports: [CommonModule, RouterModule],
-    styleUrls: ['./caving.scss']
+    styleUrls: ['./freelance.component.scss']
 })
 export default class FreelancePageComponent {
 }

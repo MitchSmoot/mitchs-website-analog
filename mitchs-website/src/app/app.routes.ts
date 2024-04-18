@@ -8,6 +8,7 @@ import PageNotFoundComponent from "./pages/[...page-note-found].page";
 import CaveGalleryPageComponent from "./pages/caving/gallery/cave-gallery.component";
 import CavingHomePageComponent from "./pages/caving/caving-home.component";
 import CaveRepairPageComponent from "./pages/caving/cave-repair/cave-repair.component";
+import FreelancePageComponent from "./pages/freelance/freelance.component";
 
 export const appRoutes: Route[] = [
   { path: '', component: HomeComponent },
@@ -19,5 +20,6 @@ export const appRoutes: Route[] = [
   { path: 'portfolio', component: PortfolioPageComponent },
   { path: 'blog', component: BlogPageComponent},
   { path: 'radio', component: RadioPageComponent },
+  { path: 'freelance', component: FreelancePageComponent },
   { path: '**', component: PageNotFoundComponent }
 ]
