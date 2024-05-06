@@ -4,6 +4,7 @@ Welcome to the repository for my personal website! It is being built on the new 
 
 ## Planned Additions
 
-Will soon add a Ham radio page. 
+Will soon add a Ham radio page.
+Working on a page dedicated to my freelance web building services.
 There will also be a travel page utilizing OpenStreetMap.
 My hobby-related pages will continue to have useful information and tools added, in hope they will eventually become useful reference pages to those who share those hobbies.
