@@ -178,6 +178,10 @@ button {
   margin-top: 93.75vh;
 }
 
+a {
+  color: var(--clr-text-accent);
+}
+
 @media (max-width: 899px) {
   .cubing-container {
     flex-direction: column;
