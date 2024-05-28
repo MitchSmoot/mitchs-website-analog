@@ -3,6 +3,16 @@
   padding: 1rem;
   margin-bottom: 1rem;
   margin-inline: 1rem;
+  position: relative;
+}
+
+.job-container:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-top: 80px solid #333;
+  border-left: 80px solid #222;
+  width: 0;
 }
 
 .portfolio-item {
