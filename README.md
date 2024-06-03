@@ -10,3 +10,6 @@ Will soon add a Ham radio page.
 Working on a page dedicated to my freelance web building services.
 There will also be a travel page utilizing OpenStreetMap.
 My hobby-related pages will continue to have useful information and tools added, in hope they will eventually become useful reference pages to those who share those hobbies.
+
+
+Feel free to contact me if you have any questions about how or why the code was written as it is.
