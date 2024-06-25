@@ -3,17 +3,6 @@
   padding: 1rem;
   margin-bottom: 1rem;
   margin-inline: 1rem;
-  position: relative;
-}
-
-.job-container:before {
-  // style for upper right corner snip
-  content: '';
-  position: absolute;
-  top: 0; right: 0;
-  border-top: 80px solid var(--clr-bg-primary);
-  border-left: 80px solid #222;
-  width: 0;
 }
 
 .portfolio-item {

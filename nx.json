@@ -2,9 +2,13 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultProject": "mitchs-website",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": ["default"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "production": [
+      "default"
+    ],
     "sharedGlobals": []
-  },
-  "nxCloudAccessToken": "Y2MyZjc4ZTQtYTg5YS00NTRiLTlkMzUtMGVhNDgyYzlkYTU5fHJlYWQtd3JpdGU="
+  }
 }
