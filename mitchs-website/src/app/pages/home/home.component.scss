@@ -28,6 +28,7 @@
 
 section {
   padding: 2rem 2rem;
+  min-height: 36rem;
 }
 
 .diagonal {
@@ -89,7 +90,7 @@ section {
     z-index: 1;
     &-text {
       font-size: 1.6rem;
-    
+
     }
   }
 
